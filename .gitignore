@@ -10,6 +10,7 @@
 
 # Visual Studio cache directory
 .vs/
+.ide/
 
 # Gradle cache directory
 .gradle/
