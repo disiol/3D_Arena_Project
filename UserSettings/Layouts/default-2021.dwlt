@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1600
     height: 811
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Console
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 89
+  controlID: 26
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,7 +94,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 302
-    height: 508
+    height: 515
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -112,23 +112,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 508
+    y: 515
     width: 1222
-    height: 253
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 14}
+    height: 246
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 14}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 90
+  controlID: 27
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,11 +245,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1222
-    height: 508
+    height: 515
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 91
+  controlID: 105
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -268,16 +268,16 @@ MonoBehaviour:
     x: 302
     y: 0
     width: 920
-    height: 508
-  m_MinSize: {x: 102, y: 121}
+    height: 515
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 13}
-  m_Selected: 2
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 2
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -306,6 +306,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+    m_OverlaysVisible: 1
   progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
@@ -398,7 +399,7 @@ MonoBehaviour:
     localBranches: []
     remoteBranches: []
   changesView:
-    currentBranchHasUpdate: 0
+    currentBranchHasUpdate: 1
     currentStatusEntriesHasUpdate: 1
     currentLocksHasUpdate: 1
     commitBody: 
@@ -410,11 +411,17 @@ MonoBehaviour:
         keys:
         - 00000000000000001000000000000000
         - 9479a86e1f387d0dd8b972c8065545cb
-        - f0099d79e6180b0949598cfb28d359c8
+        - 3fa66aa4dc1bade0ba36bd11b58e07ea
+        - 4cd807c4162049c19c52db5907af4e32
+        - a377925c79814b94b371ed038dc9aca0
+        - 5e81fc0d792842bf8a7fa3eb09dd2f3d
+        - f4f7f24247994c9aa98feea15d6b817d
+        - 3eb7255ccd9448ee92b7ac2037640915
         - 4c219e121404e59b3987f158ef196b84
         - 8a441d149daedff168718dccc4432b70
-        - 782f52fba84eee665900e494a88a1caa
-        - 165eb6f26c974168dbd837fe554ab1e1
+        - 67dda11fc87c4e57b88794cb2976c104
+        - 30a1f930e2994a669ec2b2d354c3f680
+        - 00000000000000004000000000000000
         values:
         - path: Assets
           label: Assets
@@ -452,11 +459,11 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets/Scripts/ScriptsAssembly.asmdef
-          label: ScriptsAssembly.asmdef
+        - path: Assets/Scripts/Player
+          label: Player
           level: 2
-          isFolder: 0
-          isContainer: 1
+          isFolder: 1
+          isContainer: 0
           isCollapsed: 0
           isHidden: 0
           isActive: 0
@@ -464,12 +471,102 @@ MonoBehaviour:
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: Assets/Scripts/ScriptsAssembly.asmdef
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/ScriptsAssembly.asmdef
-            projectPath: Assets/Scripts/ScriptsAssembly.asmdef
+            path: 
+            fullPath: 
+            projectPath: 
             originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scripts/Player/Health
+          label: Health
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scripts/Player/Health/Model
+          label: Model
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
+          label: PlayerHealthModel.cs
+          level: 5
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
+            projectPath: Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets/Scripts/Player/Health/Presenter
+          label: Presenter
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+          label: PlayerHealthPresenter.cs
+          level: 5
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+            projectPath: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
         - path: Assets/Tests
           label: Tests
           level: 1
@@ -506,8 +603,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
-          label: TestPlayerHelseModel.cs
+        - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
+          label: TestsPlayerHealthModel.cs
           level: 3
           isFolder: 0
           isContainer: 1
@@ -518,14 +615,14 @@ MonoBehaviour:
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
-            projectPath: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
+            path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
+            projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
             originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-          label: TestsEditMode.asmdef
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
+          label: TestsPlayerHealthPresenter.cs
           level: 3
           isFolder: 0
           isContainer: 1
@@ -533,22 +630,107 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
+            projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
+            originalPath: 
+            indexStatus: 4
+            workTreeStatus: 3
+        - path: ProjectSettings/ProjectSettings.asset
+          label: ProjectSettings.asset
+          level: 1
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-            projectPath: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
+            path: ProjectSettings/ProjectSettings.asset
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/ProjectSettings/ProjectSettings.asset
+            projectPath: ProjectSettings/ProjectSettings.asset
             originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
+            indexStatus: 0
+            workTreeStatus: 3
       folders:
         keys:
+        - .idea
+        - .idea/.idea.3D_Arena_Project
+        - .idea/.idea.3D_Arena_Project/.idea
         - Assets
         - Assets/Scripts
+        - Assets/Scripts/Player
+        - Assets/Scripts/Player/Health
+        - Assets/Scripts/Player/Health/Model
+        - Assets/Scripts/Player/Health/Presenter
         - Assets/Tests
         - Assets/Tests/TestsEditMode
+        - Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets
+        - Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets/Tests
+        - Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets/Tests/TestsEditMode
+        - ProjectSettings
+        - UserSettings
+        - UserSettings/Layouts
         values:
+        - path: .idea
+          label: .idea
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: .idea/.idea.3D_Arena_Project
+          label: .idea.3D_Arena_Project
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: .idea/.idea.3D_Arena_Project/.idea
+          label: .idea
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
         - path: Assets
           label: Assets
           level: 0
@@ -585,6 +767,78 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Assets/Scripts/Player
+          label: Player
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scripts/Player/Health
+          label: Health
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scripts/Player/Health/Model
+          label: Model
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scripts/Player/Health/Presenter
+          label: Presenter
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
         - path: Assets/Tests
           label: Tests
           level: 1
@@ -606,6 +860,114 @@ MonoBehaviour:
         - path: Assets/Tests/TestsEditMode
           label: TestsEditMode
           level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets
+          label: TestsPlayerHealthModel.cs.meta -> Assets
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets/Tests
+          label: Tests
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets/Tests/TestsEditMode
+          label: TestsEditMode
+          level: 5
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: ProjectSettings
+          label: ProjectSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings
+          label: UserSettings
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: UserSettings/Layouts
+          label: Layouts
+          level: 1
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -649,9 +1011,63 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: .attach_pid27704
-        label: .attach_pid27704
+      - path: .idea
+        label: .idea
         level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: .idea/.idea.3D_Arena_Project
+        label: .idea.3D_Arena_Project
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: .idea/.idea.3D_Arena_Project/.idea
+        label: .idea
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
+        label: workspace.xml
+        level: 3
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -661,12 +1077,12 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: .attach_pid27704
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/.attach_pid27704
-          projectPath: .attach_pid27704
+          path: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/.idea/.idea.3D_Arena_Project/.idea/workspace.xml
+          projectPath: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
           originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
+          indexStatus: 0
+          workTreeStatus: 3
       - path: Assets
         label: Assets
         level: 0
@@ -703,11 +1119,11 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets/Scripts/ScriptsAssembly.asmdef
-        label: ScriptsAssembly.asmdef
+      - path: Assets/Scripts/Player
+        label: Player
         level: 2
-        isFolder: 0
-        isContainer: 1
+        isFolder: 1
+        isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
@@ -715,15 +1131,51 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Scripts/ScriptsAssembly.asmdef
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/ScriptsAssembly.asmdef
-          projectPath: Assets/Scripts/ScriptsAssembly.asmdef
+          path: 
+          fullPath: 
+          projectPath: 
           originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets/Scripts/ScriptsAssembly.asmdef.meta
-        label: ScriptsAssembly.asmdef.meta
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Scripts/Player/Health
+        label: Health
         level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Scripts/Player/Health/Model
+        label: Model
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
+        label: PlayerHealthModel.cs
+        level: 5
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -733,12 +1185,48 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Scripts/ScriptsAssembly.asmdef.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/ScriptsAssembly.asmdef.meta
-          projectPath: Assets/Scripts/ScriptsAssembly.asmdef.meta
+          path: Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
+          projectPath: Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
           originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets/Scripts/Player/Health/Presenter
+        label: Presenter
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+        label: PlayerHealthPresenter.cs
+        level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+          projectPath: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       - path: Assets/Tests
         label: Tests
         level: 1
@@ -757,24 +1245,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode.meta
-        label: TestsEditMode.meta
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Tests/TestsEditMode.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode.meta
-          projectPath: Assets/Tests/TestsEditMode.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
       - path: Assets/Tests/TestsEditMode
         label: TestsEditMode
         level: 2
@@ -793,8 +1263,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
-        label: TestPlayerHelseModel.cs
+      - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
+        label: TestsPlayerHealthModel.cs
         level: 3
         isFolder: 0
         isContainer: 1
@@ -805,14 +1275,14 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
-          projectPath: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
+          path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
+          projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
           originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs.meta
-        label: TestPlayerHelseModel.cs.meta
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta
+        label: TestsPlayerHealthModel.cs.meta
         level: 4
         isFolder: 0
         isContainer: 0
@@ -823,14 +1293,88 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs.meta
-          projectPath: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs.meta
+          path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta
+          projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
-      - path: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-        label: TestsEditMode.asmdef
+      - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets
+        label: TestsPlayerHealthModel.cs.meta -> Assets
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets/Tests
+        label: Tests
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets/Tests/TestsEditMode
+        label: TestsEditMode
+        level: 5
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets/Tests/TestsEditMode/TestsPlayerHealthModelTests.cs.meta
+        label: TestsPlayerHealthModelTests.cs.meta
+        level: 6
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets/Tests/TestsEditMode/TestsPlayerHealthModelTests.cs.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta
+            -> Assets/Tests/TestsEditMode/TestsPlayerHealthModelTests.cs.meta
+          projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta
+            -> Assets/Tests/TestsEditMode/TestsPlayerHealthModelTests.cs.meta
+          originalPath: 
+          indexStatus: 6
+          workTreeStatus: 5
+      - path: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
+        label: TestsPlayerHealthPresenter.cs
         level: 3
         isFolder: 0
         isContainer: 1
@@ -838,18 +1382,54 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
+          projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 3
+      - path: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs.meta
+        label: TestsPlayerHealthPresenter.cs.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs.meta
+          projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: ProjectSettings
+        label: ProjectSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-          projectPath: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
+          path: 
+          fullPath: 
+          projectPath: 
           originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets/Tests/TestsEditMode/TestsEditMode.asmdef.meta
-        label: TestsEditMode.asmdef.meta
-        level: 4
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: ProjectSettings/ProjectSettings.asset
+        label: ProjectSettings.asset
+        level: 1
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
@@ -859,89 +1439,156 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/TestsEditMode.asmdef.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsEditMode.asmdef.meta
-          projectPath: Assets/Tests/TestsEditMode/TestsEditMode.asmdef.meta
+          path: ProjectSettings/ProjectSettings.asset
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/ProjectSettings/ProjectSettings.asset
+          projectPath: ProjectSettings/ProjectSettings.asset
           originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: UserSettings
+        label: UserSettings
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings/Layouts
+        label: Layouts
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: UserSettings/Layouts/default-2021.dwlt
+        label: default-2021.dwlt
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: UserSettings/Layouts/default-2021.dwlt
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/UserSettings/Layouts/default-2021.dwlt
+          projectPath: UserSettings/Layouts/default-2021.dwlt
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       selectedNode:
-        path: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-        label: TestsEditMode.asmdef
-        level: 3
+        path: 
+        label: 
+        level: 0
         isFolder: 0
-        isContainer: 1
+        isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
-        treeIsCheckable: 1
+        treeIsCheckable: 0
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-          projectPath: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
+          path: 
+          fullPath: 
+          projectPath: 
           originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
+          indexStatus: 0
+          workTreeStatus: 0
     gitStatusEntries:
-    - path: .attach_pid27704
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/.attach_pid27704
-      projectPath: .attach_pid27704
+    - path: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/.idea/.idea.3D_Arena_Project/.idea/workspace.xml
+      projectPath: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
+      projectPath: Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+      projectPath: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
+      projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta
+      projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets/Scripts/ScriptsAssembly.asmdef
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/ScriptsAssembly.asmdef
-      projectPath: Assets/Scripts/ScriptsAssembly.asmdef
+    - path: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets/Tests/TestsEditMode/TestsPlayerHealthModelTests.cs.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta
+        -> Assets/Tests/TestsEditMode/TestsPlayerHealthModelTests.cs.meta
+      projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta -> Assets/Tests/TestsEditMode/TestsPlayerHealthModelTests.cs.meta
       originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets/Scripts/ScriptsAssembly.asmdef.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/ScriptsAssembly.asmdef.meta
-      projectPath: Assets/Scripts/ScriptsAssembly.asmdef.meta
+      indexStatus: 6
+      workTreeStatus: 5
+    - path: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
+      projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs
       originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets/Tests/TestsEditMode.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode.meta
-      projectPath: Assets/Tests/TestsEditMode.meta
+      indexStatus: 4
+      workTreeStatus: 3
+    - path: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs.meta
+      projectPath: Assets/Tests/TestsEditMode/TestsPlayerHealthPresenter.cs.meta
       originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
-      projectPath: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings/ProjectSettings.asset
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/ProjectSettings/ProjectSettings.asset
+      projectPath: ProjectSettings/ProjectSettings.asset
       originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs.meta
-      projectPath: Assets/Tests/TestsEditMode/TestPlayerHelseModel.cs.meta
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: UserSettings/Layouts/default-2021.dwlt
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/UserSettings/Layouts/default-2021.dwlt
+      projectPath: UserSettings/Layouts/default-2021.dwlt
       originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-      projectPath: Assets/Tests/TestsEditMode/TestsEditMode.asmdef
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets/Tests/TestsEditMode/TestsEditMode.asmdef.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/TestsEditMode.asmdef.meta
-      projectPath: Assets/Tests/TestsEditMode/TestsEditMode.asmdef.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    changedFilesText: 8 changed files
+      indexStatus: 0
+      workTreeStatus: 3
+    changedFilesText: 10 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-05-26T22:03:42.138+03:00
+      updatedTimeString: 2023-05-27T12:06:06.705+03:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-05-26T23:25:21.653+03:00
+      updatedTimeString: 2023-05-27T12:32:49.210+03:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2023-05-27T12:06:06.911+03:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -2502,13 +3149,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-05-26T22:03:42.138+03:00
+    updatedTimeString: 2023-05-27T01:08:33.167+03:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-05-26T22:40:02.909+03:00
+    updatedTimeString: 2023-05-27T01:08:33.638+03:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-05-26T23:00:11.984+03:00
+    updatedTimeString: 2023-05-27T02:42:17.537+03:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -2555,28 +3202,29 @@ MonoBehaviour:
     x: 302
     y: 119
     width: 918
-    height: 487
+    height: 494
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+    m_OverlaysVisible: 1
   m_Spl:
-    ID: 896
-    splitterInitialOffset: 0
+    ID: 202
+    splitterInitialOffset: 348
     currentActiveSplitter: -1
     realSizes:
-    - 313
-    - 104
+    - 221
+    - 203
     relativeSizes:
-    - 0.75
-    - 0.25
+    - 0.521576
+    - 0.478424
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 417
+    lastTotalSize: 424
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -2627,9 +3275,9 @@ MonoBehaviour:
       uniqueId: '[3D_Arena_Project][suite]'
       name: 3D_Arena_Project
       fullName: 3D_Arena_Project
-      resultStatus: 2
-      duration: 0.0735121
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.2426069
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -2643,9 +3291,9 @@ MonoBehaviour:
       uniqueId: '[TestsEditMode.dll][suite]'
       name: TestsEditMode.dll
       fullName: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Library/ScriptAssemblies/TestsEditMode.dll
-      resultStatus: 2
-      duration: 0.0259309
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1823276
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -2659,9 +3307,9 @@ MonoBehaviour:
       uniqueId: TestsEditMode.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 0.0253077
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1754966
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -2675,9 +3323,9 @@ MonoBehaviour:
       uniqueId: TestsEditMode.dll/Tests/[TestsEditMode][suite]
       name: TestsEditMode
       fullName: Tests.TestsEditMode
-      resultStatus: 2
-      duration: 0.0148857
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.17048
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -2687,13 +3335,13 @@ MonoBehaviour:
       categories: []
       parentId: 1005
       parentUniqueId: TestsEditMode.dll/[Tests][suite]
-    - id: 1001
-      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.HealthTests][suite]
-      name: HealthTests
-      fullName: Tests.TestsEditMode.HealthTests
-      resultStatus: 2
-      duration: 0.0107791
-      messages: One or more child tests had errors
+    - id: 1015
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/[Player][suite]
+      name: Player
+      fullName: Tests.TestsEditMode.Player
+      resultStatus: 1
+      duration: 0.1007674
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -2701,26 +3349,165 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1009
+      parentId: 1014
+      parentUniqueId: TestsEditMode.dll/Tests/[TestsEditMode][suite]
+    - id: 1016
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/[Health][suite]
+      name: Health
+      fullName: Tests.TestsEditMode.Player.Health
+      resultStatus: 1
+      duration: 0.0955901
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[Player][suite]
+    - id: 1017
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/[Presenter][suite]
+      name: Presenter
+      fullName: Tests.TestsEditMode.Player.Health.Presenter
+      resultStatus: 1
+      duration: 0.0919569
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/[Health][suite]
+    - id: 1018
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests][suite]
+      name: Tests
+      fullName: Tests.TestsEditMode.Player.Health.Presenter.Tests
+      resultStatus: 1
+      duration: 0.0883897
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1017
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/[Presenter][suite]
+    - id: 1007
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/Tests/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter][suite]
+      name: TestsPlayerHealthPresenter
+      fullName: Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter
+      resultStatus: 1
+      duration: 0.0831827
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1018
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests][suite]
+    - id: 1009
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/Tests/TestsPlayerHealthPresenter/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter.Damage_ReducesHealth]
+      name: Damage_ReducesHealth
+      fullName: Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter.Damage_ReducesHealth
+      resultStatus: 1
+      duration: 0.0556637
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/Tests/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter][suite]
+    - id: 1010
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/Tests/TestsPlayerHealthPresenter/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter.Heal_IncreasesHealth]
+      name: Heal_IncreasesHealth
+      fullName: Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter.Heal_IncreasesHealth
+      resultStatus: 1
+      duration: 0.0010412
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/Tests/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter][suite]
+    - id: 1011
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/Tests/TestsPlayerHealthPresenter/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter.Reset_RestoresHealth]
+      name: Reset_RestoresHealth
+      fullName: Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter.Reset_RestoresHealth
+      resultStatus: 1
+      duration: 0.0008481
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/Tests/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter][suite]
+    - id: 1008
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/Tests/TestsPlayerHealthPresenter/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter.UpdateView_UpdatesHealthSliderAndText]
+      name: UpdateView_UpdatesHealthSliderAndText
+      fullName: Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter.UpdateView_UpdatesHealthSliderAndText
+      resultStatus: 1
+      duration: 0.0027786
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Health/Presenter/Tests/[TestsEditMode][Tests.TestsEditMode.Player.Health.Presenter.Tests.TestsPlayerHealthPresenter][suite]
+    - id: 1001
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel][suite]
+      name: TestsPlayerHealthModel
+      fullName: Tests.TestsEditMode.TestsPlayerHealthModel
+      resultStatus: 1
+      duration: 0.06522
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1014
       parentUniqueId: TestsEditMode.dll/Tests/[TestsEditMode][suite]
     - id: 1005
-      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/HealthTests/[TestsEditMode][Tests.TestsEditMode.HealthTests.Decrement_DecreaseHealthBelowMinHealth_ClampToMinHealth]
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/TestsPlayerHealthModel/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel.Decrement_DecreaseHealthBelowMinHealth_ClampToMinHealth]
       name: Decrement_DecreaseHealthBelowMinHealth_ClampToMinHealth
-      fullName: Tests.TestsEditMode.HealthTests.Decrement_DecreaseHealthBelowMinHealth_ClampToMinHealth
-      resultStatus: 2
-      duration: 0.0012632
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      fullName: Tests.TestsEditMode.TestsPlayerHealthModel.Decrement_DecreaseHealthBelowMinHealth_ClampToMinHealth
+      resultStatus: 1
+      duration: 0.0011096
+      messages: 
       output: 
-      stacktrace: "  at Player.Health.Model.Health.UpdateHealth () [0x00001] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/Health.cs:51
-        \n  at Player.Health.Model.Health.Decrement (System.Int32 amount) [0x0002c]
-        in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/Health.cs:38
-        \n  at Tests.TestsEditMode.HealthTests.Decrement_DecreaseHealthBelowMinHealth_ClampToMinHealth
-        () [0x00018] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/HealthTests.cs:79
-        \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <9581cd2c12ed473a9d5f9139284f8a60>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -2728,25 +3515,16 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.HealthTests][suite]
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel][suite]
     - id: 1004
-      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/HealthTests/[TestsEditMode][Tests.TestsEditMode.HealthTests.Decrement_DecreaseHealthWithinBounds]
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/TestsPlayerHealthModel/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel.Decrement_DecreaseHealthWithinBounds]
       name: Decrement_DecreaseHealthWithinBounds
-      fullName: Tests.TestsEditMode.HealthTests.Decrement_DecreaseHealthWithinBounds
-      resultStatus: 2
-      duration: 0.0008823
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      fullName: Tests.TestsEditMode.TestsPlayerHealthModel.Decrement_DecreaseHealthWithinBounds
+      resultStatus: 1
+      duration: 0.00049
+      messages: 
       output: 
-      stacktrace: "  at Player.Health.Model.Health.UpdateHealth () [0x00001] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/Health.cs:51
-        \n  at Player.Health.Model.Health.Decrement (System.Int32 amount) [0x0002c]
-        in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/Health.cs:38
-        \n  at Tests.TestsEditMode.HealthTests.Decrement_DecreaseHealthWithinBounds
-        () [0x00018] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/HealthTests.cs:64
-        \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <9581cd2c12ed473a9d5f9139284f8a60>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -2754,25 +3532,16 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.HealthTests][suite]
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel][suite]
     - id: 1003
-      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/HealthTests/[TestsEditMode][Tests.TestsEditMode.HealthTests.Increment_IncreaseHealthAboveMaxHealth_ClampToMaxHealth]
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/TestsPlayerHealthModel/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel.Increment_IncreaseHealthAboveMaxHealth_ClampToMaxHealth]
       name: Increment_IncreaseHealthAboveMaxHealth_ClampToMaxHealth
-      fullName: Tests.TestsEditMode.HealthTests.Increment_IncreaseHealthAboveMaxHealth_ClampToMaxHealth
-      resultStatus: 2
-      duration: 0.0008662
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      fullName: Tests.TestsEditMode.TestsPlayerHealthModel.Increment_IncreaseHealthAboveMaxHealth_ClampToMaxHealth
+      resultStatus: 1
+      duration: 0.000472
+      messages: 
       output: 
-      stacktrace: "  at Player.Health.Model.Health.UpdateHealth () [0x00001] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/Health.cs:51
-        \n  at Player.Health.Model.Health.Increment (System.Int32 amount) [0x0002c]
-        in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/Health.cs:31
-        \n  at Tests.TestsEditMode.HealthTests.Increment_IncreaseHealthAboveMaxHealth_ClampToMaxHealth
-        () [0x00018] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/HealthTests.cs:49
-        \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <9581cd2c12ed473a9d5f9139284f8a60>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -2780,22 +3549,16 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.HealthTests][suite]
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel][suite]
     - id: 1002
-      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/HealthTests/[TestsEditMode][Tests.TestsEditMode.HealthTests.Increment_IncreaseHealthWithinBounds]
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/TestsPlayerHealthModel/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel.Increment_IncreaseHealthWithinBounds]
       name: Increment_IncreaseHealthWithinBounds
-      fullName: Tests.TestsEditMode.HealthTests.Increment_IncreaseHealthWithinBounds
-      resultStatus: 2
-      duration: 0.0007419
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      fullName: Tests.TestsEditMode.TestsPlayerHealthModel.Increment_IncreaseHealthWithinBounds
+      resultStatus: 1
+      duration: 0.0005398
+      messages: 
       output: 
-      stacktrace: "  at Tests.TestsEditMode.HealthTests.Increment_IncreaseHealthWithinBounds
-        () [0x00001] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/HealthTests.cs:19
-        \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <9581cd2c12ed473a9d5f9139284f8a60>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -2803,24 +3566,16 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.HealthTests][suite]
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel][suite]
     - id: 1006
-      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/HealthTests/[TestsEditMode][Tests.TestsEditMode.HealthTests.Restore_SetHealthToMaxHealth]
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/TestsPlayerHealthModel/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel.Restore_SetHealthToMaxHealth]
       name: Restore_SetHealthToMaxHealth
-      fullName: Tests.TestsEditMode.HealthTests.Restore_SetHealthToMaxHealth
-      resultStatus: 2
-      duration: 0.0009003
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      fullName: Tests.TestsEditMode.TestsPlayerHealthModel.Restore_SetHealthToMaxHealth
+      resultStatus: 1
+      duration: 0.000468
+      messages: 
       output: 
-      stacktrace: "  at Player.Health.Model.Health.UpdateHealth () [0x00001] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/Health.cs:51
-        \n  at Player.Health.Model.Health.Restore () [0x0000d] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Model/Health.cs:45
-        \n  at Tests.TestsEditMode.HealthTests.Restore_SetHealthToMaxHealth () [0x00015]
-        in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/HealthTests.cs:93
-        \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <9581cd2c12ed473a9d5f9139284f8a60>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -2828,19 +3583,14 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.HealthTests][suite]
-    m_ResultText: 'HealthTests (0.011s)
-
-      ---
-
-      One or more child tests
-      had errors'
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/[TestsEditMode][Tests.TestsEditMode.TestsPlayerHealthModel][suite]
+    m_ResultText: 3D_Arena_Project (0.243s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 66e7a5b0
-      m_LastClickedID: -1331304602
-      m_ExpandedIDs: 66e7a5b0d666e2ff15c0620f3eeb87165195b152ffffff7f
+      m_SelectedIDs: 15c0620f
+      m_LastClickedID: 258129941
+      m_ExpandedIDs: 0a3c648285c77f8266e7a5b00f88c9e2a105fff2d666e2ff8df6c8026fdab20515c0620f5195b152bd0fa67bcc76d57effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2887,13 +3637,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 627
+    y: 634
     width: 1221
-    height: 232
+    height: 225
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+    m_OverlaysVisible: 1
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -2907,22 +3658,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Player/Health/Presenter
+    - Assets/Scripts/Player/Ulta/Presenter
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Player/Health/Presenter
+  - Assets/Scripts/Player/Ulta/Presenter
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 44}
-    m_SelectedIDs: 80820000
-    m_LastClickedID: 33408
-    m_ExpandedIDs: 00000000fe7e00000a7f00000c7f0000fe820000b084000000ca9a3b
+    scrollPos: {x: 0, y: 135}
+    m_SelectedIDs: f6770000
+    m_LastClickedID: 30710
+    m_ExpandedIDs: 00000000d6770000d8770000da770000dc770000de770000e077000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2950,7 +3701,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000d6770000d8770000da770000dc770000de770000e0770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2975,9 +3726,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: d0f4ffff
+    m_LastClickedInstanceID: -2864
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -3034,6 +3785,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+    m_OverlaysVisible: 1
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
@@ -3070,17 +3822,18 @@ MonoBehaviour:
     x: 0
     y: 119
     width: 301
-    height: 487
+    height: 494
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+    m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: d0f4ffff
       m_LastClickedID: 0
-      m_ExpandedIDs: a4a5fffff4a5ffff56a8ffff96a8ffff02aaffff84aafffff0b7ffff30b8ffff54b9ffffceb9ffff82baffffb2d1ffffb2d3ffff
+      m_ExpandedIDs: a2f6ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3352,6 +4105,7 @@ MonoBehaviour:
       id: Scene View/Tilemap Palette Helper
       index: 12
       layout: 4
+    m_OverlaysVisible: 1
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
@@ -3465,18 +4219,19 @@ MonoBehaviour:
     x: 302
     y: 119
     width: 918
-    height: 487
+    height: 494
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+    m_OverlaysVisible: 1
   m_SerializedViewNames: []
   m_SerializedViewValues: []
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 918, y: 466}
+  m_TargetSize: {x: 2960, y: 1440}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -3485,16 +4240,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 0000000000000000000000000c000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -459
-    m_HBaseRangeMax: 459
-    m_VBaseRangeMin: -233
-    m_VBaseRangeMax: 233
+    m_HBaseRangeMin: -1480
+    m_HBaseRangeMax: 1480
+    m_VBaseRangeMin: -720
+    m_VBaseRangeMax: 720
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -3513,25 +4268,25 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 918
-      height: 466
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 459, y: 233}
+      height: 473
+    m_Scale: {x: 0.31013513, y: 0.31013513}
+    m_Translation: {x: 459, y: 236.49998}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -459
-      y: -233
-      width: 918
-      height: 466
+      x: -1480
+      y: -762.5708
+      width: 2960
+      height: 1525.1416
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 918, y: 487}
+  m_defaultScale: 0.31013513
+  m_LastWindowPixelSize: {x: 918, y: 494}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_LowResolutionForAspectRatios: 01000001000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 --- !u!114 &19
@@ -3555,10 +4310,11 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 571
+    y: 634
     width: 1221
-    height: 288
+    height: 225
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+    m_OverlaysVisible: 1

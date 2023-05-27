@@ -1,45 +1,36 @@
+using Player.Health.Model;
+using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Player.Health.Presenter
 {
-    // The Presenter. This listens for View changes in the user interface and the manipulates the Model (PlayerHealthModel)
-    // in response. The Presenter updates the View when the Model changes.
-
     public class PlayerHealthPresenter : MonoBehaviour
     {
-        [FormerlySerializedAs("health")] [Header("Model")] [SerializeField] Model.PlayerHealthModel playerHealthModel;
+        [Header("Model")] 
+        [SerializeField] private PlayerHealthModel playerHealthModel;
 
-        [Header("View")] [SerializeField] Slider healthSlider;
-        [SerializeField] Text healthText;
+        [Header("View")]
+        [SerializeField] private Slider healthSlider;
+        [SerializeField] private TextMeshProUGUI healthText;
+
+#if UNITY_EDITOR
+
+        public void PlayerHealthPresenterSetTestData(PlayerHealthModel playerHealthModel, Slider healthSlider,
+            TextMeshProUGUI healthText)
+        {
+            this.playerHealthModel = playerHealthModel;
+            this.healthSlider = healthSlider;
+            this.healthText = healthText;
+        }
+#endif
+
 
         private void Awake()
         {
-            if (playerHealthModel == null)
-            {
-                Debug.LogWarning(
-                    "PlayerHealthModel Presenter needs a PlayerHealthModel to present please make sure one is set in The Inspector",
-                    gameObject);
-                enabled = false;
-            }
-
-            if (healthSlider == null)
-            {
-                Debug.LogWarning(
-                    "PlayerHealthModel Presenter needs a Slider to Update please make sure one is set in The Inspector",
-                    gameObject);
-                enabled = false;
-            }
-
-            if (healthText == null)
-            {
-                Debug.LogWarning(
-                    "PlayerHealthModel Presenter needs a HealthText to Update please make sure one is set in The Inspector",
-                    gameObject);
-                enabled = false;
-            }
+            CheckSerializeFieldToNull();
         }
+
 
         private void Start()
         {
@@ -81,6 +72,11 @@ namespace Player.Health.Presenter
             if (playerHealthModel == null)
                 return;
 
+            FormatTheDataForView();
+        }
+
+        private void FormatTheDataForView()
+        {
             // format the data for view
             if (healthSlider != null && playerHealthModel.MaxHealth != 0)
             {
@@ -93,10 +89,38 @@ namespace Player.Health.Presenter
             }
         }
 
-        // listen for model changes and update the view
-        public void OnPlayerHealthModelChanged()
+        private void CheckSerializeFieldToNull()
+        {
+            if (playerHealthModel == null)
+            {
+                Debug.LogWarning(
+                    "PlayerUltaModel Presenter needs a PlayerUltaModel to present please make sure one is set in The Inspector",
+                    gameObject);
+                enabled = false;
+            }
+
+            if (healthSlider == null)
+            {
+                Debug.LogWarning(
+                    "PlayerUltaModel Presenter needs a Slider to Update please make sure one is set in The Inspector",
+                    gameObject);
+                enabled = false;
+            }
+
+            if (healthText == null)
+            {
+                Debug.LogWarning(
+                    "PlayerUltaModel Presenter needs a HealthText to Update please make sure one is set in The Inspector",
+                    gameObject);
+                enabled = false;
+            }
+        }
+
+        private void OnPlayerHealthModelChanged()
         {
             UpdateView();
         }
+        
+        
     }
 }

@@ -3,16 +3,21 @@ using UnityEngine;
 
 namespace Player.Health.Model
 {
-    // The Model. This contains the data for our MVP pattern.
     public class PlayerHealthModel : MonoBehaviour
     {
-        // This event notifies the Presenter that the health has changed.
-        // This is useful if setting the value (e.g. saving to disk or
-        // storing in a database) takes some time.
+#if UNITY_EDITOR
+        public void PlayerHealthModelSetTestData(int minHealth, int maxHealth)
+        {
+            this.minHealth = minHealth;
+            this.maxHealth = maxHealth;
+        }
+#endif
+       
+
         public event Action HealthChanged;
 
-        [SerializeField] private int minHealth = 50;
-        [SerializeField] private int maxHealth = 100;
+        [SerializeField] private int minHealth;
+        [SerializeField] private int maxHealth;
         private int _currentHealth;
 
         public int CurrentHealth
