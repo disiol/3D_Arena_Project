@@ -14,6 +14,8 @@ namespace Tests.TestsEditMode.Player.Health
             private PlayerHealthModel _playerHealthModel;
             private Slider _healthSlider;
             private TextMeshProUGUI _healthText;
+            private int _minHealth;
+            private int _maxHealth;
 
             [SetUp]
             public void Setup()
@@ -25,7 +27,9 @@ namespace Tests.TestsEditMode.Player.Health
 
                 // Create a PlayerUltaModel instance
                 _playerHealthModel = gameObject.AddComponent<PlayerHealthModel>();
-                _playerHealthModel.PlayerHealthModelSetTestData(0, 100);
+                _minHealth = 0;
+                _maxHealth = 100;
+                _playerHealthModel.PlayerHealthModelSetTestData(_minHealth, _maxHealth);
 
 
                 // Create a Slider and Text for the UI elements
@@ -45,10 +49,10 @@ namespace Tests.TestsEditMode.Player.Health
             [Test]
             public void UpdateView_UpdatesHealthSliderAndText()
             {
-                // Set the initial health values
+                // Arrange
                 _playerHealthModel.CurrentHealth = 50;
 
-                // Call the UpdateView method
+               // Act
                 _playerHealthPresenter.UpdateView();
 
                 // Assert that the healthSlider value is set correctly
@@ -61,13 +65,11 @@ namespace Tests.TestsEditMode.Player.Health
             [Test]
             public void Damage_ReducesHealth()
             {
-                // Set the initial health value
+                // Arrange
                 _playerHealthModel.CurrentHealth = 100;
 
-                // Call the Damage method with a damage amount of 20
+                // Act
                 _playerHealthPresenter.Damage(20);
-                
-                 // Call the UpdateView method
                 _playerHealthPresenter.UpdateView();
 
                 // Assert that the current health is reduced by 20
@@ -77,10 +79,10 @@ namespace Tests.TestsEditMode.Player.Health
             [Test]
             public void Heal_IncreasesHealth()
             {
-                // Set the initial health value
+                // Arrange 
                 _playerHealthModel.CurrentHealth = 50;
 
-                // Call the Heal method with a heal amount of 30
+               // Act Call the Heal method with a heal amount of 30
                 _playerHealthPresenter.Heal(30);
 
                 // Assert that the current health is increased by 30
@@ -90,10 +92,10 @@ namespace Tests.TestsEditMode.Player.Health
             [Test]
             public void Reset_RestoresHealth()
             {
-                // Set the initial health values
+                // Arrange
                 _playerHealthModel.CurrentHealth = 50;
 
-                // Call the Reset method
+                // Act
                 _playerHealthPresenter.Reset();
 
                 // Assert that the current health is restored to the maximum health

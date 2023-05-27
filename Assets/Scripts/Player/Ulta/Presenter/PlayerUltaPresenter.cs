@@ -17,11 +17,12 @@ namespace Player.Ulta.Presenter
 #if UNITY_EDITOR
 
         public void PlayerUltaPresenterSetTestData(PlayerUltaModel playerHealthModel, Slider healthSlider,
-            TextMeshProUGUI powerText)
+            TextMeshProUGUI powerText, GameObject ultaButton)
         {
             this.playerUltaModel = playerHealthModel;
             this.powerIndicatorSlider = healthSlider;
             this.powerText = powerText;
+            this.ultaButton = ultaButton;
         }
 #endif
 
@@ -61,7 +62,7 @@ namespace Player.Ulta.Presenter
             playerUltaModel?.ResetPower();
         }
 
-        private void UpdateView()
+        public void UpdateView()
         {
             if (playerUltaModel == null)
                 return;

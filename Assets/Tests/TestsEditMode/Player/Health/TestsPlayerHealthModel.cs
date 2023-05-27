@@ -104,7 +104,6 @@ namespace Tests.TestsEditMode.Player.Health
         {
             // Arrange
             _playerHealthModel.HealthChanged += Action_stub;
-
             _playerHealthModel.CurrentHealth = 70;
 
             // Act

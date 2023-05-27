@@ -5,50 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596f741e-7d16-44fc-bb2c-f77153c7d656" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/BttonUlta.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/BttonUlta.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Model.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Presenter.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Health.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Ulta.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UIElements.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Profiling.Editor.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.UI.Builder.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Experimental.GraphView.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Overlays.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.PackageManager.UI.Internal.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Search.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.ShortcutManagement.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.UIElements.Debugger.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.UIElements.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEngine.UIElements.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaPresenterTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaPresenterTests.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptsAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptsAssembly.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptsAssembly.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptsAssembly.asmdef.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/TestsEditMode.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/TestsEditMode.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/TestsPlayerHealthModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +121,7 @@
       <workItem from="1685178326889" duration="40000" />
       <workItem from="1685179443988" duration="1177000" />
       <workItem from="1685180761927" duration="8390000" />
-      <workItem from="1685199580037" duration="475000" />
+      <workItem from="1685199580037" duration="3828000" />
     </task>
     <servers />
   </component>
