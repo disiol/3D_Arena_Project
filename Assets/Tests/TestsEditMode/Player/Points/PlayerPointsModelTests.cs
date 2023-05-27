@@ -8,29 +8,29 @@ namespace Tests.TestsEditMode.Player.Points
     [TestFixture]
     public class PlayerPointsModelTests
     {
-        private PlayerPointsModel playerPointsModel;
+        private PlayerPointsModel _playerPointsModel;
 
         [SetUp]
         public void SetUp()
         {            
             GameObject gameObject = new GameObject();
-            playerPointsModel = gameObject.AddComponent<PlayerPointsModel>();
-            playerPointsModel.PointsChanged += Action_stub;
+            _playerPointsModel = gameObject.AddComponent<PlayerPointsModel>();
+            _playerPointsModel.PointsChanged += Action_stub;
         }
 
         [Test]
         public void PointsPlus_AddsAmountToPoints()
         {
             // Arrange
-            int initialPoints = playerPointsModel.Points;
+            int initialPoints = _playerPointsModel.Points;
             int amount = 10;
 
             // Act
-            playerPointsModel.PointsPlus(amount);
+            _playerPointsModel.PointsPlus(amount);
 
             // Assert
             int expectedPoints = initialPoints + amount;
-            int actualPoints = playerPointsModel.Points;
+            int actualPoints = _playerPointsModel.Points;
 
             
             Assert.AreEqual(expectedPoints, actualPoints);
@@ -40,13 +40,13 @@ namespace Tests.TestsEditMode.Player.Points
         public void ResetPoints_SetsPointsToZero()
         {  
             // Arrange
-            playerPointsModel.Points = 100;
+            _playerPointsModel.Points = 100;
 
             // Act
-            playerPointsModel.ResetPoints();
+            _playerPointsModel.ResetPoints();
             
             // Assert
-            Assert.AreEqual(0, playerPointsModel.Points);
+            Assert.AreEqual(0, _playerPointsModel.Points);
         }
         private void Action_stub()
         {

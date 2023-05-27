@@ -1,11 +1,8 @@
 using Player.Points.Model;
-using Player.Ulta.Model;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using UnityEngine.Serialization;
+using UnityEngine;
 
-namespace Player.Ulta.Presenter
+namespace Player.Points.Presenter
 {
     public class PlayerPointsPresenter : MonoBehaviour
     {

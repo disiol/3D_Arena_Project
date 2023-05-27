@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596f741e-7d16-44fc-bb2c-f77153c7d656" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Points.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Points/Model.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Points/Presenter.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Points.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsPresenterTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsPresenterTests.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +118,7 @@
       <workItem from="1685178326889" duration="40000" />
       <workItem from="1685179443988" duration="1177000" />
       <workItem from="1685180761927" duration="8390000" />
-      <workItem from="1685199580037" duration="6239000" />
+      <workItem from="1685199580037" duration="6896000" />
     </task>
     <servers />
   </component>
@@ -144,6 +132,23 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs</url>
+          <line>22</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs" initialLine="22" containingFunctionPresentation="Method 'PointsPlus_AddsAmountToPoints'">
+            <startOffsets>
+              <option value="583" />
+            </startOffsets>
+            <endOffsets>
+              <option value="584" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
         <watch expression="_currentHealth" />
