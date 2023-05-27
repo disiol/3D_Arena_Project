@@ -26,12 +26,10 @@ namespace Tests.TestsEditMode.Player.Ulta
         public void Increment_IncreasePowerWithinRange()
         {
             // Arrange
-
             int initialPower = _playerUltaModel.CurrentPower;
             int amount = 5;
 
             // Act
-
             _playerUltaModel.Increment(amount);
 
             // Assert

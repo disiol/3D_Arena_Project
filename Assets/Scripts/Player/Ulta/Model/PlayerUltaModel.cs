@@ -46,7 +46,7 @@ namespace Player.Ulta.Model
         public void KillAllEnemies()
         {
             //TODO при срабатывании которой все враги умрут
-            Debug.Log("PlayerUltaModel KillAllEnemies");
+            Debug.Log("PlayerPointsModel KillAllEnemies");
             
         }
 

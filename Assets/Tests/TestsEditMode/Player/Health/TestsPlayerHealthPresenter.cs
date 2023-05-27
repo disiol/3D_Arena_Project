@@ -20,12 +20,12 @@ namespace Tests.TestsEditMode.Player.Health
             [SetUp]
             public void Setup()
             {
-                // Create a GameObject to attach the PlayerUltaPresenter script
+                // Create a GameObject to attach the PlayerPointsPresenter script
                 GameObject gameObject = new GameObject();
                 _playerHealthPresenter = gameObject.AddComponent<PlayerHealthPresenter>();
 
 
-                // Create a PlayerUltaModel instance
+                // Create a PlayerPointsModel instance
                 _playerHealthModel = gameObject.AddComponent<PlayerHealthModel>();
                 _minHealth = 0;
                 _maxHealth = 100;

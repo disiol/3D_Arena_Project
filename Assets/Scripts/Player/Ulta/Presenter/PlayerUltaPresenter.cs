@@ -96,7 +96,7 @@ namespace Player.Ulta.Presenter
             if (playerUltaModel == null)
             {
                 Debug.LogWarning(
-                    "PlayerUltaPresenter Presenter needs a PlayerUltaModel to present please make sure one is set in The Inspector",
+                    "PlayerPointsPresenter Presenter needs a PlayerPointsModel to present please make sure one is set in The Inspector",
                     gameObject);
                 enabled = false;
             }
@@ -104,7 +104,7 @@ namespace Player.Ulta.Presenter
             if (powerIndicatorSlider == null)
             {
                 Debug.LogWarning(
-                    "PlayerUltaPresenter Presenter needs a Slider to Update please make sure one is set in The Inspector",
+                    "PlayerPointsPresenter Presenter needs a Slider to Update please make sure one is set in The Inspector",
                     gameObject);
                 enabled = false;
             }
@@ -112,7 +112,7 @@ namespace Player.Ulta.Presenter
             if (powerText == null)
             {
                 Debug.LogWarning(
-                    "PlayerUltaModel Presenter needs a HealthText to Update please make sure one is set in The Inspector",
+                    "PlayerPointsModel Presenter needs a HealthText to Update please make sure one is set in The Inspector",
                     gameObject);
                 enabled = false;
             }
@@ -120,7 +120,7 @@ namespace Player.Ulta.Presenter
             if (ultaButton == null)
             {
                 Debug.LogWarning(
-                    "PlayerUltaModel Presenter needs a ultaButton to Update please make sure one is set in The Inspector",
+                    "PlayerPointsModel Presenter needs a ultaButton to Update please make sure one is set in The Inspector",
                     gameObject);
                 enabled = false;
             }

@@ -94,7 +94,7 @@ namespace Player.Health.Presenter
             if (playerHealthModel == null)
             {
                 Debug.LogWarning(
-                    "PlayerUltaModel Presenter needs a PlayerUltaModel to present please make sure one is set in The Inspector",
+                    "PlayerPointsModel Presenter needs a PlayerPointsModel to present please make sure one is set in The Inspector",
                     gameObject);
                 enabled = false;
             }
@@ -102,7 +102,7 @@ namespace Player.Health.Presenter
             if (healthSlider == null)
             {
                 Debug.LogWarning(
-                    "PlayerUltaModel Presenter needs a Slider to Update please make sure one is set in The Inspector",
+                    "PlayerPointsModel Presenter needs a Slider to Update please make sure one is set in The Inspector",
                     gameObject);
                 enabled = false;
             }
@@ -110,7 +110,7 @@ namespace Player.Health.Presenter
             if (healthText == null)
             {
                 Debug.LogWarning(
-                    "PlayerUltaModel Presenter needs a HealthText to Update please make sure one is set in The Inspector",
+                    "PlayerPointsModel Presenter needs a HealthText to Update please make sure one is set in The Inspector",
                     gameObject);
                 enabled = false;
             }
