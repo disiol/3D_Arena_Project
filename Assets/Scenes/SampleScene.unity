@@ -565,6 +565,7 @@ GameObject:
   - component: {fileID: 430238104}
   - component: {fileID: 430238105}
   - component: {fileID: 430238106}
+  - component: {fileID: 430238107}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -615,6 +616,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPower: 0
   maxPower: 100
+--- !u!114 &430238107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430238103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e847ff527bf84c6c8b42f9ad42bacc0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &444863521
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,6 +2177,7 @@ GameObject:
   - component: {fileID: 1820315955}
   - component: {fileID: 1820315956}
   - component: {fileID: 1820315957}
+  - component: {fileID: 1820315958}
   m_Layer: 0
   m_Name: Presenter
   m_TagString: Untagged
@@ -2213,10 +2227,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de56610f262c4ffbaaa04ca4946dfb9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerUltaModel: {fileID: 0}
+  playerUltaModel: {fileID: 430238106}
   powerIndicatorSlider: {fileID: 0}
   powerText: {fileID: 0}
   ultaButton: {fileID: 0}
+--- !u!114 &1820315958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820315954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53ee09aa633b426fa6a286ca104569eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPointsModel: {fileID: 430238107}
+  pointsText: {fileID: 0}
 --- !u!1 &1822263476
 GameObject:
   m_ObjectHideFlags: 0
