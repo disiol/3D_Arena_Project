@@ -43,7 +43,7 @@ namespace Player.Points.Presenter
         }
 
         //    • За Синего - 50
-       // • За Красного - 15
+        // • За Красного - 15
         public void PointsPlus(int amount)
         {
             playerPointsModel?.PointsPlus(amount);
@@ -62,19 +62,16 @@ namespace Player.Points.Presenter
                 return;
 
             FormatTheDataForView();
-
         }
 
         private void FormatTheDataForView()
         {
             if (pointsText != null)
             {
-                pointsText.text = playerPointsModel.Points.ToString();
+                pointsText.text = "Points: " + playerPointsModel.Points;
             }
-
         }
 
-     
 
         private void CheckSerializeFieldToNull()
         {
@@ -85,7 +82,7 @@ namespace Player.Points.Presenter
                     gameObject);
                 enabled = false;
             }
-            
+
             if (pointsText == null)
             {
                 Debug.LogWarning(
@@ -93,7 +90,6 @@ namespace Player.Points.Presenter
                     gameObject);
                 enabled = false;
             }
-            
         }
 
         private void OnPlayerPointsModelChanged()
