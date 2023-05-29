@@ -8,30 +8,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PixelRect:
-    serializedVersion: 2
-    x: 0
-    y: 64
-    width: 1600
-    height: 836
-  m_ShowMode: 0
-  m_Title: Preferences
-  m_RootView: {fileID: 4}
-  m_MinSize: {x: 310, y: 221}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_Maximized: 0
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -43,62 +19,12 @@ MonoBehaviour:
     width: 1600
     height: 811
   m_ShowMode: 4
-  m_Title: Inspector
-  m_RootView: {fileID: 9}
+  m_Title: Project
+  m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: PreferenceSettingsWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1600
-    height: 836
-  m_MinSize: {x: 310, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1600
-    height: 836
-  m_MinSize: {x: 310, y: 221}
-  m_MaxSize: {x: 4000, y: 4021}
-  vertical: 0
-  controlID: 839
---- !u!114 &5
+--- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,8 +37,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 12}
-  - {fileID: 6}
+  - {fileID: 9}
+  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -122,8 +48,8 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
---- !u!114 &6
+  controlID: 19
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,13 +70,13 @@ MonoBehaviour:
     height: 761
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 16}
+  - {fileID: 15}
+  - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &7
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,15 +94,15 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 302
-    height: 587
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
+    height: 472
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 20}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &8
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,18 +118,18 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 587
+    y: 472
     width: 1222
-    height: 174
+    height: 289
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 18}
-  - {fileID: 23}
+  - {fileID: 14}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &9
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,9 +142,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 5}
-  - {fileID: 11}
+  - {fileID: 7}
+  - {fileID: 2}
+  - {fileID: 8}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -231,7 +157,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &10
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,7 +179,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &11
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -274,7 +200,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &12
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,8 +213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 13}
-  - {fileID: 8}
+  - {fileID: 10}
+  - {fileID: 5}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -298,8 +224,8 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 87
---- !u!114 &13
+  controlID: 20
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -312,19 +238,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 14}
+  - {fileID: 4}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1222
-    height: 587
+    height: 472
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 88
---- !u!114 &14
+  controlID: 140
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -334,7 +260,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -342,73 +268,17 @@ MonoBehaviour:
     x: 302
     y: 0
     width: 920
-    height: 587
-  m_MinSize: {x: 102, y: 121}
+    height: 472
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 21}
-  - {fileID: 22}
   - {fileID: 17}
-  m_Selected: 2
-  m_LastSelected: 1
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13855, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 310, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Preferences
-    m_Image: {fileID: -5712115415447495865, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 64
-    width: 1600
-    height: 815
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 0, y: 0}
-  m_Scope: 0
-  m_SplitterFlex: 0.2
-  m_SearchText: 
-  m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 71137e95
-    m_LastClickedID: -1786899599
-    m_ExpandedIDs: 2956c29689577ec100000000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
---- !u!114 &16
+  - {fileID: 18}
+  - {fileID: 13}
+  m_Selected: 1
+  m_LastSelected: 2
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -442,8 +312,8 @@ MonoBehaviour:
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
   currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 0
+  currentStatusEntriesHasUpdate: 1
+  repositoryProgressHasUpdate: 1
   appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
@@ -530,10 +400,10 @@ MonoBehaviour:
     remoteBranches: []
   changesView:
     currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
+    currentStatusEntriesHasUpdate: 1
     currentLocksHasUpdate: 0
     commitBody: 
-    commitMessage: mace PlayerPointsModel, PlayerPointsModel Test
+    commitMessage: 
     currentBranch: '[main]'
     treeScroll: {x: 0, y: 0}
     treeChanges:
@@ -541,29 +411,11 @@ MonoBehaviour:
         keys:
         - 00000000000000001000000000000000
         - 9479a86e1f387d0dd8b972c8065545cb
+        - e8690a61f349436eab89efeeeb7ff99b
         - 3fa66aa4dc1bade0ba36bd11b58e07ea
-        - 4cd807c4162049c19c52db5907af4e32
-        - f4f7f24247994c9aa98feea15d6b817d
-        - 3eb7255ccd9448ee92b7ac2037640915
-        - 2edc57fb2ebf4b929330f12395fbcd85
-        - f2c6f80024694e298eee94400698d73a
-        - e847ff527bf84c6c8b42f9ad42bacc0a
-        - cdb5d79fdb4645e595b8f902b26992d8
-        - 53ee09aa633b426fa6a286ca104569eb
-        - 3565762b81fc4c5185ff363f26cd6931
-        - 28357b22ab49497c9ba3036c6c660538
-        - 76e50c3860474bc5b53a30fcefa04946
-        - aba1809877944556af7bea76becf7736
-        - de56610f262c4ffbaaa04ca4946dfb9f
-        - 4c219e121404e59b3987f158ef196b84
-        - 8a441d149daedff168718dccc4432b70
-        - 43a37a2a2f6f4a2ab1bf81a6eafa0f3b
-        - c81aa855cc0a41f883182a93ca09159b
-        - 30a1f930e2994a669ec2b2d354c3f680
-        - fd3bf414af1a498598592e37c29e9b32
-        - 8d337c74ec2947ebb4876b0f6911a33d
-        - c0f517e8738141e4ac42ca647eb9a0bc
-        - d1f7a972c8874869b11ef4c57b4d6606
+        - 8d86bf9586534f1db35d2554ae5c4f13
+        - 867c4ffadc1d4830b16ca9446a11d534
+        - f2735715f64e4e18aaeb6d8249abe559
         values:
         - path: Assets
           label: Assets
@@ -574,7 +426,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -592,7 +444,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -601,6 +453,24 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Assets/Scripts/ObjectPool.cs
+          label: ObjectPool.cs
+          level: 2
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Scripts/ObjectPool.cs
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/ObjectPool.cs
+            projectPath: Assets/Scripts/ObjectPool.cs
+            originalPath: 
+            indexStatus: 4
+            workTreeStatus: 3
         - path: Assets/Scripts/Player
           label: Player
           level: 2
@@ -610,7 +480,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -619,8 +489,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets/Scripts/Player/Health
-          label: Health
+        - path: Assets/Scripts/Player/Bullet
+          label: Bullet
           level: 3
           isFolder: 1
           isContainer: 0
@@ -628,7 +498,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -637,81 +507,9 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets/Scripts/Player/Health/Presenter
-          label: Presenter
+        - path: Assets/Scripts/Player/Bullet/Bullet.cs
+          label: Bullet.cs
           level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-          label: PlayerHealthPresenter.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-            projectPath: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets/Scripts/Player/Points
-          label: Points
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Points/Model
-          label: Model
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
-          label: PlayerPointsModel.cs
-          level: 5
           isFolder: 0
           isContainer: 1
           isCollapsed: 0
@@ -721,33 +519,15 @@ MonoBehaviour:
           checkState: 1
           isLocked: 0
           gitStatusEntry:
-            path: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
-            projectPath: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
+            path: Assets/Scripts/Player/Bullet/Bullet.cs
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet/Bullet.cs
+            projectPath: Assets/Scripts/Player/Bullet/Bullet.cs
             originalPath: 
             indexStatus: 4
             workTreeStatus: 3
-        - path: Assets/Scripts/Player/Points/Presenter
-          label: Presenter
+        - path: Assets/Scripts/Player/Bullet/BulletSpawner.cs
+          label: BulletSpawner.cs
           level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
-          label: PlayerPointsPresenter.cs
-          level: 5
           isFolder: 0
           isContainer: 1
           isCollapsed: 0
@@ -757,263 +537,11 @@ MonoBehaviour:
           checkState: 1
           isLocked: 0
           gitStatusEntry:
-            path: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
-            projectPath: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
+            path: Assets/Scripts/Player/Bullet/BulletSpawner.cs
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet/BulletSpawner.cs
+            projectPath: Assets/Scripts/Player/Bullet/BulletSpawner.cs
             originalPath: 
             indexStatus: 4
-            workTreeStatus: 3
-        - path: Assets/Scripts/Player/Ulta
-          label: Ulta
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Ulta/Model
-          label: Model
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-          label: PlayerUltaModel.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-            projectPath: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets/Scripts/Player/Ulta/Presenter
-          label: Presenter
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-          label: PlayerUltaPresenter.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-            projectPath: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets/Tests
-          label: Tests
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode
-          label: TestsEditMode
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player
-          label: Player
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player/Health
-          label: Health
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-          label: TestsPlayerHealthPresenter.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-            projectPath: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets/Tests/TestsEditMode/Player/Points
-          label: Points
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-          label: PlayerPointsModelTests.cs
-          level: 5
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-            projectPath: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-            originalPath: 
-            indexStatus: 4
-            workTreeStatus: 3
-        - path: Assets/Tests/TestsEditMode/Player/Ulta
-          label: Ulta
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-          label: PlayerUltaModelTests.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-            projectPath: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-            originalPath: 
-            indexStatus: 0
             workTreeStatus: 3
       folders:
         keys:
@@ -1023,20 +551,7 @@ MonoBehaviour:
         - Assets
         - Assets/Scripts
         - Assets/Scripts/Player
-        - Assets/Scripts/Player/Health
-        - Assets/Scripts/Player/Health/Presenter
-        - Assets/Scripts/Player/Points
-        - Assets/Scripts/Player/Points/Model
-        - Assets/Scripts/Player/Points/Presenter
-        - Assets/Scripts/Player/Ulta
-        - Assets/Scripts/Player/Ulta/Model
-        - Assets/Scripts/Player/Ulta/Presenter
-        - Assets/Tests
-        - Assets/Tests/TestsEditMode
-        - Assets/Tests/TestsEditMode/Player
-        - Assets/Tests/TestsEditMode/Player/Health
-        - Assets/Tests/TestsEditMode/Player/Points
-        - Assets/Tests/TestsEditMode/Player/Ulta
+        - Assets/Scripts/Player/Bullet
         values:
         - path: .idea
           label: .idea
@@ -1047,7 +562,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1065,7 +580,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1083,7 +598,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1101,7 +616,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1119,7 +634,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1137,7 +652,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1146,8 +661,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets/Scripts/Player/Health
-          label: Health
+        - path: Assets/Scripts/Player/Bullet
+          label: Bullet
           level: 3
           isFolder: 1
           isContainer: 0
@@ -1155,241 +670,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Health/Presenter
-          label: Presenter
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Points
-          label: Points
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Points/Model
-          label: Model
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Points/Presenter
-          label: Presenter
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Ulta
-          label: Ulta
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Ulta/Model
-          label: Model
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Scripts/Player/Ulta/Presenter
-          label: Presenter
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests
-          label: Tests
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode
-          label: TestsEditMode
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player
-          label: Player
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player/Health
-          label: Health
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player/Points
-          label: Points
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player/Ulta
-          label: Ulta
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
+          checkState: 0
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1399,122 +680,8 @@ MonoBehaviour:
             indexStatus: 0
             workTreeStatus: 0
       checkedFileNodes:
-        keys:
-        - .idea/.idea.3D_Arena_Project/.idea/workspace.xml
-        - Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-        - Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-        - Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-        - Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-        - Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-        values:
-        - path: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
-          label: workspace.xml
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/.idea/.idea.3D_Arena_Project/.idea/workspace.xml
-            projectPath: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-          label: PlayerHealthPresenter.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-            projectPath: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-          label: PlayerUltaModel.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-            projectPath: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-          label: PlayerUltaPresenter.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-            projectPath: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-          label: TestsPlayerHealthPresenter.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-            projectPath: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
-        - path: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-          label: PlayerUltaModelTests.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-            projectPath: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
+        keys: []
+        values: []
       title: 
       pathSeparator: /
       displayRootNode: 0
@@ -1549,7 +716,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1567,7 +734,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1585,7 +752,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1603,7 +770,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
@@ -1621,7 +788,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1639,7 +806,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1647,6 +814,42 @@ MonoBehaviour:
           projectPath: 
           originalPath: 
           indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Scripts/ObjectPool.cs
+        label: ObjectPool.cs
+        level: 2
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Scripts/ObjectPool.cs
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/ObjectPool.cs
+          projectPath: Assets/Scripts/ObjectPool.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 3
+      - path: Assets/Scripts/ObjectPool.cs.meta
+        label: ObjectPool.cs.meta
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Scripts/ObjectPool.cs.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/ObjectPool.cs.meta
+          projectPath: Assets/Scripts/ObjectPool.cs.meta
+          originalPath: 
+          indexStatus: 4
           workTreeStatus: 0
       - path: Assets/Scripts/Player
         label: Player
@@ -1657,7 +860,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1666,62 +869,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets/Scripts/Player/Health
-        label: Health
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Health/Presenter
-        label: Presenter
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-        label: PlayerHealthPresenter.cs
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-          projectPath: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets/Scripts/Player/Points.meta
-        label: Points.meta
+      - path: Assets/Scripts/Player/Bullet.meta
+        label: Bullet.meta
         level: 3
         isFolder: 0
         isContainer: 0
@@ -1732,14 +881,14 @@ MonoBehaviour:
         checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Scripts/Player/Points.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points.meta
-          projectPath: Assets/Scripts/Player/Points.meta
+          path: Assets/Scripts/Player/Bullet.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet.meta
+          projectPath: Assets/Scripts/Player/Bullet.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      - path: Assets/Scripts/Player/Points
-        label: Points
+      - path: Assets/Scripts/Player/Bullet
+        label: Bullet
         level: 3
         isFolder: 1
         isContainer: 0
@@ -1747,7 +896,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 1
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1756,45 +905,9 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets/Scripts/Player/Points/Model.meta
-        label: Model.meta
+      - path: Assets/Scripts/Player/Bullet/Bullet.cs
+        label: Bullet.cs
         level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Scripts/Player/Points/Model.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Model.meta
-          projectPath: Assets/Scripts/Player/Points/Model.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Points/Model
-        label: Model
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
-        label: PlayerPointsModel.cs
-        level: 5
         isFolder: 0
         isContainer: 1
         isCollapsed: 0
@@ -1804,69 +917,33 @@ MonoBehaviour:
         checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
-          projectPath: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
+          path: Assets/Scripts/Player/Bullet/Bullet.cs
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet/Bullet.cs
+          projectPath: Assets/Scripts/Player/Bullet/Bullet.cs
           originalPath: 
           indexStatus: 4
           workTreeStatus: 3
-      - path: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs.meta
-        label: PlayerPointsModel.cs.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs.meta
-          projectPath: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Points/Presenter.meta
-        label: Presenter.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Scripts/Player/Points/Presenter.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Presenter.meta
-          projectPath: Assets/Scripts/Player/Points/Presenter.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Points/Presenter
-        label: Presenter
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
-        label: PlayerPointsPresenter.cs
+      - path: Assets/Scripts/Player/Bullet/Bullet.cs.meta
+        label: Bullet.cs.meta
         level: 5
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Scripts/Player/Bullet/Bullet.cs.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet/Bullet.cs.meta
+          projectPath: Assets/Scripts/Player/Bullet/Bullet.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/Scripts/Player/Bullet/BulletSpawner.cs
+        label: BulletSpawner.cs
+        level: 4
         isFolder: 0
         isContainer: 1
         isCollapsed: 0
@@ -1876,68 +953,14 @@ MonoBehaviour:
         checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
-          projectPath: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
+          path: Assets/Scripts/Player/Bullet/BulletSpawner.cs
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet/BulletSpawner.cs
+          projectPath: Assets/Scripts/Player/Bullet/BulletSpawner.cs
           originalPath: 
           indexStatus: 4
           workTreeStatus: 3
-      - path: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs.meta
-        label: PlayerPointsPresenter.cs.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs.meta
-          projectPath: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Ulta
-        label: Ulta
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Ulta/Model
-        label: Model
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-        label: PlayerUltaModel.cs
+      - path: Assets/Scripts/Player/Bullet/BulletSpawner.cs.meta
+        label: BulletSpawner.cs.meta
         level: 5
         isFolder: 0
         isContainer: 0
@@ -1948,257 +971,23 @@ MonoBehaviour:
         checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-          projectPath: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets/Scripts/Player/Ulta/Presenter
-        label: Presenter
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-        label: PlayerUltaPresenter.cs
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-          projectPath: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets/Tests
-        label: Tests
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode
-        label: TestsEditMode
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/Player
-        label: Player
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/Player/Health
-        label: Health
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-        label: TestsPlayerHealthPresenter.cs
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-          projectPath: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
-      - path: Assets/Tests/TestsEditMode/Player/Points.meta
-        label: Points.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/Player/Points.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Points.meta
-          projectPath: Assets/Tests/TestsEditMode/Player/Points.meta
+          path: Assets/Scripts/Player/Bullet/BulletSpawner.cs.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet/BulletSpawner.cs.meta
+          projectPath: Assets/Scripts/Player/Bullet/BulletSpawner.cs.meta
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/Player/Points
-        label: Points
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-        label: PlayerPointsModelTests.cs
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-          projectPath: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 3
-      - path: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs.meta
-        label: PlayerPointsModelTests.cs.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs.meta
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs.meta
-          projectPath: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs.meta
-          originalPath: 
-          indexStatus: 4
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/Player/Ulta
-        label: Ulta
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-        label: PlayerUltaModelTests.cs
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-          projectPath: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       selectedNode:
-        path: Assets
-        label: Assets
+        path: 
+        label: 
         level: 0
-        isFolder: 1
+        isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
         isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
+        treeIsCheckable: 0
+        checkState: 0
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -2214,102 +1003,54 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
-    - path: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
-      projectPath: Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs
+    - path: Assets/Scripts/ObjectPool.cs
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/ObjectPool.cs
+      projectPath: Assets/Scripts/ObjectPool.cs
       originalPath: 
-      indexStatus: 0
+      indexStatus: 4
       workTreeStatus: 3
-    - path: Assets/Scripts/Player/Points.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points.meta
-      projectPath: Assets/Scripts/Player/Points.meta
+    - path: Assets/Scripts/ObjectPool.cs.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/ObjectPool.cs.meta
+      projectPath: Assets/Scripts/ObjectPool.cs.meta
       originalPath: 
       indexStatus: 4
       workTreeStatus: 0
-    - path: Assets/Scripts/Player/Points/Model.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Model.meta
-      projectPath: Assets/Scripts/Player/Points/Model.meta
+    - path: Assets/Scripts/Player/Bullet.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet.meta
+      projectPath: Assets/Scripts/Player/Bullet.meta
       originalPath: 
       indexStatus: 4
       workTreeStatus: 0
-    - path: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
-      projectPath: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs
+    - path: Assets/Scripts/Player/Bullet/Bullet.cs
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet/Bullet.cs
+      projectPath: Assets/Scripts/Player/Bullet/Bullet.cs
       originalPath: 
       indexStatus: 4
       workTreeStatus: 3
-    - path: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs.meta
-      projectPath: Assets/Scripts/Player/Points/Model/PlayerPointsModel.cs.meta
+    - path: Assets/Scripts/Player/Bullet/Bullet.cs.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet/Bullet.cs.meta
+      projectPath: Assets/Scripts/Player/Bullet/Bullet.cs.meta
       originalPath: 
       indexStatus: 4
       workTreeStatus: 0
-    - path: Assets/Scripts/Player/Points/Presenter.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Presenter.meta
-      projectPath: Assets/Scripts/Player/Points/Presenter.meta
+    - path: Assets/Scripts/Player/Bullet/BulletSpawner.cs
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet/BulletSpawner.cs
+      projectPath: Assets/Scripts/Player/Bullet/BulletSpawner.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 3
+    - path: Assets/Scripts/Player/Bullet/BulletSpawner.cs.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Bullet/BulletSpawner.cs.meta
+      projectPath: Assets/Scripts/Player/Bullet/BulletSpawner.cs.meta
       originalPath: 
       indexStatus: 4
       workTreeStatus: 0
-    - path: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
-      projectPath: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs
-      originalPath: 
-      indexStatus: 4
-      workTreeStatus: 3
-    - path: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs.meta
-      projectPath: Assets/Scripts/Player/Points/Presenter/PlayerPointsPresenter.cs.meta
-      originalPath: 
-      indexStatus: 4
-      workTreeStatus: 0
-    - path: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-      projectPath: Assets/Scripts/Player/Ulta/Model/PlayerUltaModel.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-      projectPath: Assets/Scripts/Player/Ulta/Presenter/PlayerUltaPresenter.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-      projectPath: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthPresenter.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    - path: Assets/Tests/TestsEditMode/Player/Points.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Points.meta
-      projectPath: Assets/Tests/TestsEditMode/Player/Points.meta
-      originalPath: 
-      indexStatus: 4
-      workTreeStatus: 0
-    - path: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-      projectPath: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs
-      originalPath: 
-      indexStatus: 4
-      workTreeStatus: 3
-    - path: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs.meta
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs.meta
-      projectPath: Assets/Tests/TestsEditMode/Player/Points/PlayerPointsModelTests.cs.meta
-      originalPath: 
-      indexStatus: 4
-      workTreeStatus: 0
-    - path: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-      projectPath: Assets/Tests/TestsEditMode/Player/Ulta/PlayerUltaModelTests.cs
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 16 changed files
+    changedFilesText: 8 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-05-27T12:33:50.492+03:00
+      updatedTimeString: 2023-05-27T23:10:21.456+03:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-05-27T23:06:10.546+03:00
+      updatedTimeString: 2023-05-28T01:10:22.815+03:00
       cacheType: 6
     lastLocksChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
@@ -3876,10 +2617,10 @@ MonoBehaviour:
     updatedTimeString: 2023-05-27T01:08:33.167+03:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-05-27T22:38:56.943+03:00
+    updatedTimeString: 2023-05-28T00:38:57.112+03:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-05-27T23:06:10.546+03:00
+    updatedTimeString: 2023-05-28T01:10:22.815+03:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -3903,7 +2644,7 @@ MonoBehaviour:
   appManagerProgressMessage: Initialized
   connections: []
   primaryConnectionUsername: 
---- !u!114 &17
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3933,7 +2674,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 1626
+    ID: 222
     splitterInitialOffset: 446
     currentActiveSplitter: -1
     realSizes:
@@ -3993,14 +2734,14 @@ MonoBehaviour:
       availableCategories: []
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 17}
+    m_Window: {fileID: 13}
     m_NewResultList:
     - id: 1000
       uniqueId: '[3D_Arena_Project][suite]'
       name: 3D_Arena_Project
       fullName: 3D_Arena_Project
       resultStatus: 1
-      duration: 0.2984459
+      duration: 0.154753
       messages: 
       output: 
       stacktrace: 
@@ -4016,7 +2757,7 @@ MonoBehaviour:
       name: TestsEditMode.dll
       fullName: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Library/ScriptAssemblies/TestsEditMode.dll
       resultStatus: 1
-      duration: 0.209174
+      duration: 0.0827201
       messages: 
       output: 
       stacktrace: 
@@ -4032,7 +2773,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.2004924
+      duration: 0.0818534
       messages: 
       output: 
       stacktrace: 
@@ -4048,7 +2789,7 @@ MonoBehaviour:
       name: TestsEditMode
       fullName: Tests.TestsEditMode
       resultStatus: 1
-      duration: 0.1927891
+      duration: 0.0782944
       messages: 
       output: 
       stacktrace: 
@@ -4064,7 +2805,7 @@ MonoBehaviour:
       name: Player
       fullName: Tests.TestsEditMode.Player
       resultStatus: 1
-      duration: 0.1850335
+      duration: 0.074709
       messages: 
       output: 
       stacktrace: 
@@ -4281,7 +3022,7 @@ MonoBehaviour:
       name: Points
       fullName: Tests.TestsEditMode.Player.Points
       resultStatus: 1
-      duration: 0.0302837
+      duration: 0.0709243
       messages: 
       output: 
       stacktrace: 
@@ -4342,6 +3083,73 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1011
       parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Points/[TestsEditMode][Tests.TestsEditMode.Player.Points.PlayerPointsModelTests][suite]
+    - id: 1014
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Points/[TestsEditMode][Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests][suite]
+      name: PlayerPointsPresenterTests
+      fullName: Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests
+      resultStatus: 1
+      duration: 0.0614339
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1034
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/[TestsEditMode][Tests.TestsEditMode.Player.Points][suite]
+    - id: 1015
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Points/PlayerPointsPresenterTests/[TestsEditMode][Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests.PointsPlus_IncrementsPointsModel]
+      name: PointsPlus_IncrementsPointsModel
+      fullName: Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests.PointsPlus_IncrementsPointsModel
+      resultStatus: 1
+      duration: 0.0316195
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Points/[TestsEditMode][Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests][suite]
+    - id: 1016
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Points/PlayerPointsPresenterTests/[TestsEditMode][Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests.Reset_ResetsPointsModel]
+      name: Reset_ResetsPointsModel
+      fullName: Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests.Reset_ResetsPointsModel
+      resultStatus: 1
+      duration: 0.0012231
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Points/[TestsEditMode][Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests][suite]
+    - id: 1017
+      uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Points/PlayerPointsPresenterTests/[TestsEditMode][Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests.UpdateView_UpdatesPointsText]
+      name: UpdateView_UpdatesPointsText
+      fullName: Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests.UpdateView_UpdatesPointsText
+      resultStatus: 1
+      duration: 0.0018758
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Points/[TestsEditMode][Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests][suite]
     - id: 1023
       uniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/[TestsEditMode][Tests.TestsEditMode.Player.Ulta][suite]
       name: Ulta
@@ -4526,7 +3334,7 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1005
       parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Ulta/[TestsEditMode][Tests.TestsEditMode.Player.Ulta.PlayerUltaPresenterTests][suite]
-    m_ResultText: 3D_Arena_Project (0.298s)
+    m_ResultText: 3D_Arena_Project (0.155s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -4558,7 +3366,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &18
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4579,9 +3387,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 706
+    y: 591
     width: 1221
-    height: 153
+    height: 268
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -4600,22 +3408,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Perfabs/Enimes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Perfabs/Enimes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: d6770000
-    m_LastClickedID: 30678
-    m_ExpandedIDs: 00000000d6770000d8770000da770000dc770000de770000e0770000567800000c7a00000e7a0000167a00001a7a0000b682000000ca9a3b
+    scrollPos: {x: 0, y: 6}
+    m_SelectedIDs: 3e5b0000
+    m_LastClickedID: 23358
+    m_ExpandedIDs: 000000009a5800009c5800009e580000a0580000a2580000a4580000a6580000a8580000b258000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4631,7 +3439,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 8}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -4643,7 +3451,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d6770000d8770000da770000dc770000de770000e0770000
+    m_ExpandedIDs: 000000009a5800009c5800009e580000a0580000a2580000a4580000a6580000a8580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4699,7 +3507,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &19
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4741,7 +3549,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &20
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4764,7 +3572,7 @@ MonoBehaviour:
     x: 0
     y: 119
     width: 301
-    height: 566
+    height: 451
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -4773,25 +3581,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d6770000
-      m_LastClickedID: 0
-      m_ExpandedIDs: ee9bffff6a9dffff589effffc2a4ffff88a5ffff74a7ffff90aeffffc4aeffffcaafffff3eb0ffff58b1ffff74b2ffffd6b2ffffa0b3ffffb8b3ffff1ab4ffff8eb4ffff02b5ffff48b6ffffe6b6ffff04b8ffffb4b9ffffcecdffff5ccfffff12d0ffff3ad1ffffdcdaffff
+      m_SelectedIDs: aae6ffff
+      m_LastClickedID: -6486
+      m_ExpandedIDs: 8ef7ffffeef7ffff30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Model
-        m_OriginalName: Model
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 39870
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 7}
+        m_ClientGUIView: {fileID: 4}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -4799,7 +3607,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &21
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5138,7 +3946,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &22
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5161,7 +3969,7 @@ MonoBehaviour:
     x: 302
     y: 119
     width: 918
-    height: 566
+    height: 451
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -5173,7 +3981,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 918, y: 545}
+  m_TargetSize: {x: 2960, y: 1440}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -5188,10 +3996,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -459
-    m_HBaseRangeMax: 459
-    m_VBaseRangeMin: -272.5
-    m_VBaseRangeMax: 272.5
+    m_HBaseRangeMin: -1480
+    m_HBaseRangeMax: 1480
+    m_VBaseRangeMin: -720
+    m_VBaseRangeMax: 720
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -5210,28 +4018,28 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 918
-      height: 545
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 459, y: 272.5}
+      height: 430
+    m_Scale: {x: 0.2986111, y: 0.2986111}
+    m_Translation: {x: 459, y: 215}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -459
-      y: -272.5
-      width: 918
-      height: 545
+      x: -1537.1163
+      y: -720
+      width: 3074.2327
+      height: 1440
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 918, y: 566}
+  m_defaultScale: 0.2986111
+  m_LastWindowPixelSize: {x: 918, y: 451}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &23
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
