@@ -106,7 +106,70 @@ namespace Tests.TestsPlayMode.Movement
             bool isAttacking = (bool)GetInstanceField(typeof(PlayerController), _playerController, "_isAttacking");
             Assert.IsFalse(isAttacking);
         }
+        
+        
+        [UnityTest]
+        public IEnumerator MoveToRandomPosition_ChangesPlayerPosition()
+        {
+            Vector3 initialPosition = _playerObject.transform.position;
+            
+            
+            // Act
+            MethodInfo privateMethodMoveToRandomPosition = typeof(PlayerController).GetMethod("MoveToRandomPosition", BindingFlags.NonPublic | BindingFlags.Instance);
+            privateMethodMoveToRandomPosition.Invoke(_playerController, null);
 
+            yield return null;
+
+            Vector3 newPosition = _playerObject.transform.position;
+
+            Assert.AreNotEqual(initialPosition, newPosition);
+        }
+        
+        [UnityTest]
+        public IEnumerator IsNearEdge_PlayerNearEdge_ReturnsTrue()
+        {
+            // Set up the necessary conditions for the test
+            float platformSize = 10f;
+            Vector3 platformCenter = Vector3.zero;
+            float edgeThreshold = 1f;
+
+            // Set the player's position near the edge
+            _playerObject.transform.position = platformCenter + Vector3.forward * (platformSize / 2f - edgeThreshold);
+
+            // Use reflection to access the private method
+            MethodInfo isNearEdgeMethod = typeof(PlayerController).GetMethod("IsNearEdge", BindingFlags.NonPublic | BindingFlags.Instance);
+
+            // Invoke the private method and get the result
+            bool isNearEdge = (bool)isNearEdgeMethod.Invoke(_playerController, null);
+
+            // Assert the expected result
+            Assert.IsTrue(isNearEdge);
+
+            yield return null;
+        }
+
+        [UnityTest]
+        public IEnumerator IsNearEdge_PlayerNotNearEdge_ReturnsFalse()
+        {
+            // Set up the necessary conditions for the test
+            float platformSize = 10f;
+            Vector3 platformCenter = Vector3.zero;
+            float edgeThreshold = 1f;
+
+            // Set the player's position away from the edge
+            _playerObject.transform.position = platformCenter + Vector3.forward * (platformSize / 2f + edgeThreshold);
+
+            // Use reflection to access the private method
+            MethodInfo isNearEdgeMethod = typeof(PlayerController).GetMethod("IsNearEdge", BindingFlags.NonPublic | BindingFlags.Instance);
+
+            // Invoke the private method and get the result
+            bool isNearEdge = (bool)isNearEdgeMethod.Invoke(_playerController, null);
+
+            // Assert the expected result
+            Assert.IsFalse(isNearEdge);
+
+            yield return null;
+        }
         private object GetInstanceField(Type type, object instance, string fieldName)
         {
             BindingFlags bindFlags =

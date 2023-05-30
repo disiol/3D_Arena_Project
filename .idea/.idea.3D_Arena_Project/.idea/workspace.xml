@@ -5,37 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596f741e-7d16-44fc-bb2c-f77153c7d656" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Perfabs/Bullet.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Perfabs/Bullet.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenseAssembly.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenseAssembly.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerActionsMap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerActionsMap.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerActionsMap.inputactions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerActionsMap.inputactions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/TestsPlayMode.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/TestsPlayMode.asmdef.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptsAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptsAssembly.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsPresenterTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/Player/Points/PlayerPointsPresenterTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/TestsEditMode.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsEditMode/TestsEditMode.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InitTestScene638210840082450250.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InitTestScene638210840082450250.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,10 +89,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13041">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="13041" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -149,7 +124,7 @@
       <workItem from="1685180761927" duration="8390000" />
       <workItem from="1685199580037" duration="10379000" />
       <workItem from="1685313347598" duration="1456000" />
-      <workItem from="1685448196223" duration="17912000" />
+      <workItem from="1685448196223" duration="21806000" />
     </task>
     <servers />
   </component>
@@ -177,6 +152,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs</url>
+          <line>109</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" initialLine="109" containingFunctionPresentation="Method 'MoveToRandomPosition'">
+            <startOffsets>
+              <option value="3581" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3670" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs</url>
+          <line>111</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" initialLine="111" containingFunctionPresentation="Method 'MoveToRandomPosition'">
+            <startOffsets>
+              <option value="3684" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3720" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs</url>
+          <line>101</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" initialLine="101" containingFunctionPresentation="Method 'IsNearEdge'">
+            <startOffsets>
+              <option value="3257" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3295" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

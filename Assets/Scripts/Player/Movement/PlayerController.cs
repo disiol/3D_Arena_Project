@@ -42,9 +42,10 @@ namespace Player.Movement
             
             // Movement controls
             float movementX = _movementInput.x;
-            float movementY = _lukInput.y;
+            float movementY = _movementInput.y;
 
             transform.Translate(Vector3.forward * movementY * movementSpeed * Time.deltaTime);
+           
             transform.Rotate(Vector3.up * movementX * turnSpeed * Time.deltaTime);
 
             // Projectile launch
