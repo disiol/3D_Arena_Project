@@ -1,78 +1,114 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-namespace Player
+namespace Player.Movement
 {
     public class PlayerController : MonoBehaviour
     {
         public float movementSpeed = 5f;
-        public float rotationSpeed = 180f;
+        public float turnSpeed = 200f;
         public GameObject projectilePrefab;
         public float projectileForce = 10f;
         public float edgeThreshold = 1f;
-        public float randomPlacementRange = 10f;
-        public LayerMask enemyLayer;
 
-        private Rigidbody _rb;
+        private Vector2 _movementInput;
+        private Vector2 _lukInput;
+
+        private bool _isAttacking;
+
+        private PlayerActionsMap _playerActionsMap;
 
         private void Start()
         {
-            _rb = GetComponent<Rigidbody>();
+            _playerActionsMap = new PlayerActionsMap();
+            _playerActionsMap.Player.Move.performed += OnMovement;
+            _playerActionsMap.Player.Move.canceled += OnMovement; 
+            _playerActionsMap.Player.Luk.performed += OnLuk;
+            _playerActionsMap.Player.Luk.canceled += OnLuk;
+            _playerActionsMap.Player.Fire.started += OnAttack;
+            _playerActionsMap.Player.Fire.canceled += OnAttack;
+            _playerActionsMap.Enable();        }
+
+        private void OnDisable()
+        {
+            _playerActionsMap.Disable();
+
         }
 
         private void Update()
         {
+        
+            
             // Movement controls
-            float moveInput = Input.GetAxis("Vertical");
-            float turnInput = Input.GetAxis("Horizontal");
+            float movementX = _movementInput.x;
+            float movementY = _lukInput.y;
 
-            // Move the player
-            Vector3 movement = transform.forward * moveInput * movementSpeed * Time.deltaTime;
-            _rb.MovePosition(_rb.position + movement);
-
-            // Rotate the player
-            float rotation = turnInput * rotationSpeed * Time.deltaTime;
-            Quaternion turnRotation = Quaternion.Euler(0f, rotation, 0f);
-            _rb.MoveRotation(_rb.rotation * turnRotation);
+            transform.Translate(Vector3.forward * movementY * movementSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.up * movementX * turnSpeed * Time.deltaTime);
 
             // Projectile launch
-            if (Input.GetButtonDown("Fire1"))
+            if (_isAttacking)
             {
                 LaunchProjectile();
             }
 
             // Detect proximity to the edge
-            if (Mathf.Abs(transform.position.x) >= edgeThreshold || Mathf.Abs(transform.position.z) >= edgeThreshold)
+            if (IsNearEdge())
             {
                 MoveToRandomPosition();
+            }
+        }
+
+        public void OnMovement(InputAction.CallbackContext context)
+        {
+            _movementInput = context.ReadValue<Vector2>();
+        } 
+        public void OnLuk(InputAction.CallbackContext context)
+        {
+            _lukInput = context.ReadValue<Vector2>();
+        }
+
+        public void OnAttack(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                _isAttacking = true;
+            }
+            else if (context.canceled)
+            {
+                _isAttacking = false;
             }
         }
 
         private void LaunchProjectile()
         {
             GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-            Rigidbody projectileRb = projectile.GetComponent<Rigidbody>();
-            projectileRb.AddForce(transform.forward * projectileForce, ForceMode.Impulse);
+            Rigidbody rb = projectile.GetComponent<Rigidbody>();
+            rb.AddForce(transform.forward * projectileForce, ForceMode.Impulse);
+        }
+
+        private bool IsNearEdge()
+        {
+            // Replace with your own logic to determine proximity to the edge
+            // You can use the player's position and the platform's boundaries
+
+            // For example, assuming the platform is a square with a size of 10 units:
+            float platformSize = 10f;
+            Vector3 platformCenter = Vector3.zero; // Replace with actual center position of the platform
+
+            float distanceToEdge = Vector3.Distance(transform.position, platformCenter) - platformSize / 2f;
+            return distanceToEdge < edgeThreshold;
         }
 
         private void MoveToRandomPosition()
         {
-            Vector3 randomPosition = new Vector3(
-                Random.Range(-randomPlacementRange, randomPlacementRange),
-                transform.position.y,
-                Random.Range(-randomPlacementRange, randomPlacementRange)
-            );
+            // Replace with your own logic to generate a random position within the platform's bounds
+            // You can use the platform's collider or defined boundaries to restrict the random position
+
+            Vector3 randomPosition = Vector3.zero; // Replace with actual random position calculation
 
             transform.position = randomPosition;
-        }
-
-        private void FixedUpdate()
-        {
-            // Enemy detection and avoidance
-            Collider[] nearbyEnemies = Physics.OverlapSphere(transform.position, 5f, enemyLayer);
-            if (nearbyEnemies.Length > 0)
-            {
-                // Implement your avoidance behavior here
-            }
         }
     }
 }
