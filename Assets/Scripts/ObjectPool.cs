@@ -9,7 +9,7 @@ public class ObjectPool : MonoBehaviour
     public GameObject bulletPrefab;
     public int poolSize = 10;
 
-    private Queue<GameObject> inactiveObjects = new Queue<GameObject>();
+    private Queue<GameObject> _inactiveObjects = new();
 
     private void Start()
     {
@@ -20,15 +20,15 @@ public class ObjectPool : MonoBehaviour
             bullet.SetActive(false);
             Bullet bulletComponent = bullet.GetComponent<Bullet>();
             bulletComponent.SetObjectPool(this);
-            inactiveObjects.Enqueue(bullet);
+            _inactiveObjects.Enqueue(bullet);
         }
     }
 
     public GameObject GetObject()
     {
-        if (inactiveObjects.Count > 0)
+        if (_inactiveObjects.Count > 0)
         {
-            GameObject bullet = inactiveObjects.Dequeue();
+            GameObject bullet = _inactiveObjects.Dequeue();
             bullet.SetActive(true);
             return bullet;
         }
@@ -43,6 +43,6 @@ public class ObjectPool : MonoBehaviour
     public void ReturnObject(GameObject bullet)
     {
         bullet.SetActive(false);
-        inactiveObjects.Enqueue(bullet);
+        _inactiveObjects.Enqueue(bullet);
     }
 }

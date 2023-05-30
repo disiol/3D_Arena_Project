@@ -70,7 +70,7 @@ namespace Tests.TestsEditMode.Player.Points
             _playerPointsPresenter.UpdateView();
 
             // Assert
-            Assert.AreEqual("50", _pointsText.text);
+            Assert.AreEqual("Points: 50", _pointsText.text);
         }
         
         private void Action_stub()
