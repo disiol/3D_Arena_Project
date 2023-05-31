@@ -7,15 +7,16 @@ namespace Player.Movement
 {
     public class PlayerController : MonoBehaviour
     {
-        public float movementSpeed = 5f;
-        public float turnSpeed = 200f;
-        public GameObject projectilePrefab;
-        public float projectileForce = 10f;
+        [SerializeField] private float movementSpeed = 5f;
+        [SerializeField] private float turnSpeed = 200f;
+        [SerializeField] private GameObject projectilePrefab;
+        [SerializeField] private float projectileForce = 10f;
 
-        public float edgeDistance = 10f; // Distance from the edge to trigger movement
-        public float enemyRadius = 5f; // Radius around the player to check for enemies
-        public Transform[] enemies; // Array of enemy transforms
-        public Transform platform;
+        [SerializeField] private float edgeDistance = 10f; // Distance from the edge to trigger movement
+        [SerializeField] private float enemyRadius = 5f; // Radius around the player to check for enemies
+      
+        [SerializeField] private Transform[] enemies; // Array of enemy transforms
+        [SerializeField] private Transform platform;
 
 
         private Vector2 _movementInput;

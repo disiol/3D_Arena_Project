@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="596f741e-7d16-44fc-bb2c-f77153c7d656" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Perfabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Perfabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" afterDir="false" />
     </list>
@@ -23,6 +19,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/641e30bacc0444688e6c5f619fdd19b4158400/01/f449e474/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/2c/11eaa80f/ObjectPool`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/de80aed0bd3646409e8bfb15c101f005e2000/c1/9a4e97c6/StackOverflowException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/da6a1787df247a0274ec8fc4840f41df092ee13874f55f87a9db568acab1bd2/System.Reflection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerActionsMap.cs" root0="FORCE_HIGHLIGHTING" />
@@ -127,7 +124,9 @@
       <workItem from="1685313347598" duration="1456000" />
       <workItem from="1685448196223" duration="23953000" />
       <workItem from="1685485141975" duration="2655000" />
-      <workItem from="1685519514791" duration="498000" />
+      <workItem from="1685519514791" duration="6844000" />
+      <workItem from="1685528350209" duration="7000" />
+      <workItem from="1685528373970" duration="1717000" />
     </task>
     <servers />
   </component>
@@ -155,6 +154,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs</url>
+          <line>190</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" initialLine="175" containingFunctionPresentation="Method 'PlayerMovesToSafeLocationWhenAtEdge'">
+            <startOffsets>
+              <option value="6580" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6611" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
