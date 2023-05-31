@@ -670,6 +670,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 365420888, guid: 5837a43239279c546904194f0d24adfb, type: 3}
+      propertyPath: platform
+      value: 
+      objectReference: {fileID: 198456211}
     - target: {fileID: 8361523090125356570, guid: 5837a43239279c546904194f0d24adfb, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -720,28 +724,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5837a43239279c546904194f0d24adfb, type: 3}
---- !u!1 &365420886 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8361523090125356646, guid: 5837a43239279c546904194f0d24adfb, type: 3}
-  m_PrefabInstance: {fileID: 365420885}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &365420888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365420886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6077e73306e0bb72b86e0299410e0093, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 5
-  turnSpeed: 200
-  projectilePrefab: {fileID: 688918793758728779, guid: 6e21c74019b2c6959aafa9d5f32f5e2f, type: 3}
-  projectileForce: 10
-  edgeThreshold: 1
 --- !u!1 &430238103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2904,7 +2886,10 @@ MonoBehaviour:
   turnSpeed: 200
   projectilePrefab: {fileID: 0}
   projectileForce: 10
-  edgeThreshold: 1
+  edgeDistance: 10
+  enemyRadius: 5
+  enemies: []
+  platform: {fileID: 0}
 --- !u!1 &1580167110
 GameObject:
   m_ObjectHideFlags: 0

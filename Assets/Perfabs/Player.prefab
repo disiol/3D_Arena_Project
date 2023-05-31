@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8361523090125356569}
   - component: {fileID: 8361523090125356568}
   - component: {fileID: 8361523090125356647}
+  - component: {fileID: 365420888}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -183,3 +184,23 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &365420888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361523090125356646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6077e73306e0bb72b86e0299410e0093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
+  turnSpeed: 200
+  projectilePrefab: {fileID: 688918793758728779, guid: 6e21c74019b2c6959aafa9d5f32f5e2f, type: 3}
+  projectileForce: 10
+  edgeDistance: 10
+  enemyRadius: 5
+  enemies: []
+  platform: {fileID: 0}

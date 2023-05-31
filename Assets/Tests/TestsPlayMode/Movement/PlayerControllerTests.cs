@@ -1,15 +1,14 @@
 using System;
 using System.Collections;
 using System.Reflection;
-using NUnit.Framework;
-using Player.Movement;
 using UnityEngine;
 using UnityEngine.TestTools;
+using NUnit.Framework;
+using Player.Movement;
 using Object = UnityEngine.Object;
 
 namespace Tests.TestsPlayMode.Movement
 {
-    [TestFixture]
     public class PlayerControllerTests
     {
         private GameObject _playerObject;
@@ -117,58 +116,55 @@ namespace Tests.TestsPlayMode.Movement
             // Act
             MethodInfo privateMethodMoveToRandomPosition = typeof(PlayerController).GetMethod("MoveToRandomPosition", BindingFlags.NonPublic | BindingFlags.Instance);
             privateMethodMoveToRandomPosition.Invoke(_playerController, null);
-
+        
             yield return null;
-
+        
             Vector3 newPosition = _playerObject.transform.position;
-
+        
             Assert.AreNotEqual(initialPosition, newPosition);
         }
         
         [UnityTest]
-        public IEnumerator IsNearEdge_PlayerNearEdge_ReturnsTrue()
+        public IEnumerator PlayerMovesToSafeLocationWhenAtEdge()
         {
-            // Set up the necessary conditions for the test
-            float platformSize = 10f;
-            Vector3 platformCenter = Vector3.zero;
-            float edgeThreshold = 1f;
-
-            // Set the player's position near the edge
-            _playerObject.transform.position = platformCenter + Vector3.forward * (platformSize / 2f - edgeThreshold);
-
-            // Use reflection to access the private method
-            MethodInfo isNearEdgeMethod = typeof(PlayerController).GetMethod("IsNearEdge", BindingFlags.NonPublic | BindingFlags.Instance);
-
-            // Invoke the private method and get the result
-            bool isNearEdge = (bool)isNearEdgeMethod.Invoke(_playerController, null);
-
-            // Assert the expected result
-            Assert.IsTrue(isNearEdge);
-
-            yield return null;
+            // Arrange
+           
+        
+            GameObject platformObject = new GameObject("Platform")
+            {
+                transform =
+                {
+                    position = Vector3.zero,
+                    localScale = new Vector3(10f, 1f, 10f)
+                }
+            };
+            _playerController.platform = platformObject.transform;
+        
+            Transform enemy1 = CreateEnemy(new Vector3(2f, 0f, 2f));
+            Transform enemy2 = CreateEnemy(new Vector3(-3f, 0f, -3f));
+            _playerController.enemies = new Transform[] { enemy1, enemy2 };
+        
+            yield return null; // Wait for one frame to allow initialization
+        
+            // Act
+            _playerObject.transform.position = new Vector3(9f, 0f, 9f);
+            yield return null; // Wait for one frame to trigger Update()
+        
+            // Assert
+            Assert.IsTrue(Vector3.Distance(_playerObject.transform.position, platformObject.transform.position) > _playerController.edgeDistance);
+        
+            // Clean up
+            Object.Destroy(_playerObject);
+            Object.Destroy(platformObject);
+            Object.Destroy(enemy1.gameObject);
+            Object.Destroy(enemy2.gameObject);
         }
-
-        [UnityTest]
-        public IEnumerator IsNearEdge_PlayerNotNearEdge_ReturnsFalse()
+        
+        private Transform CreateEnemy(Vector3 position)
         {
-            // Set up the necessary conditions for the test
-            float platformSize = 10f;
-            Vector3 platformCenter = Vector3.zero;
-            float edgeThreshold = 1f;
-
-            // Set the player's position away from the edge
-            _playerObject.transform.position = platformCenter + Vector3.forward * (platformSize / 2f + edgeThreshold);
-
-            // Use reflection to access the private method
-            MethodInfo isNearEdgeMethod = typeof(PlayerController).GetMethod("IsNearEdge", BindingFlags.NonPublic | BindingFlags.Instance);
-
-            // Invoke the private method and get the result
-            bool isNearEdge = (bool)isNearEdgeMethod.Invoke(_playerController, null);
-
-            // Assert the expected result
-            Assert.IsFalse(isNearEdge);
-
-            yield return null;
+            GameObject enemyObject = new GameObject("Enemy");
+            enemyObject.transform.position = position;
+            return enemyObject.transform;
         }
         private object GetInstanceField(Type type, object instance, string fieldName)
         {

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 namespace Player.Movement
 {
@@ -10,7 +11,12 @@ namespace Player.Movement
         public float turnSpeed = 200f;
         public GameObject projectilePrefab;
         public float projectileForce = 10f;
-        public float edgeThreshold = 1f;
+
+        public float edgeDistance = 10f; // Distance from the edge to trigger movement
+        public float enemyRadius = 5f; // Radius around the player to check for enemies
+        public Transform[] enemies; // Array of enemy transforms
+        public Transform platform;
+
 
         private Vector2 _movementInput;
         private Vector2 _lukInput;
@@ -23,29 +29,27 @@ namespace Player.Movement
         {
             _playerActionsMap = new PlayerActionsMap();
             _playerActionsMap.Player.Move.performed += OnMovement;
-            _playerActionsMap.Player.Move.canceled += OnMovement; 
+            _playerActionsMap.Player.Move.canceled += OnMovement;
             _playerActionsMap.Player.Luk.performed += OnLuk;
             _playerActionsMap.Player.Luk.canceled += OnLuk;
             _playerActionsMap.Player.Fire.started += OnAttack;
             _playerActionsMap.Player.Fire.canceled += OnAttack;
-            _playerActionsMap.Enable();        }
+            _playerActionsMap.Enable();
+        }
 
         private void OnDisable()
         {
             _playerActionsMap.Disable();
-
         }
 
         private void Update()
         {
-        
-            
             // Movement controls
             float movementX = _movementInput.x;
             float movementY = _movementInput.y;
 
             transform.Translate(Vector3.forward * movementY * movementSpeed * Time.deltaTime);
-           
+
             transform.Rotate(Vector3.up * movementX * turnSpeed * Time.deltaTime);
 
             // Projectile launch
@@ -55,16 +59,17 @@ namespace Player.Movement
             }
 
             // Detect proximity to the edge
-            if (IsNearEdge())
+            if (IsAtEdge())
             {
-                MoveToRandomPosition();
+                MovePlayerToSafeLocation();
             }
         }
 
         public void OnMovement(InputAction.CallbackContext context)
         {
             _movementInput = context.ReadValue<Vector2>();
-        } 
+        }
+
         public void OnLuk(InputAction.CallbackContext context)
         {
             _lukInput = context.ReadValue<Vector2>();
@@ -89,27 +94,56 @@ namespace Player.Movement
             rb.AddForce(transform.forward * projectileForce, ForceMode.Impulse);
         }
 
-        private bool IsNearEdge()
+        private bool IsAtEdge()
         {
-            // Replace with your own logic to determine proximity to the edge
-            // You can use the player's position and the platform's boundaries
+            // Check if the player is close to the edge
 
-            // For example, assuming the platform is a square with a size of 10 units:
-            float platformSize = 10f;
-            Vector3 platformCenter = Vector3.zero; // Replace with actual center position of the platform
+            if (platform != null)
+            {
+                float distanceToEdge = Vector3.Distance(transform.position, platform.position);
+                return distanceToEdge <= edgeDistance;
+            }
 
-            float distanceToEdge = Vector3.Distance(transform.position, platformCenter) - platformSize / 2f;
-            return distanceToEdge < edgeThreshold;
+            return false;
         }
 
-        private void MoveToRandomPosition()
+        private void MovePlayerToSafeLocation()
         {
-            // Replace with your own logic to generate a random position within the platform's bounds
-            // You can use the platform's collider or defined boundaries to restrict the random position
-
-            Vector3 randomPosition = Vector3.zero; // Replace with actual random position calculation
-
+            Vector3 randomPosition = GetRandomPositionAwayFromEnemies();
             transform.position = randomPosition;
+        }
+
+        private Vector3 GetRandomPositionAwayFromEnemies()
+        {
+            Vector3 randomPosition = Vector3.zero;
+            bool isPositionValid = false;
+
+            while (!isPositionValid)
+            {
+                // Generate a random position within the platform boundaries
+                var position = platform.position;
+                var localScale = platform.localScale;
+
+                float randomX = Random.Range(position.x - localScale.x / 2f, position.x + localScale.x / 2f);
+                float randomZ = Random.Range(position.z - localScale.z / 2f, position.z + localScale.z / 2f);
+                randomPosition = new Vector3(randomX, transform.position.y, randomZ);
+
+                // Check if the random position is far enough from all enemies
+                bool isPositionSafe = true;
+                foreach (Transform enemy in enemies)
+                {
+                    float distanceToEnemy = Vector3.Distance(randomPosition, enemy.position);
+                    if (distanceToEnemy <= enemyRadius)
+                    {
+                        isPositionSafe = false;
+                        break;
+                    }
+                }
+
+                isPositionValid = isPositionSafe;
+            }
+
+            return randomPosition;
         }
     }
 }
