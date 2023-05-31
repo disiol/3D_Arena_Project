@@ -680,7 +680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361523090125356570, guid: 5837a43239279c546904194f0d24adfb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.01
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8361523090125356570, guid: 5837a43239279c546904194f0d24adfb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -688,7 +688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361523090125356570, guid: 5837a43239279c546904194f0d24adfb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.72
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 8361523090125356570, guid: 5837a43239279c546904194f0d24adfb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -896,7 +896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1234485504437107435, guid: a11c6d7137cea2d5bba5dc84a5d7d067, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.091
+      value: 0.176
       objectReference: {fileID: 0}
     - target: {fileID: 1234485504437107435, guid: a11c6d7137cea2d5bba5dc84a5d7d067, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2473,7 +2473,7 @@ GameObject:
   - component: {fileID: 1328875362}
   - component: {fileID: 1328875361}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: FlorCylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2634,6 +2634,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355935406}
   m_CullTransparentMesh: 1
+--- !u!1 &1362731461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8361523090125356646, guid: 5837a43239279c546904194f0d24adfb, type: 3}
+  m_PrefabInstance: {fileID: 365420885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1362731462
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362731461}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &1374477275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2846,7 +2867,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1508392934}
-  - component: {fileID: 1508392935}
   m_Layer: 0
   m_Name: View
   m_TagString: Untagged
@@ -2870,26 +2890,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1508392935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1508392933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6077e73306e0bb72b86e0299410e0093, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 5
-  turnSpeed: 200
-  projectilePrefab: {fileID: 0}
-  projectileForce: 10
-  edgeDistance: 10
-  enemyRadius: 5
-  enemies: []
-  platform: {fileID: 0}
 --- !u!1 &1580167110
 GameObject:
   m_ObjectHideFlags: 0
@@ -3025,7 +3025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5738136471344511346, guid: 24bf720ac665c91f19ca7e64077f10e3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.26
+      value: 0.337
       objectReference: {fileID: 0}
     - target: {fileID: 5738136471344511346, guid: 24bf720ac665c91f19ca7e64077f10e3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3965,19 +3965,19 @@ MonoBehaviour:
   m_Behaviour: 0
   m_UseIsolatedInputActions: 0
   m_PointerDownAction:
-    m_Name: 
+    m_Name: Pointer Down
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 
+    m_Id: fd208ebc-970f-4ad0-95ad-b1b23eca5873
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
   m_PointerMoveAction:
-    m_Name: 
+    m_Name: Pointer Move
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 
+    m_Id: 32389da6-dbb8-4baa-adae-4e77af145e6d
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []

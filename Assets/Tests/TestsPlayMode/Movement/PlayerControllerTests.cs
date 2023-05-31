@@ -20,6 +20,9 @@ namespace Tests.TestsPlayMode.Movement
         public void Setup()
         {
             _playerObject = new GameObject("Player");
+
+            _playerObject.AddComponent<Rigidbody>();
+
             _playerController = _playerObject.AddComponent<PlayerController>();
             _playerActionsMap = new PlayerActionsMap();
         }
@@ -41,6 +44,9 @@ namespace Tests.TestsPlayMode.Movement
             _playerActionsMap.Player.Move.canceled += _playerController.OnMovement;
             _playerActionsMap.Player.Move.Enable();
             _playerActionsMap.Player.Move.ReadValue<Vector2>();
+
+            //TODO
+
 
             yield return null;
 
@@ -150,7 +156,8 @@ namespace Tests.TestsPlayMode.Movement
             foreach (Transform enemy in enemiesValue)
             {
                 float distanceToEnemy = Vector3.Distance(_playerController.transform.position, enemy.position);
-                float enemyRadius =(float) _getAccessToPrivate.GetPrivateFieldValue(typeof(PlayerController), _playerController,
+                float enemyRadius = (float)_getAccessToPrivate.GetPrivateFieldValue(typeof(PlayerController),
+                    _playerController,
                     "enemyRadius");
                 Assert.Greater(distanceToEnemy, enemyRadius);
             }
@@ -213,8 +220,5 @@ namespace Tests.TestsPlayMode.Movement
             enemyObject.transform.position = position;
             return enemyObject.transform;
         }
-
-
-       
     }
 }

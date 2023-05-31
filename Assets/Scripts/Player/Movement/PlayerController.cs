@@ -14,15 +14,18 @@ namespace Player.Movement
 
         [SerializeField] private float edgeDistance = 10f; // Distance from the edge to trigger movement
         [SerializeField] private float enemyRadius = 5f; // Radius around the player to check for enemies
-      
+
         [SerializeField] private Transform[] enemies; // Array of enemy transforms
         [SerializeField] private Transform platform;
 
+
+        private Rigidbody _rb;
 
         private Vector2 _movementInput;
         private Vector2 _lukInput;
 
         private bool _isAttacking;
+
 
         private PlayerActionsMap _playerActionsMap;
 
@@ -46,12 +49,10 @@ namespace Player.Movement
         private void Update()
         {
             // Movement controls
-            float movementX = _movementInput.x;
-            float movementY = _movementInput.y;
 
-            transform.Translate(Vector3.forward * movementY * movementSpeed * Time.deltaTime);
+            Movement();
+            OnLuk();
 
-            transform.Rotate(Vector3.up * movementX * turnSpeed * Time.deltaTime);
 
             // Projectile launch
             if (_isAttacking)
@@ -60,20 +61,35 @@ namespace Player.Movement
             }
 
             // Detect proximity to the edge
-            if (IsAtEdge())
-            {
-                MovePlayerToSafeLocation();
-            }
+            // if (IsAtEdge())
+            // {
+            //     MovePlayerToSafeLocation();
+            // }
+        }
+
+        private void OnLuk()
+        {
+            float lukInputX = _lukInput.x;
+            transform.Rotate(Vector3.up * lukInputX * turnSpeed * Time.deltaTime);
+        }
+
+        private void Movement()
+        {
+            float movementY = _movementInput.y;
+            transform.Translate(Vector3.forward * movementY * movementSpeed * Time.deltaTime);
         }
 
         public void OnMovement(InputAction.CallbackContext context)
         {
-            _movementInput = context.ReadValue<Vector2>();
+            _movementInput = context.ReadValue<Vector2>().normalized;
+
+            
         }
 
         public void OnLuk(InputAction.CallbackContext context)
         {
-            _lukInput = context.ReadValue<Vector2>();
+            _lukInput = context.ReadValue<Vector2>().normalized;
+           
         }
 
         public void OnAttack(InputAction.CallbackContext context)
