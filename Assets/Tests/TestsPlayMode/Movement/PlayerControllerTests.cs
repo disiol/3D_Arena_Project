@@ -5,11 +5,13 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using NUnit.Framework;
 using Player.Movement;
+using UnityEngine.InputSystem;
 using Object = UnityEngine.Object;
 
 namespace Tests.TestsPlayMode.Movement
 {
-    public class PlayerControllerTests
+    public class PlayerControllerTests : InputTestFixture
+
     {
         private GameObject _playerObject;
         private PlayerController _playerController;
@@ -36,27 +38,37 @@ namespace Tests.TestsPlayMode.Movement
         }
 
         [UnityTest]
-        public IEnumerator Move_Forward_TranslatesPlayerForward()
+        public IEnumerator Move_Forward()
         {
             _playerActionsMap.Enable();
 
             _playerActionsMap.Player.Move.performed += _playerController.OnMovement;
             _playerActionsMap.Player.Move.canceled += _playerController.OnMovement;
             _playerActionsMap.Player.Move.Enable();
-            _playerActionsMap.Player.Move.ReadValue<Vector2>();
-
-            //TODO
-
-
-            yield return null;
 
             float playerControllerMovementSpeed =
                 (float)_getAccessToPrivate.GetPrivateFieldValue(typeof(PlayerController), _playerController,
                     "movementSpeed");
-            Vector3 expectedPosition = _playerObject.transform.position +
-                                       _playerObject.transform.forward * playerControllerMovementSpeed * Time.deltaTime;
+            var position = _playerObject.transform.position;
 
-            Assert.AreEqual(expectedPosition, _playerObject.transform.position);
+            Vector3 direction = new Vector3(0, 0, 1.0f).normalized;
+            
+
+            Vector3 expectedPosition = position +
+                                       _playerObject.transform.TransformDirection(direction) *
+                                       playerControllerMovementSpeed * Time.fixedTime;
+            Gamepad gamepad = InputSystem.AddDevice<Gamepad>();
+            Set(gamepad.leftStick, new Vector2(0.0f, 1.0f));
+
+
+            yield return new WaitForSeconds(0.1f);
+
+
+            var newPosition = _playerObject.transform.position;
+
+
+            Assert.AreEqual(expectedPosition, newPosition,
+                "Move_Forward. Mover object moved from " + position + " to " + expectedPosition);
         }
 
         [UnityTest]
@@ -67,7 +79,9 @@ namespace Tests.TestsPlayMode.Movement
             _playerActionsMap.Player.Luk.performed += _playerController.OnLuk;
             _playerActionsMap.Player.Luk.canceled += _playerController.OnLuk;
             _playerActionsMap.Player.Luk.Enable();
-            _playerActionsMap.Player.Luk.ReadValue<Vector2>();
+
+            Gamepad gamepad = InputSystem.AddDevice<Gamepad>();
+            Set(gamepad.leftStick, new Vector2(0.0f, 1.0f));
 
             yield return null;
 
