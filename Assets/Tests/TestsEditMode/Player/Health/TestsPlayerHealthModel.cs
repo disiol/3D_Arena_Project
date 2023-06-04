@@ -31,9 +31,7 @@ namespace Tests.TestsEditMode.Player.Health
             // Act
             int amount = 30;
 
-            // Act
             _playerHealthModel.Increment(amount);
-
             Action_stub();
 
             // Assert
