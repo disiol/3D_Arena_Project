@@ -49,7 +49,7 @@ namespace Tests.TestsPlayMode.Movement
         }
 
         [UnityTest]
-        public IEnumerator Move_Forward()
+        public IEnumerator Player_Forward()
         {
             // Arrange
             _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
@@ -86,7 +86,127 @@ namespace Tests.TestsPlayMode.Movement
 
             // Assert
             Assert.AreEqual(expectedPositionNormalized, newPosition.normalized,
-                "Move_Forward. Mover object moved from " + position + " to " + expectedPositionNormalized);
+                "Player_Left. Mover object moved from " + position + " to " + expectedPositionNormalized);
+        }
+        
+        [UnityTest]
+        public IEnumerator Player_Back()
+        {
+            // Arrange
+            _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+
+            _playerActionsMap.Player.Move.performed += _playerController.OnMovement;
+            _playerActionsMap.Player.Move.canceled += _playerController.OnMovement;
+            _playerActionsMap.Player.Move.Enable();
+            _playerActionsMap.Enable();
+
+
+            float playerControllerMovementSpeed =
+                (float)_getAccessToPrivate.GetPrivateFieldValue(typeof(PlayerController), _playerController,
+                    "movementSpeed");
+            var position = _playerObject.transform.position;
+
+            Vector3 direction = new Vector3(0, 0, -1.0f);
+
+
+            Vector3 expectedPosition = position +
+                                       _playerObject.transform.TransformDirection(direction) *
+                                       playerControllerMovementSpeed * Time.fixedTime;
+            Vector3 expectedPositionNormalized = expectedPosition.normalized;
+
+
+            Gamepad gamepad = InputSystem.AddDevice<Gamepad>();
+
+            // Act
+            Set(gamepad.leftStick, new Vector2(0.0f, -1.0f));
+
+            yield return new WaitForSeconds(0.1f);
+
+
+            var newPosition = _playerObject.transform.position;
+
+            // Assert
+            Assert.AreEqual(expectedPositionNormalized, newPosition.normalized,
+                "Player_Left. Mover object moved from " + position + " to " + expectedPositionNormalized);
+        }
+        [UnityTest]
+        public IEnumerator Player_Right()
+        {
+            // Arrange
+            _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+
+            _playerActionsMap.Player.Move.performed += _playerController.OnMovement;
+            _playerActionsMap.Player.Move.canceled += _playerController.OnMovement;
+            _playerActionsMap.Player.Move.Enable();
+            _playerActionsMap.Enable();
+
+
+            float playerControllerMovementSpeed =
+                (float)_getAccessToPrivate.GetPrivateFieldValue(typeof(PlayerController), _playerController,
+                    "movementSpeed");
+            var position = _playerObject.transform.position;
+
+            Vector3 direction = new Vector3(1.0f, 0, 0.0f);
+
+
+            Vector3 expectedPosition = position +
+                                       _playerObject.transform.TransformDirection(direction) *
+                                       playerControllerMovementSpeed * Time.fixedTime;
+            Vector3 expectedPositionNormalized = expectedPosition.normalized;
+
+
+            Gamepad gamepad = InputSystem.AddDevice<Gamepad>();
+
+            // Act
+            Set(gamepad.leftStick, new Vector2(1.0f, 0.0f));
+
+            yield return new WaitForSeconds(0.1f);
+
+
+            var newPosition = _playerObject.transform.position;
+
+            // Assert
+            Assert.AreEqual(expectedPositionNormalized, newPosition.normalized,
+                "Player_Left. Mover object moved from " + position + " to " + expectedPositionNormalized);
+        }   [UnityTest]
+        public IEnumerator Player_Left()
+        {
+            // Arrange
+            _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+
+            _playerActionsMap.Player.Move.performed += _playerController.OnMovement;
+            _playerActionsMap.Player.Move.canceled += _playerController.OnMovement;
+            _playerActionsMap.Player.Move.Enable();
+            _playerActionsMap.Enable();
+
+
+            float playerControllerMovementSpeed =
+                (float)_getAccessToPrivate.GetPrivateFieldValue(typeof(PlayerController), _playerController,
+                    "movementSpeed");
+            var position = _playerObject.transform.position;
+
+            Vector3 direction = new Vector3(-1.0f, 0, 0.0f);
+
+
+            Vector3 expectedPosition = position +
+                                       _playerObject.transform.TransformDirection(direction) *
+                                       playerControllerMovementSpeed * Time.fixedTime;
+            Vector3 expectedPositionNormalized = expectedPosition.normalized;
+
+
+            Gamepad gamepad = InputSystem.AddDevice<Gamepad>();
+
+            // Act
+            Set(gamepad.leftStick, new Vector2(-1.0f, 0.0f));
+
+            yield return new WaitForSeconds(0.1f);
+
+
+            var newPosition = _playerObject.transform.position;
+
+            // Assert
+            Assert.AreEqual(expectedPositionNormalized, newPosition.normalized,
+                "Player_Left. Mover object moved from " + position + " to " + expectedPositionNormalized);
         }
 
         [UnityTest]

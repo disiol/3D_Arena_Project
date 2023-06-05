@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596f741e-7d16-44fc-bb2c-f77153c7d656" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/InitTestScene638215194590730520.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InitTestScene638215194590730520.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InitTestScene638215808664724500.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InitTestScene638215808664724500.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InitTestScene638215907977180570.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InitTestScene638215907977180570.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InitTestScene638215909406078270.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InitTestScene638215909406078270.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Perfabs/Arena.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Perfabs/Arena.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Perfabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Perfabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +150,7 @@
       <workItem from="1685701827025" duration="3448000" />
       <workItem from="1685803485069" duration="7263000" />
       <workItem from="1685909353508" duration="7955000" />
-      <workItem from="1685966777032" duration="7557000" />
+      <workItem from="1685966777032" duration="8777000" />
     </task>
     <servers />
   </component>
@@ -195,13 +181,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs</url>
-          <line>288</line>
+          <line>408</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" initialLine="175" containingFunctionPresentation="Method 'PlayerMovesToSafeLocationWhenAtEdge'">
             <startOffsets>
-              <option value="8935" />
+              <option value="13683" />
             </startOffsets>
             <endOffsets>
-              <option value="8966" />
+              <option value="13714" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
