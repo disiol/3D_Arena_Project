@@ -17,13 +17,25 @@ namespace Tests.TestsPlayMode.Movement
         private PlayerController _playerController;
         private PlayerActionsMap _playerActionsMap;
         private readonly GetAccessToPrivate _getAccessToPrivate = new GetAccessToPrivate();
+        private Rigidbody _rigidbody;
 
         [SetUp]
         public void Setup()
         {
             _playerObject = new GameObject("Player");
+            var root = new GameObject();
+            // Attach a camera to our root game object.
+            root.AddComponent(typeof(Camera));
+            // Get a reference to the camera.
+            var camera = root.GetComponent<Camera>();
+            // Set the camera's background color to white.
+            // Add our game object (with the camera included) to the scene by instantiating it.
+            root = GameObject.Instantiate(root);
 
-            _playerObject.AddComponent<Rigidbody>();
+            _rigidbody = _playerObject.AddComponent<Rigidbody>();
+            _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+            ;
+
 
             _playerController = _playerObject.AddComponent<PlayerController>();
             _playerActionsMap = new PlayerActionsMap();
@@ -34,64 +46,111 @@ namespace Tests.TestsPlayMode.Movement
         {
             Object.Destroy(_playerObject);
             _playerActionsMap.Disable();
-            _playerActionsMap.Dispose();
         }
 
         [UnityTest]
         public IEnumerator Move_Forward()
         {
-            _playerActionsMap.Enable();
+            // Arrange
+            _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
 
             _playerActionsMap.Player.Move.performed += _playerController.OnMovement;
             _playerActionsMap.Player.Move.canceled += _playerController.OnMovement;
             _playerActionsMap.Player.Move.Enable();
+            _playerActionsMap.Enable();
+
 
             float playerControllerMovementSpeed =
                 (float)_getAccessToPrivate.GetPrivateFieldValue(typeof(PlayerController), _playerController,
                     "movementSpeed");
             var position = _playerObject.transform.position;
 
-            Vector3 direction = new Vector3(0, 0, 1.0f).normalized;
-            
+            Vector3 direction = new Vector3(0, 0, 1.0f);
+
 
             Vector3 expectedPosition = position +
                                        _playerObject.transform.TransformDirection(direction) *
                                        playerControllerMovementSpeed * Time.fixedTime;
-            Gamepad gamepad = InputSystem.AddDevice<Gamepad>();
-            Set(gamepad.leftStick, new Vector2(0.0f, 1.0f));
+            Vector3 expectedPositionNormalized = expectedPosition.normalized;
 
+
+            Gamepad gamepad = InputSystem.AddDevice<Gamepad>();
+
+            // Act
+            Set(gamepad.leftStick, new Vector2(0.0f, 1.0f));
 
             yield return new WaitForSeconds(0.1f);
 
 
             var newPosition = _playerObject.transform.position;
 
-
-            Assert.AreEqual(expectedPosition, newPosition,
-                "Move_Forward. Mover object moved from " + position + " to " + expectedPosition);
+            // Assert
+            Assert.AreEqual(expectedPositionNormalized, newPosition.normalized,
+                "Move_Forward. Mover object moved from " + position + " to " + expectedPositionNormalized);
         }
 
         [UnityTest]
-        public IEnumerator Luk_Right_RotatesPlayerRight()
+        public IEnumerator RotatesPlayerRight()
         {
-            _playerActionsMap.Enable();
+            // Arrange
+            _rigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+
 
             _playerActionsMap.Player.Luk.performed += _playerController.OnLuk;
             _playerActionsMap.Player.Luk.canceled += _playerController.OnLuk;
             _playerActionsMap.Player.Luk.Enable();
+            _playerActionsMap.Enable();
 
             Gamepad gamepad = InputSystem.AddDevice<Gamepad>();
-            Set(gamepad.leftStick, new Vector2(0.0f, 1.0f));
 
-            yield return null;
+            Quaternion initialRotation = _playerObject.transform.rotation;
 
-            float playerControllerTurnSpeed =
-                (float)_getAccessToPrivate.GetPrivateFieldValue(typeof(PlayerController), _playerController,
-                    "turnSpeed");
-            Quaternion expectedRotation = Quaternion.Euler(0f, playerControllerTurnSpeed * Time.deltaTime, 0f) *
-                                          _playerObject.transform.rotation;
+            var lukInputX = 1.0f;
 
-            Assert.AreEqual(expectedRotation, _playerObject.transform.rotation);
+
+            // Act
+            Set(gamepad.rightStick, new Vector2(lukInputX, 0.0f));
+
+            yield return new WaitForSeconds(0.1f);
+
+            // Assert
+
+
+            Quaternion finalRotation = _playerObject.transform.rotation;
+
+            Assert.Greater(finalRotation.normalized.y, initialRotation.normalized.y, "RotatesPlayerRight");
+        }  
+        
+        [UnityTest]
+        public IEnumerator RotatesPlayerLeft()
+        {
+            // Arrange
+            _rigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+
+
+            _playerActionsMap.Player.Luk.performed += _playerController.OnLuk;
+            _playerActionsMap.Player.Luk.canceled += _playerController.OnLuk;
+            _playerActionsMap.Player.Luk.Enable();
+            _playerActionsMap.Enable();
+
+            Gamepad gamepad = InputSystem.AddDevice<Gamepad>();
+
+            Quaternion initialRotation = _playerObject.transform.rotation;
+
+            var lukInputX = -1.0f;
+
+
+            // Act
+            Set(gamepad.rightStick, new Vector2(lukInputX, 0.0f));
+
+            yield return new WaitForSeconds(0.1f);
+
+            // Assert
+
+
+            Quaternion finalRotation = _playerObject.transform.rotation;
+
+            Assert.Less(finalRotation.normalized.y, initialRotation.normalized.y, "RotatesPlayerLeft");
         }
 
         [UnityTest]

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1600
     height: 811
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: GitHub
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 96
+  controlID: 97
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,12 +141,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 549
+    width: 838
     height: 761
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 157
+  controlID: 170
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,12 +162,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 549
+    x: 838
     y: 0
-    width: 176
+    width: 237
     height: 761
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -188,9 +188,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 725
+    x: 1075
     y: 0
-    width: 405
+    width: 133
     height: 761
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
@@ -209,24 +209,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1130
+    x: 1208
     y: 0
-    width: 470
+    width: 392
     height: 761
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 17}
   - {fileID: 14}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -237,24 +237,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 549
-    height: 410
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+    width: 838
+    height: 415
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 20}
   - {fileID: 15}
   - {fileID: 13}
-  m_Selected: 2
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 2
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,11 +271,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 410
-    width: 549
-    height: 351
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    y: 415
+    width: 838
+    height: 346
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -354,8 +354,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 119
-    width: 548
-    height: 389
+    width: 837
+    height: 394
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -381,9 +381,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1131
+    x: 1208
     y: 119
-    width: 468
+    width: 391
     height: 740
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -396,8 +396,8 @@ MonoBehaviour:
   currentBranchAndRemoteHasUpdate: 0
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -482,21 +482,28 @@ MonoBehaviour:
     localBranches: []
     remoteBranches: []
   changesView:
-    currentBranchHasUpdate: 1
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
+    currentBranchHasUpdate: 0
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
     commitBody: 
-    commitMessage: fix mufnent
+    commitMessage: mace test  RotatesPlayerRight    ant  RotatesPlayerLeft
     currentBranch: '[main]'
-    treeScroll: {x: 0, y: 0}
+    treeScroll: {x: 0, y: 371}
     treeChanges:
       assets:
         keys:
         - 00000000000000001000000000000000
+        - 04c1e6c72ea837c87a71107f09564535
+        - 4675710ba8d26fc8d9b335e220db5d91
+        - 8ad1dcac6830c60f0943143c30c362db
+        - c656b668c1da8cd4589faac9f7167a49
+        - 4a77e06eb5bfa8a6280cf08904e53497
+        - 65c889d711f704e329bcdd7af340e930
+        - 5c118813b0b481694a32fd103306ac2f
+        - d6a09c7b25a26ada39898d32378e7784
+        - 3f74805c2446fa411bde875f7d41d99f
         - 818dd793a0333ffa88eeedba57430e13
-        - 21c2449de1001a078904e383613f4262
-        - 24bf720ac665c91f19ca7e64077f10e3
-        - a11c6d7137cea2d5bba5dc84a5d7d067
+        - ebd8c60392c0d5fdd8f12a5094de7faf
         - 5837a43239279c546904194f0d24adfb
         - 4f704ae4b4f98ae41a0bce26658850c1
         - 99c9720ab356a0642a771bea13969a05
@@ -505,14 +512,9 @@ MonoBehaviour:
         - 8ff736345c9f4326ad4a59f5e5ecaabb
         - 6077e73306e0bb72b86e0299410e0093
         - 4c219e121404e59b3987f158ef196b84
-        - 8a441d149daedff168718dccc4432b70
-        - 43a37a2a2f6f4a2ab1bf81a6eafa0f3b
-        - c81aa855cc0a41f883182a93ca09159b
-        - 67dda11fc87c4e57b88794cb2976c104
         - 6ee871979e0bc53b483cdcbcc219cb59
         - a8c583b543974c0bbe8083d078a3f24e
         - 55329b773f4d471b8d21c9e5d581f712
-        - 0000000000000000b000000000000000
         values:
         - path: Assets
           label: Assets
@@ -523,7 +525,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -531,6 +533,168 @@ MonoBehaviour:
             projectPath: 
             originalPath: 
             indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/InitTestScene638215194590730520.unity
+          label: InitTestScene638215194590730520.unity
+          level: 1
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/InitTestScene638215194590730520.unity
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215194590730520.unity
+            projectPath: Assets/InitTestScene638215194590730520.unity
+            originalPath: 
+            indexStatus: 4
+            workTreeStatus: 0
+        - path: Assets/InitTestScene638215774908543060.unity
+          label: InitTestScene638215774908543060.unity
+          level: 1
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/InitTestScene638215774908543060.unity
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215774908543060.unity
+            projectPath: Assets/InitTestScene638215774908543060.unity
+            originalPath: 
+            indexStatus: 4
+            workTreeStatus: 5
+        - path: Assets/InitTestScene638215785689077910.unity
+          label: InitTestScene638215785689077910.unity
+          level: 1
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/InitTestScene638215785689077910.unity
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215785689077910.unity
+            projectPath: Assets/InitTestScene638215785689077910.unity
+            originalPath: 
+            indexStatus: 4
+            workTreeStatus: 5
+        - path: Assets/InitTestScene638215808213724070.unity
+          label: InitTestScene638215808213724070.unity
+          level: 1
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/InitTestScene638215808213724070.unity
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215808213724070.unity
+            projectPath: Assets/InitTestScene638215808213724070.unity
+            originalPath: 
+            indexStatus: 4
+            workTreeStatus: 5
+        - path: Assets/InitTestScene638215808664724500.unity
+          label: InitTestScene638215808664724500.unity
+          level: 1
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/InitTestScene638215808664724500.unity
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215808664724500.unity
+            projectPath: Assets/InitTestScene638215808664724500.unity
+            originalPath: 
+            indexStatus: 4
+            workTreeStatus: 0
+        - path: Assets/InitTestScene638215907977180570.unity
+          label: InitTestScene638215907977180570.unity
+          level: 1
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/InitTestScene638215907977180570.unity
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215907977180570.unity
+            projectPath: Assets/InitTestScene638215907977180570.unity
+            originalPath: 
+            indexStatus: 4
+            workTreeStatus: 0
+        - path: Assets/InitTestScene638215909406078270.unity
+          label: InitTestScene638215909406078270.unity
+          level: 1
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/InitTestScene638215909406078270.unity
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215909406078270.unity
+            projectPath: Assets/InitTestScene638215909406078270.unity
+            originalPath: 
+            indexStatus: 4
+            workTreeStatus: 0
+        - path: Assets/InitTestScene638215910433371470.unity
+          label: InitTestScene638215910433371470.unity
+          level: 1
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/InitTestScene638215910433371470.unity
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215910433371470.unity
+            projectPath: Assets/InitTestScene638215910433371470.unity
+            originalPath: 
+            indexStatus: 4
+            workTreeStatus: 0
+        - path: Assets/InitTestScene638215910683212460.unity
+          label: InitTestScene638215910683212460.unity
+          level: 1
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/InitTestScene638215910683212460.unity
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215910683212460.unity
+            projectPath: Assets/InitTestScene638215910683212460.unity
+            originalPath: 
+            indexStatus: 4
             workTreeStatus: 0
         - path: Assets/Perfabs
           label: Perfabs
@@ -541,7 +705,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -550,29 +714,11 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets/Perfabs/Enimes
-          label: Enimes
+        - path: Assets/Perfabs/Arena.prefab
+          label: Arena.prefab
           level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Perfabs/Enimes/Blue.prefab
-          label: Blue.prefab
-          level: 3
           isFolder: 0
-          isContainer: 0
+          isContainer: 1
           isCollapsed: 0
           isHidden: 0
           isActive: 0
@@ -580,29 +726,11 @@ MonoBehaviour:
           checkState: 1
           isLocked: 0
           gitStatusEntry:
-            path: Assets/Perfabs/Enimes/Blue.prefab
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Enimes/Blue.prefab
-            projectPath: Assets/Perfabs/Enimes/Blue.prefab
+            path: Assets/Perfabs/Arena.prefab
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Arena.prefab
+            projectPath: Assets/Perfabs/Arena.prefab
             originalPath: 
-            indexStatus: 3
-            workTreeStatus: 0
-        - path: Assets/Perfabs/Enimes/Red.prefab
-          label: Red.prefab
-          level: 3
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 1
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets/Perfabs/Enimes/Red.prefab
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Enimes/Red.prefab
-            projectPath: Assets/Perfabs/Enimes/Red.prefab
-            originalPath: 
-            indexStatus: 3
+            indexStatus: 4
             workTreeStatus: 0
         - path: Assets/Perfabs/Player.prefab
           label: Player.prefab
@@ -631,7 +759,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -667,7 +795,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -685,7 +813,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -703,7 +831,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -729,7 +857,7 @@ MonoBehaviour:
             projectPath: Assets/Scripts/Player/Movement/PlayerController.cs
             originalPath: 
             indexStatus: 3
-            workTreeStatus: 0
+            workTreeStatus: 3
         - path: Assets/Tests
           label: Tests
           level: 1
@@ -739,86 +867,14 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode
-          label: TestsEditMode
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player
-          label: Player
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player/Health
-          label: Health
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
-          label: TestsPlayerHealthModel.cs
-          level: 5
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
           checkState: 1
           isLocked: 0
           gitStatusEntry:
-            path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
-            projectPath: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
+            path: 
+            fullPath: 
+            projectPath: 
             originalPath: 
-            indexStatus: 3
+            indexStatus: 0
             workTreeStatus: 0
         - path: Assets/Tests/TestsPlayMode
           label: TestsPlayMode
@@ -829,7 +885,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -847,7 +903,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -874,24 +930,6 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 3
             workTreeStatus: 3
-        - path: ProjectSettings/EditorBuildSettings.asset
-          label: EditorBuildSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings/EditorBuildSettings.asset
-            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/ProjectSettings/EditorBuildSettings.asset
-            projectPath: ProjectSettings/EditorBuildSettings.asset
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 3
       folders:
         keys:
         - .idea
@@ -899,18 +937,13 @@ MonoBehaviour:
         - .idea/.idea.3D_Arena_Project/.idea
         - Assets
         - Assets/Perfabs
-        - Assets/Perfabs/Enimes
         - Assets/Scenes
         - Assets/Scripts
         - Assets/Scripts/Player
         - Assets/Scripts/Player/Movement
         - Assets/Tests
-        - Assets/Tests/TestsEditMode
-        - Assets/Tests/TestsEditMode/Player
-        - Assets/Tests/TestsEditMode/Player/Health
         - Assets/Tests/TestsPlayMode
         - Assets/Tests/TestsPlayMode/Movement
-        - ProjectSettings
         - UserSettings
         - UserSettings/Layouts
         values:
@@ -923,7 +956,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -941,7 +974,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -959,7 +992,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -977,7 +1010,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -995,25 +1028,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Perfabs/Enimes
-          label: Enimes
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1031,7 +1046,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1049,7 +1064,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1067,7 +1082,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1085,7 +1100,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1103,61 +1118,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode
-          label: TestsEditMode
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player
-          label: Player
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets/Tests/TestsEditMode/Player/Health
-          label: Health
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1175,7 +1136,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1193,25 +1154,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: ProjectSettings
-          label: ProjectSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1229,7 +1172,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1247,7 +1190,7 @@ MonoBehaviour:
           isHidden: 0
           isActive: 0
           treeIsCheckable: 1
-          checkState: 0
+          checkState: 1
           isLocked: 0
           gitStatusEntry:
             path: 
@@ -1257,8 +1200,27 @@ MonoBehaviour:
             indexStatus: 0
             workTreeStatus: 0
       checkedFileNodes:
-        keys: []
-        values: []
+        keys:
+        - .idea/.idea.3D_Arena_Project/.idea/workspace.xml
+        values:
+        - path: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
+          label: workspace.xml
+          level: 3
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 1
+          isLocked: 0
+          gitStatusEntry:
+            path: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
+            fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/.idea/.idea.3D_Arena_Project/.idea/workspace.xml
+            projectPath: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
+            originalPath: 
+            indexStatus: 3
+            workTreeStatus: 3
       title: 
       pathSeparator: /
       displayRootNode: 0
@@ -1275,7 +1237,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1293,7 +1255,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1311,7 +1273,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1329,7 +1291,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1365,7 +1327,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1373,6 +1335,330 @@ MonoBehaviour:
           projectPath: 
           originalPath: 
           indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215194590730520.unity
+        label: InitTestScene638215194590730520.unity
+        level: 1
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215194590730520.unity
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215194590730520.unity
+          projectPath: Assets/InitTestScene638215194590730520.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215194590730520.unity.meta
+        label: InitTestScene638215194590730520.unity.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215194590730520.unity.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215194590730520.unity.meta
+          projectPath: Assets/InitTestScene638215194590730520.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215774908543060.unity
+        label: InitTestScene638215774908543060.unity
+        level: 1
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215774908543060.unity
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215774908543060.unity
+          projectPath: Assets/InitTestScene638215774908543060.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 5
+      - path: Assets/InitTestScene638215774908543060.unity.meta
+        label: InitTestScene638215774908543060.unity.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215774908543060.unity.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215774908543060.unity.meta
+          projectPath: Assets/InitTestScene638215774908543060.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 5
+      - path: Assets/InitTestScene638215785689077910.unity
+        label: InitTestScene638215785689077910.unity
+        level: 1
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215785689077910.unity
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215785689077910.unity
+          projectPath: Assets/InitTestScene638215785689077910.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 5
+      - path: Assets/InitTestScene638215785689077910.unity.meta
+        label: InitTestScene638215785689077910.unity.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215785689077910.unity.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215785689077910.unity.meta
+          projectPath: Assets/InitTestScene638215785689077910.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 5
+      - path: Assets/InitTestScene638215808213724070.unity
+        label: InitTestScene638215808213724070.unity
+        level: 1
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215808213724070.unity
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215808213724070.unity
+          projectPath: Assets/InitTestScene638215808213724070.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 5
+      - path: Assets/InitTestScene638215808213724070.unity.meta
+        label: InitTestScene638215808213724070.unity.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215808213724070.unity.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215808213724070.unity.meta
+          projectPath: Assets/InitTestScene638215808213724070.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 5
+      - path: Assets/InitTestScene638215808664724500.unity
+        label: InitTestScene638215808664724500.unity
+        level: 1
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215808664724500.unity
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215808664724500.unity
+          projectPath: Assets/InitTestScene638215808664724500.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215808664724500.unity.meta
+        label: InitTestScene638215808664724500.unity.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215808664724500.unity.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215808664724500.unity.meta
+          projectPath: Assets/InitTestScene638215808664724500.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215907977180570.unity
+        label: InitTestScene638215907977180570.unity
+        level: 1
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215907977180570.unity
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215907977180570.unity
+          projectPath: Assets/InitTestScene638215907977180570.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215907977180570.unity.meta
+        label: InitTestScene638215907977180570.unity.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215907977180570.unity.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215907977180570.unity.meta
+          projectPath: Assets/InitTestScene638215907977180570.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215909406078270.unity
+        label: InitTestScene638215909406078270.unity
+        level: 1
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215909406078270.unity
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215909406078270.unity
+          projectPath: Assets/InitTestScene638215909406078270.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215909406078270.unity.meta
+        label: InitTestScene638215909406078270.unity.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215909406078270.unity.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215909406078270.unity.meta
+          projectPath: Assets/InitTestScene638215909406078270.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215910433371470.unity
+        label: InitTestScene638215910433371470.unity
+        level: 1
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215910433371470.unity
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215910433371470.unity
+          projectPath: Assets/InitTestScene638215910433371470.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215910433371470.unity.meta
+        label: InitTestScene638215910433371470.unity.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215910433371470.unity.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215910433371470.unity.meta
+          projectPath: Assets/InitTestScene638215910433371470.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215910683212460.unity
+        label: InitTestScene638215910683212460.unity
+        level: 1
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215910683212460.unity
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215910683212460.unity
+          projectPath: Assets/InitTestScene638215910683212460.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets/InitTestScene638215910683212460.unity.meta
+        label: InitTestScene638215910683212460.unity.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 1
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/InitTestScene638215910683212460.unity.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215910683212460.unity.meta
+          projectPath: Assets/InitTestScene638215910683212460.unity.meta
+          originalPath: 
+          indexStatus: 4
           workTreeStatus: 0
       - path: Assets/Perfabs
         label: Perfabs
@@ -1383,7 +1669,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1392,26 +1678,26 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets/Perfabs/Enimes
-        label: Enimes
+      - path: Assets/Perfabs/Arena.prefab
+        label: Arena.prefab
         level: 2
-        isFolder: 1
-        isContainer: 0
+        isFolder: 0
+        isContainer: 1
         isCollapsed: 0
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
+          path: Assets/Perfabs/Arena.prefab
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Arena.prefab
+          projectPath: Assets/Perfabs/Arena.prefab
           originalPath: 
-          indexStatus: 0
+          indexStatus: 4
           workTreeStatus: 0
-      - path: Assets/Perfabs/Enimes/Blue.prefab
-        label: Blue.prefab
+      - path: Assets/Perfabs/Arena.prefab.meta
+        label: Arena.prefab.meta
         level: 3
         isFolder: 0
         isContainer: 0
@@ -1422,29 +1708,11 @@ MonoBehaviour:
         checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Perfabs/Enimes/Blue.prefab
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Enimes/Blue.prefab
-          projectPath: Assets/Perfabs/Enimes/Blue.prefab
+          path: Assets/Perfabs/Arena.prefab.meta
+          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Arena.prefab.meta
+          projectPath: Assets/Perfabs/Arena.prefab.meta
           originalPath: 
-          indexStatus: 3
-          workTreeStatus: 0
-      - path: Assets/Perfabs/Enimes/Red.prefab
-        label: Red.prefab
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 1
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets/Perfabs/Enimes/Red.prefab
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Enimes/Red.prefab
-          projectPath: Assets/Perfabs/Enimes/Red.prefab
-          originalPath: 
-          indexStatus: 3
+          indexStatus: 4
           workTreeStatus: 0
       - path: Assets/Perfabs/Player.prefab
         label: Player.prefab
@@ -1473,7 +1741,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1509,7 +1777,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1527,7 +1795,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1545,7 +1813,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1571,7 +1839,7 @@ MonoBehaviour:
           projectPath: Assets/Scripts/Player/Movement/PlayerController.cs
           originalPath: 
           indexStatus: 3
-          workTreeStatus: 0
+          workTreeStatus: 3
       - path: Assets/Tests
         label: Tests
         level: 1
@@ -1581,86 +1849,14 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode
-        label: TestsEditMode
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/Player
-        label: Player
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/Player/Health
-        label: Health
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
-        label: TestsPlayerHealthModel.cs
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
         checkState: 1
         isLocked: 0
         gitStatusEntry:
-          path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
-          projectPath: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
+          path: 
+          fullPath: 
+          projectPath: 
           originalPath: 
-          indexStatus: 3
+          indexStatus: 0
           workTreeStatus: 0
       - path: Assets/Tests/TestsPlayMode
         label: TestsPlayMode
@@ -1671,7 +1867,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1689,7 +1885,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1716,42 +1912,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 3
           workTreeStatus: 3
-      - path: ProjectSettings
-        label: ProjectSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: ProjectSettings/EditorBuildSettings.asset
-        label: EditorBuildSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings/EditorBuildSettings.asset
-          fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/ProjectSettings/EditorBuildSettings.asset
-          projectPath: ProjectSettings/EditorBuildSettings.asset
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       - path: UserSettings
         label: UserSettings
         level: 0
@@ -1761,7 +1921,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1779,7 +1939,7 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: 
@@ -1797,14 +1957,14 @@ MonoBehaviour:
         isHidden: 0
         isActive: 0
         treeIsCheckable: 1
-        checkState: 0
+        checkState: 1
         isLocked: 0
         gitStatusEntry:
           path: UserSettings/Layouts/default-2021.dwlt
           fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/UserSettings/Layouts/default-2021.dwlt
           projectPath: UserSettings/Layouts/default-2021.dwlt
           originalPath: 
-          indexStatus: 0
+          indexStatus: 3
           workTreeStatus: 3
       selectedNode:
         path: 
@@ -1832,17 +1992,125 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 3
       workTreeStatus: 3
-    - path: Assets/Perfabs/Enimes/Blue.prefab
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Enimes/Blue.prefab
-      projectPath: Assets/Perfabs/Enimes/Blue.prefab
+    - path: Assets/InitTestScene638215194590730520.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215194590730520.unity
+      projectPath: Assets/InitTestScene638215194590730520.unity
       originalPath: 
-      indexStatus: 3
+      indexStatus: 4
       workTreeStatus: 0
-    - path: Assets/Perfabs/Enimes/Red.prefab
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Enimes/Red.prefab
-      projectPath: Assets/Perfabs/Enimes/Red.prefab
+    - path: Assets/InitTestScene638215194590730520.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215194590730520.unity.meta
+      projectPath: Assets/InitTestScene638215194590730520.unity.meta
       originalPath: 
-      indexStatus: 3
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/InitTestScene638215774908543060.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215774908543060.unity
+      projectPath: Assets/InitTestScene638215774908543060.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 5
+    - path: Assets/InitTestScene638215774908543060.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215774908543060.unity.meta
+      projectPath: Assets/InitTestScene638215774908543060.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 5
+    - path: Assets/InitTestScene638215785689077910.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215785689077910.unity
+      projectPath: Assets/InitTestScene638215785689077910.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 5
+    - path: Assets/InitTestScene638215785689077910.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215785689077910.unity.meta
+      projectPath: Assets/InitTestScene638215785689077910.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 5
+    - path: Assets/InitTestScene638215808213724070.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215808213724070.unity
+      projectPath: Assets/InitTestScene638215808213724070.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 5
+    - path: Assets/InitTestScene638215808213724070.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215808213724070.unity.meta
+      projectPath: Assets/InitTestScene638215808213724070.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 5
+    - path: Assets/InitTestScene638215808664724500.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215808664724500.unity
+      projectPath: Assets/InitTestScene638215808664724500.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/InitTestScene638215808664724500.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215808664724500.unity.meta
+      projectPath: Assets/InitTestScene638215808664724500.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/InitTestScene638215907977180570.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215907977180570.unity
+      projectPath: Assets/InitTestScene638215907977180570.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/InitTestScene638215907977180570.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215907977180570.unity.meta
+      projectPath: Assets/InitTestScene638215907977180570.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/InitTestScene638215909406078270.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215909406078270.unity
+      projectPath: Assets/InitTestScene638215909406078270.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/InitTestScene638215909406078270.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215909406078270.unity.meta
+      projectPath: Assets/InitTestScene638215909406078270.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/InitTestScene638215910433371470.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215910433371470.unity
+      projectPath: Assets/InitTestScene638215910433371470.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/InitTestScene638215910433371470.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215910433371470.unity.meta
+      projectPath: Assets/InitTestScene638215910433371470.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/InitTestScene638215910683212460.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215910683212460.unity
+      projectPath: Assets/InitTestScene638215910683212460.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/InitTestScene638215910683212460.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215910683212460.unity.meta
+      projectPath: Assets/InitTestScene638215910683212460.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Perfabs/Arena.prefab
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Arena.prefab
+      projectPath: Assets/Perfabs/Arena.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets/Perfabs/Arena.prefab.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Arena.prefab.meta
+      projectPath: Assets/Perfabs/Arena.prefab.meta
+      originalPath: 
+      indexStatus: 4
       workTreeStatus: 0
     - path: Assets/Perfabs/Player.prefab
       fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Player.prefab
@@ -1861,40 +2129,28 @@ MonoBehaviour:
       projectPath: Assets/Scripts/Player/Movement/PlayerController.cs
       originalPath: 
       indexStatus: 3
-      workTreeStatus: 0
-    - path: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
-      projectPath: Assets/Tests/TestsEditMode/Player/Health/TestsPlayerHealthModel.cs
-      originalPath: 
-      indexStatus: 3
-      workTreeStatus: 0
+      workTreeStatus: 3
     - path: Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs
       fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs
       projectPath: Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs
       originalPath: 
       indexStatus: 3
       workTreeStatus: 3
-    - path: ProjectSettings/EditorBuildSettings.asset
-      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/ProjectSettings/EditorBuildSettings.asset
-      projectPath: ProjectSettings/EditorBuildSettings.asset
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
     - path: UserSettings/Layouts/default-2021.dwlt
       fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/UserSettings/Layouts/default-2021.dwlt
       projectPath: UserSettings/Layouts/default-2021.dwlt
       originalPath: 
-      indexStatus: 0
+      indexStatus: 3
       workTreeStatus: 3
-    changedFilesText: 10 changed files
+    changedFilesText: 26 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-06-03T16:42:34.402+03:00
+      updatedTimeString: 2023-06-05T15:06:34.395+03:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-06-03T17:45:06.057+03:00
+      updatedTimeString: 2023-06-05T19:45:25.097+03:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2023-06-03T16:42:37.818+03:00
+      updatedTimeString: 2023-06-05T19:43:51.670+03:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -7307,18 +7563,90 @@ MonoBehaviour:
             email: 
           lockedAtString: 
         gitFileStatus: 0
-        lockedAt: 
+        lockedAt: 1 Jan 0001, 02:02
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2023-06-05T01:12:43.911+03:00
+      cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2023-06-05T01:12:46.266+03:00
+      cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 
-      cacheType: 0
+      updatedTimeString: 2023-06-05T01:12:43.920+03:00
+      cacheType: 6
     lockedFiles: []
-    gitStatusEntries: []
+    gitStatusEntries:
+    - path: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/.idea/.idea.3D_Arena_Project/.idea/workspace.xml
+      projectPath: .idea/.idea.3D_Arena_Project/.idea/workspace.xml
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/InitTestScene638215194590730520.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215194590730520.unity
+      projectPath: Assets/InitTestScene638215194590730520.unity
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/InitTestScene638215194590730520.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215194590730520.unity.meta
+      projectPath: Assets/InitTestScene638215194590730520.unity.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/InitTestScene638215242827461280.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215242827461280.unity
+      projectPath: Assets/InitTestScene638215242827461280.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 5
+    - path: Assets/InitTestScene638215242827461280.unity.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/InitTestScene638215242827461280.unity.meta
+      projectPath: Assets/InitTestScene638215242827461280.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 5
+    - path: Assets/Perfabs/Arena.prefab
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Arena.prefab
+      projectPath: Assets/Perfabs/Arena.prefab
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Perfabs/Arena.prefab.meta
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Arena.prefab.meta
+      projectPath: Assets/Perfabs/Arena.prefab.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Perfabs/Player.prefab
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Perfabs/Player.prefab
+      projectPath: Assets/Perfabs/Player.prefab
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/Scenes/SampleScene.unity
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scenes/SampleScene.unity
+      projectPath: Assets/Scenes/SampleScene.unity
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/Scripts/Player/Movement/PlayerController.cs
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Movement/PlayerController.cs
+      projectPath: Assets/Scripts/Player/Movement/PlayerController.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs
+      projectPath: Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: UserSettings/Layouts/default-2021.dwlt
+      fullPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/UserSettings/Layouts/default-2021.dwlt
+      projectPath: UserSettings/Layouts/default-2021.dwlt
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
     currentUsername: 
     unlockFileMenuContent:
       m_Text: Release Lock
@@ -7334,7 +7662,7 @@ MonoBehaviour:
   currentRemoteUrl: git@github.com:disiol/3D_Arena_Project.git
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 1
+  hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: main
@@ -7345,13 +7673,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-06-02T15:07:41.686+03:00
+    updatedTimeString: 2023-06-05T15:06:34.395+03:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-06-02T15:07:41.768+03:00
+    updatedTimeString: 2023-06-05T15:06:34.634+03:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-06-02T15:07:41.695+03:00
+    updatedTimeString: 2023-06-05T19:45:25.097+03:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -7371,8 +7699,8 @@ MonoBehaviour:
     m_Tooltip: 
   repositoryProgressValue: 0
   repositoryProgressMessage: 
-  appManagerProgressValue: 0.5
-  appManagerProgressMessage: Setting up git...
+  appManagerProgressValue: 1
+  appManagerProgressMessage: Initialized
   connections: []
   primaryConnectionUsername: 
 --- !u!114 &15
@@ -7397,30 +7725,30 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 119
-    width: 548
-    height: 393
+    width: 837
+    height: 394
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 551
-    splitterInitialOffset: 0
+    ID: 225
+    splitterInitialOffset: 305
     currentActiveSplitter: -1
     realSizes:
-    - 242
-    - 81
+    - 209
+    - 115
     relativeSizes:
-    - 0.75
-    - 0.25
+    - 0.6446281
+    - 0.3553719
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 323
+    lastTotalSize: 324
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -7437,7 +7765,7 @@ MonoBehaviour:
       name: 3D_Arena_Project
       fullName: 3D_Arena_Project
       resultStatus: 2
-      duration: 0.8208319
+      duration: 1.7091342
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -7453,7 +7781,7 @@ MonoBehaviour:
       name: TestsPlayMode.dll
       fullName: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Library/ScriptAssemblies/TestsPlayMode.dll
       resultStatus: 2
-      duration: 0.3321536
+      duration: 1.1155308
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -7469,7 +7797,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 2
-      duration: 0.2719477
+      duration: 1.0810012
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -7485,7 +7813,7 @@ MonoBehaviour:
       name: TestsPlayMode
       fullName: Tests.TestsPlayMode
       resultStatus: 2
-      duration: 0.2664329
+      duration: 1.0743673
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -7501,7 +7829,7 @@ MonoBehaviour:
       name: Movement
       fullName: Tests.TestsPlayMode.Movement
       resultStatus: 2
-      duration: 0.2609929
+      duration: 1.0684608
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -7517,7 +7845,7 @@ MonoBehaviour:
       name: PlayerControllerTests
       fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests
       resultStatus: 2
-      duration: 0.2537421
+      duration: 1.0612812
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -7533,9 +7861,27 @@ MonoBehaviour:
       name: Fire_Canceled_SetsIsAttackingToFalse
       fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests.Fire_Canceled_SetsIsAttackingToFalse
       resultStatus: 1
-      duration: 0.1627552
+      duration: 0.2013941
       messages: 
-      output: 
+      output: 'PlayerController OnLuk  before rotation rotation = (0.00000, 0.00000,
+        0.00000, 1.00000)
+
+        PlayerController OnLuk   rotation = (0.00000,
+        0.00000, 0.00000, 1.00000)
+
+        PlayerController OnLuk  before rotation
+        rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -7550,9 +7896,27 @@ MonoBehaviour:
       name: Fire_Started_SetsIsAttackingToTrue
       fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests.Fire_Started_SetsIsAttackingToTrue
       resultStatus: 1
-      duration: 0.0948443
+      duration: 0.0445165
       messages: 
-      output: 
+      output: 'PlayerController OnLuk  before rotation rotation = (0.00000, 0.00000,
+        0.00000, 1.00000)
+
+        PlayerController OnLuk   rotation = (0.00000,
+        0.00000, 0.00000, 1.00000)
+
+        PlayerController OnLuk  before rotation
+        rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -7567,9 +7931,27 @@ MonoBehaviour:
       name: IsAttacking_DefaultValue_IsFalse
       fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests.IsAttacking_DefaultValue_IsFalse
       resultStatus: 1
-      duration: 0.089328
+      duration: 0.0829596
       messages: 
-      output: 
+      output: 'PlayerController OnLuk  before rotation rotation = (0.00000, 0.00000,
+        0.00000, 1.00000)
+
+        PlayerController OnLuk   rotation = (0.00000,
+        0.00000, 0.00000, 1.00000)
+
+        PlayerController OnLuk  before rotation
+        rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -7579,63 +7961,66 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1016
       parentUniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests][suite]
-    - id: 1018
-      uniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/PlayerControllerTests/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests.Luk_Right_RotatesPlayerRight]
-      name: Luk_Right_RotatesPlayerRight
-      fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests.Luk_Right_RotatesPlayerRight
-      resultStatus: 2
-      duration: 0.1324165
-      messages: "  Expected: (0.00000, 0.03243, 0.00000, 0.99947)\n  But was:  (0.00000,
-        0.06729, 0.00000, 0.99773)\n"
-      output: 'PlayerController OnLuk _movementInput = (1.00, 0.00)
+    - id: 1002
+      uniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/PlayerControllerTests/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests.Move_Forward]
+      name: Move_Forward
+      fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests.Move_Forward
+      resultStatus: 1
+      duration: 0.1992587
+      messages: 
+      output: 'PlayerController OnLuk  before rotation rotation = (0.00000, 0.00000,
+        0.00000, 1.00000)
+
+        PlayerController OnLuk   rotation = (0.00000,
+        0.00000, 0.00000, 1.00000)
+
+        PlayerController OnLuk  before rotation
+        rotation = (0.00000, 0.00000, 0.00000, 1.00000)
 
         PlayerController
-        OnLuk _movementInput = (1.00, 0.00)
-
-        PlayerController OnLuk _movementInput
-        = (0.00, 0.00)
-
-'
-      stacktrace: 'at Tests.TestsPlayMode.Movement.PlayerControllerTests+<Luk_Right_RotatesPlayerRight>d__8.MoveNext
-        () [0x00186] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs:103
-
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
-        in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1016
-      parentUniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests][suite]
-    - id: 1002
-      uniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/PlayerControllerTests/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests.Move_Forward_Player_Forward]
-      name: Move_Forward_Player_Forward
-      fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests.Move_Forward_Player_Forward
-      resultStatus: 2
-      duration: 0.2254305
-      messages: "  Expected: (0.00, -0.06, 0.10)\n  But was:  (0.00, -0.14, 0.00)\n"
-      output: 'PlayerController OnMovement _movementInput = (0.00, 1.00)
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
 
         PlayerController
         OnMovement _movementInput = (0.00, 1.00)
 
         PlayerController OnMovement
-        _movementInput = (0.00, 0.00)
+        _movementInput = (0.00, 1.00)
+
+        PlayerController OnLuk  before rotation
+        rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnMovement _movementInput = (0.00, 0.00)
 
 '
-      stacktrace: 'at Tests.TestsPlayMode.Movement.PlayerControllerTests+<Move_Forward_Player_Forward>d__7.MoveNext
-        () [0x001a7] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs:70
-
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
-        in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -7649,11 +8034,24 @@ MonoBehaviour:
       name: MovePlayerToSafeLocation_SetsPlayerPositionToValidLocation
       fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests.MovePlayerToSafeLocation_SetsPlayerPositionToValidLocation
       resultStatus: 2
-      duration: 0.0727956
-      messages: "  Expected: greater than 5.0f\n  But was:  0.0392399989f\n"
-      output: 
-      stacktrace: 'at Tests.TestsPlayMode.Movement.PlayerControllerTests+<MovePlayerToSafeLocation_SetsPlayerPositionToValidLocation>d__12.MoveNext
-        () [0x001df] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs:188
+      duration: 0.0957402
+      messages: "  Expected: not equal to (0.00, 0.00, 0.00)\n  But was:  (0.00,
+        0.00, 0.00)\n"
+      output: 'PlayerController OnLuk  before rotation rotation = (0.00000, 0.00000,
+        0.00000, 1.00000)
+
+        PlayerController OnLuk   rotation = (0.00000,
+        0.00000, 0.00000, 1.00000)
+
+        PlayerController OnLuk  before rotation
+        rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+'
+      stacktrace: 'at Tests.TestsPlayMode.Movement.PlayerControllerTests+<MovePlayerToSafeLocation_SetsPlayerPositionToValidLocation>d__13.MoveNext
+        () [0x000f3] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs:223
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
@@ -7672,11 +8070,42 @@ MonoBehaviour:
       uniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/PlayerControllerTests/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests.PlayerMovesToSafeLocationWhenAtEdge]
       name: PlayerMovesToSafeLocationWhenAtEdge
       fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests.PlayerMovesToSafeLocationWhenAtEdge
-      resultStatus: 1
-      duration: 0.0841805
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 2
+      duration: 0.0856075
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 'PlayerController OnLuk  before rotation rotation = (0.00000, 0.00000,
+        0.00000, 1.00000)
+
+        PlayerController OnLuk   rotation = (0.00000,
+        0.00000, 0.00000, 1.00000)
+
+        PlayerController OnLuk  before rotation
+        rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+'
+      stacktrace: "  at Tests.TestsPlayMode.GetAccessToPrivate.GetPrivateFieldValue
+        (System.Type type, System.Object instance, System.String fieldName) [0x0000b]
+        in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/GetAccessToPrivate.cs:15
+        \n  at Tests.TestsPlayMode.Movement.PlayerControllerTests+<PlayerMovesToSafeLocationWhenAtEdge>d__14.MoveNext
+        () [0x0018d] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs:275
+        \n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -7685,25 +8114,339 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1016
       parentUniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests][suite]
-    m_ResultText: "Move_Forward_Player_Forward (0.225s)\n---\nExpected: (0.00, -0.06,
-      0.10)\n  But was:  (0.00, -0.14, 0.00)\n---\nat Tests.TestsPlayMode.Movement.PlayerControllerTests+<Move_Forward_Player_Forward>d__7.MoveNext
-      () [0x001a7] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs:70\nat
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e] in
-      /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46\n---\nPlayerController
-      OnMovement _movementInput = (0.00, 1.00)\nPlayerController OnMovement _movementInput
-      = (0.00, 1.00)\nPlayerController OnMovement _movementInput = (0.00, 0.00)"
-    m_ResultStacktrace: 'at Tests.TestsPlayMode.Movement.PlayerControllerTests+<Move_Forward_Player_Forward>d__7.MoveNext
-      () [0x001a7] in /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs:70
+    - id: 1004
+      uniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/PlayerControllerTests/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests.RotatesPlayerLeft]
+      name: RotatesPlayerLeft
+      fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests.RotatesPlayerLeft
+      resultStatus: 1
+      duration: 0.1523327
+      messages: 
+      output: 'PlayerController OnLuk  before rotation rotation = (0.00000, 0.00000,
+        0.00000, 1.00000)
 
-      at
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e] in
-      /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+        PlayerController OnLuk   rotation = (0.00000,
+        0.00000, 0.00000, 1.00000)
+
+        PlayerController OnLuk  before rotation
+        rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk _lukInput = (-1.00, 0.00)
+
+        PlayerController OnLuk _lukInput
+        = (-1.00, 0.00)
+
+        PlayerController OnLuk  before rotation rotation
+        = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController OnLuk  
+        rotation = (0.00000, -0.03020, 0.00000, 0.99954)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.03020, 0.00000, 0.99954)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.04422, 0.00000, 0.99902)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.04422, 0.00000, 0.99902)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.05647, 0.00000, 0.99840)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.05647, 0.00000, 0.99840)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.06765, 0.00000, 0.99771)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.06765, 0.00000, 0.99771)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.07868, 0.00000, 0.99690)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.07868, 0.00000, 0.99690)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.09022, 0.00000, 0.99592)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.09022, 0.00000, 0.99592)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.10138, 0.00000, 0.99485)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.10138, 0.00000, 0.99485)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.11270, 0.00000, 0.99363)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.11270, 0.00000, 0.99363)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.12457, 0.00000, 0.99221)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.12457, 0.00000, 0.99221)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.13529, 0.00000, 0.99081)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.13529, 0.00000, 0.99081)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.14628, 0.00000, 0.98924)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.14628, 0.00000, 0.98924)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.15713, 0.00000, 0.98758)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.15713, 0.00000, 0.98758)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.16789, 0.00000, 0.98581)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, -0.16789, 0.00000, 0.98581)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, -0.17853, 0.00000, 0.98393)
+
+        PlayerController
+        OnLuk _lukInput = (0.00, 0.00)
 
 '
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests][suite]
+    - id: 1003
+      uniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/PlayerControllerTests/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests.RotatesPlayerRight]
+      name: RotatesPlayerRight
+      fullName: Tests.TestsPlayMode.Movement.PlayerControllerTests.RotatesPlayerRight
+      resultStatus: 1
+      duration: 0.1526045
+      messages: 
+      output: 'PlayerController OnLuk  before rotation rotation = (0.00000, 0.00000,
+        0.00000, 1.00000)
+
+        PlayerController OnLuk   rotation = (0.00000,
+        0.00000, 0.00000, 1.00000)
+
+        PlayerController OnLuk  before rotation
+        rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController
+        OnLuk _lukInput = (1.00, 0.00)
+
+        PlayerController OnLuk _lukInput
+        = (1.00, 0.00)
+
+        PlayerController OnLuk  before rotation rotation
+        = (0.00000, 0.00000, 0.00000, 1.00000)
+
+        PlayerController OnLuk  
+        rotation = (0.00000, 0.04310, 0.00000, 0.99907)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.04310, 0.00000, 0.99907)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.05709, 0.00000, 0.99837)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.05709, 0.00000, 0.99837)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.07528, 0.00000, 0.99716)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.07528, 0.00000, 0.99716)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.08664, 0.00000, 0.99624)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.08664, 0.00000, 0.99624)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.09766, 0.00000, 0.99522)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.09766, 0.00000, 0.99522)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.10859, 0.00000, 0.99409)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.10859, 0.00000, 0.99409)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.11959, 0.00000, 0.99282)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.11959, 0.00000, 0.99282)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.13094, 0.00000, 0.99139)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.13094, 0.00000, 0.99139)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.14174, 0.00000, 0.98990)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.14174, 0.00000, 0.98990)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.15247, 0.00000, 0.98831)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.15247, 0.00000, 0.98831)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.16383, 0.00000, 0.98649)
+
+        PlayerController
+        OnLuk  before rotation rotation = (0.00000, 0.16383, 0.00000, 0.98649)
+
+        PlayerController
+        OnLuk   rotation = (0.00000, 0.17478, 0.00000, 0.98461)
+
+        PlayerController
+        OnLuk _lukInput = (0.00, 0.00)
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: TestsPlayMode.dll/Tests/TestsPlayMode/Movement/[TestsPlayMode][Tests.TestsPlayMode.Movement.PlayerControllerTests][suite]
+    m_ResultText: 'RotatesPlayerRight (0.153s)
+
+      ---
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.00000, 0.00000, 1.00000)
+
+      PlayerController
+      OnLuk _lukInput = (1.00, 0.00)
+
+      PlayerController OnLuk _lukInput = (1.00,
+      0.00)
+
+      PlayerController OnLuk  before rotation rotation = (0.00000, 0.00000,
+      0.00000, 1.00000)
+
+      PlayerController OnLuk   rotation = (0.00000, 0.04310,
+      0.00000, 0.99907)
+
+      PlayerController OnLuk  before rotation rotation =
+      (0.00000, 0.04310, 0.00000, 0.99907)
+
+      PlayerController OnLuk   rotation
+      = (0.00000, 0.05709, 0.00000, 0.99837)
+
+      PlayerController OnLuk  before
+      rotation rotation = (0.00000, 0.05709, 0.00000, 0.99837)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.07528, 0.00000, 0.99716)
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.07528, 0.00000, 0.99716)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.08664, 0.00000, 0.99624)
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.08664, 0.00000, 0.99624)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.09766, 0.00000, 0.99522)
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.09766, 0.00000, 0.99522)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.10859, 0.00000, 0.99409)
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.10859, 0.00000, 0.99409)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.11959, 0.00000, 0.99282)
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.11959, 0.00000, 0.99282)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.13094, 0.00000, 0.99139)
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.13094, 0.00000, 0.99139)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.14174, 0.00000, 0.98990)
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.14174, 0.00000, 0.98990)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.15247, 0.00000, 0.98831)
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.15247, 0.00000, 0.98831)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.16383, 0.00000, 0.98649)
+
+      PlayerController
+      OnLuk  before rotation rotation = (0.00000, 0.16383, 0.00000, 0.98649)
+
+      PlayerController
+      OnLuk   rotation = (0.00000, 0.17478, 0.00000, 0.98461)
+
+      PlayerController
+      OnLuk _lukInput = (0.00, 0.00)'
+    m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 82192bd0
-      m_LastClickedID: -802481790
+      scrollPos: {x: 0, y: 19}
+      m_SelectedIDs: b865afde
+      m_LastClickedID: -558930504
       m_ExpandedIDs: 0810d98a813d128f7cdff5dcd4ffb1f315c0620f2e5c511fffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -7739,7 +8482,7 @@ MonoBehaviour:
       name: 3D_Arena_Project
       fullName: 3D_Arena_Project
       resultStatus: 1
-      duration: 0.3807685
+      duration: 0.3530721
       messages: 
       output: 
       stacktrace: 
@@ -7755,7 +8498,7 @@ MonoBehaviour:
       name: TestsEditMode.dll
       fullName: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Library/ScriptAssemblies/TestsEditMode.dll
       resultStatus: 1
-      duration: 0.2644054
+      duration: 0.2560211
       messages: 
       output: 
       stacktrace: 
@@ -7771,7 +8514,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.2634337
+      duration: 0.2550948
       messages: 
       output: 
       stacktrace: 
@@ -7787,7 +8530,7 @@ MonoBehaviour:
       name: TestsEditMode
       fullName: Tests.TestsEditMode
       resultStatus: 1
-      duration: 0.2598951
+      duration: 0.2510898
       messages: 
       output: 
       stacktrace: 
@@ -7803,7 +8546,7 @@ MonoBehaviour:
       name: Player
       fullName: Tests.TestsEditMode.Player
       resultStatus: 1
-      duration: 0.2562882
+      duration: 0.2423725
       messages: 
       output: 
       stacktrace: 
@@ -7819,7 +8562,7 @@ MonoBehaviour:
       name: Health
       fullName: Tests.TestsEditMode.Player.Health
       resultStatus: 1
-      duration: 0.1217581
+      duration: 0.1195133
       messages: 
       output: 
       stacktrace: 
@@ -7835,7 +8578,7 @@ MonoBehaviour:
       name: TestsPlayerHealthModel
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthModel
       resultStatus: 1
-      duration: 0.0518227
+      duration: 0.0531333
       messages: 
       output: 
       stacktrace: 
@@ -7851,7 +8594,7 @@ MonoBehaviour:
       name: Decrement_DecreaseHealthBelowMinHealth_ClampToMinHealth
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthModel.Decrement_DecreaseHealthBelowMinHealth_ClampToMinHealth
       resultStatus: 1
-      duration: 0.0263619
+      duration: 0.0270219
       messages: 
       output: 
       stacktrace: 
@@ -7868,7 +8611,7 @@ MonoBehaviour:
       name: Decrement_DecreaseHealthWithinBounds
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthModel.Decrement_DecreaseHealthWithinBounds
       resultStatus: 1
-      duration: 0.0005565
+      duration: 0.0005893
       messages: 
       output: 
       stacktrace: 
@@ -7885,7 +8628,7 @@ MonoBehaviour:
       name: Increment_IncreaseHealthAboveMaxHealth_ClampToMaxHealth
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthModel.Increment_IncreaseHealthAboveMaxHealth_ClampToMaxHealth
       resultStatus: 1
-      duration: 0.0006181
+      duration: 0.0006253
       messages: 
       output: 
       stacktrace: 
@@ -7902,7 +8645,7 @@ MonoBehaviour:
       name: Increment_IncreaseHealthWithinBounds
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthModel.Increment_IncreaseHealthWithinBounds
       resultStatus: 1
-      duration: 0.000516
+      duration: 0.0005753
       messages: 
       output: 
       stacktrace: 
@@ -7919,7 +8662,7 @@ MonoBehaviour:
       name: Restore_SetHealthToMaxHealth
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthModel.Restore_SetHealthToMaxHealth
       resultStatus: 1
-      duration: 0.0005934
+      duration: 0.0006055
       messages: 
       output: 
       stacktrace: 
@@ -7936,7 +8679,7 @@ MonoBehaviour:
       name: TestsPlayerHealthPresenter
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthPresenter
       resultStatus: 1
-      duration: 0.0642348
+      duration: 0.0565104
       messages: 
       output: 
       stacktrace: 
@@ -7952,7 +8695,7 @@ MonoBehaviour:
       name: Damage_ReducesHealth
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthPresenter.Damage_ReducesHealth
       resultStatus: 1
-      duration: 0.0051817
+      duration: 0.0071558
       messages: 
       output: 
       stacktrace: 
@@ -7969,7 +8712,7 @@ MonoBehaviour:
       name: Heal_IncreasesHealth
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthPresenter.Heal_IncreasesHealth
       resultStatus: 1
-      duration: 0.0011596
+      duration: 0.0012266
       messages: 
       output: 
       stacktrace: 
@@ -7986,7 +8729,7 @@ MonoBehaviour:
       name: Reset_RestoresHealth
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthPresenter.Reset_RestoresHealth
       resultStatus: 1
-      duration: 0.0010169
+      duration: 0.0010681
       messages: 
       output: 
       stacktrace: 
@@ -8003,7 +8746,7 @@ MonoBehaviour:
       name: UpdateView_UpdatesHealthSliderAndText
       fullName: Tests.TestsEditMode.Player.Health.TestsPlayerHealthPresenter.UpdateView_UpdatesHealthSliderAndText
       resultStatus: 1
-      duration: 0.002168
+      duration: 0.0020855
       messages: 
       output: 
       stacktrace: 
@@ -8020,7 +8763,7 @@ MonoBehaviour:
       name: Points
       fullName: Tests.TestsEditMode.Player.Points
       resultStatus: 1
-      duration: 0.0616445
+      duration: 0.061477
       messages: 
       output: 
       stacktrace: 
@@ -8036,7 +8779,7 @@ MonoBehaviour:
       name: PlayerPointsModelTests
       fullName: Tests.TestsEditMode.Player.Points.PlayerPointsModelTests
       resultStatus: 1
-      duration: 0.0143374
+      duration: 0.0148902
       messages: 
       output: 
       stacktrace: 
@@ -8052,7 +8795,7 @@ MonoBehaviour:
       name: PointsPlus_AddsAmountToPoints
       fullName: Tests.TestsEditMode.Player.Points.PlayerPointsModelTests.PointsPlus_AddsAmountToPoints
       resultStatus: 1
-      duration: 0.0015428
+      duration: 0.0019601
       messages: 
       output: 
       stacktrace: 
@@ -8069,7 +8812,7 @@ MonoBehaviour:
       name: ResetPoints_SetsPointsToZero
       fullName: Tests.TestsEditMode.Player.Points.PlayerPointsModelTests.ResetPoints_SetsPointsToZero
       resultStatus: 1
-      duration: 0.0005664
+      duration: 0.0005726
       messages: 
       output: 
       stacktrace: 
@@ -8086,7 +8829,7 @@ MonoBehaviour:
       name: PlayerPointsPresenterTests
       fullName: Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests
       resultStatus: 1
-      duration: 0.0212499
+      duration: 0.0207908
       messages: 
       output: 
       stacktrace: 
@@ -8102,7 +8845,7 @@ MonoBehaviour:
       name: PointsPlus_IncrementsPointsModel
       fullName: Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests.PointsPlus_IncrementsPointsModel
       resultStatus: 1
-      duration: 0.001656
+      duration: 0.0019139
       messages: 
       output: 
       stacktrace: 
@@ -8119,7 +8862,7 @@ MonoBehaviour:
       name: Reset_ResetsPointsModel
       fullName: Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests.Reset_ResetsPointsModel
       resultStatus: 1
-      duration: 0.0008766
+      duration: 0.0009386
       messages: 
       output: 
       stacktrace: 
@@ -8136,7 +8879,7 @@ MonoBehaviour:
       name: UpdateView_UpdatesPointsText
       fullName: Tests.TestsEditMode.Player.Points.PlayerPointsPresenterTests.UpdateView_UpdatesPointsText
       resultStatus: 1
-      duration: 0.0011518
+      duration: 0.0011253
       messages: 
       output: 
       stacktrace: 
@@ -8153,7 +8896,7 @@ MonoBehaviour:
       name: Ulta
       fullName: Tests.TestsEditMode.Player.Ulta
       resultStatus: 1
-      duration: 0.0684572
+      duration: 0.0525429
       messages: 
       output: 
       stacktrace: 
@@ -8169,7 +8912,7 @@ MonoBehaviour:
       name: PlayerUltaModelTests
       fullName: Tests.TestsEditMode.Player.Ulta.PlayerUltaModelTests
       resultStatus: 1
-      duration: 0.009939
+      duration: 0.0105183
       messages: 
       output: 
       stacktrace: 
@@ -8185,7 +8928,7 @@ MonoBehaviour:
       name: Increment_IncreasePowerAboveMaxClampsToMax
       fullName: Tests.TestsEditMode.Player.Ulta.PlayerUltaModelTests.Increment_IncreasePowerAboveMaxClampsToMax
       resultStatus: 1
-      duration: 0.0012249
+      duration: 0.0015395
       messages: 
       output: 
       stacktrace: 
@@ -8202,7 +8945,7 @@ MonoBehaviour:
       name: Increment_IncreasePowerWithinRange
       fullName: Tests.TestsEditMode.Player.Ulta.PlayerUltaModelTests.Increment_IncreasePowerWithinRange
       resultStatus: 1
-      duration: 0.0004788
+      duration: 0.0005145
       messages: 
       output: 
       stacktrace: 
@@ -8219,7 +8962,7 @@ MonoBehaviour:
       name: ResetPower_SetCurrentPowerToMin
       fullName: Tests.TestsEditMode.Player.Ulta.PlayerUltaModelTests.ResetPower_SetCurrentPowerToMin
       resultStatus: 1
-      duration: 0.0040397
+      duration: 0.0042684
       messages: 
       output: 
       stacktrace: 
@@ -8236,7 +8979,7 @@ MonoBehaviour:
       name: PlayerUltaPresenterTests
       fullName: Tests.TestsEditMode.Player.Ulta.PlayerUltaPresenterTests
       resultStatus: 1
-      duration: 0.0423679
+      duration: 0.0253313
       messages: 
       output: 
       stacktrace: 
@@ -8252,7 +8995,7 @@ MonoBehaviour:
       name: PowerPlas_IncrementsPowerInModel
       fullName: Tests.TestsEditMode.Player.Ulta.PlayerUltaPresenterTests.PowerPlas_IncrementsPowerInModel
       resultStatus: 1
-      duration: 0.0018554
+      duration: 0.0020906
       messages: 
       output: 
       stacktrace: 
@@ -8269,7 +9012,7 @@ MonoBehaviour:
       name: Reset_ResetsPowerInModel
       fullName: Tests.TestsEditMode.Player.Ulta.PlayerUltaPresenterTests.Reset_ResetsPowerInModel
       resultStatus: 1
-      duration: 0.0010041
+      duration: 0.0010845
       messages: 
       output: 
       stacktrace: 
@@ -8286,7 +9029,7 @@ MonoBehaviour:
       name: UpdateView_SetsUltaButtonActiveWhenPowerIsMax
       fullName: Tests.TestsEditMode.Player.Ulta.PlayerUltaPresenterTests.UpdateView_SetsUltaButtonActiveWhenPowerIsMax
       resultStatus: 1
-      duration: 0.0020041
+      duration: 0.00226
       messages: 
       output: 
       stacktrace: 
@@ -8303,7 +9046,7 @@ MonoBehaviour:
       name: UpdateView_SetsUltaButtonInactiveWhenPowerIsNotMax
       fullName: Tests.TestsEditMode.Player.Ulta.PlayerUltaPresenterTests.UpdateView_SetsUltaButtonInactiveWhenPowerIsNotMax
       resultStatus: 1
-      duration: 0.0013634
+      duration: 0.0014573
       messages: 
       output: 
       stacktrace: 
@@ -8320,7 +9063,7 @@ MonoBehaviour:
       name: UpdateView_UpdatesSliderAndText
       fullName: Tests.TestsEditMode.Player.Ulta.PlayerUltaPresenterTests.UpdateView_UpdatesSliderAndText
       resultStatus: 1
-      duration: 0.0011869
+      duration: 0.001148
       messages: 
       output: 
       stacktrace: 
@@ -8332,10 +9075,10 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1005
       parentUniqueId: TestsEditMode.dll/Tests/TestsEditMode/Player/Ulta/[TestsEditMode][Tests.TestsEditMode.Player.Ulta.PlayerUltaPresenterTests][suite]
-    m_ResultText: 3D_Arena_Project (0.381s)
+    m_ResultText: 3D_Arena_Project (0.353s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 356}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 15c0620f
       m_LastClickedID: 258129941
       m_ExpandedIDs: 24d3a698674e86aef4cbd8bdd666e2ff8df6c802ba684d0a4094870e15c0620f3eeb8716dca0c32453c5d5485195b1521711105a6fd6a569ffffff7f
@@ -8384,9 +9127,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 549
+    x: 838
     y: 119
-    width: 174
+    width: 235
     height: 740
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -8396,9 +9139,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6aa20000
+      m_SelectedIDs: 2e6b0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 9ab5ffff
+      m_ExpandedIDs: 5080ffff8e80ffffe482ffff5084ffff8e84ffffe486ffffe888ffff2689ffff768affff2e8cffff6c8cffffa08effffcc8fffff189d0000329d00005e9d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -8442,9 +9185,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1130
+    x: 1208
     y: 119
-    width: 469
+    width: 391
     height: 740
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -8484,9 +9227,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 725
+    x: 1075
     y: 119
-    width: 403
+    width: 131
     height: 740
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -8506,22 +9249,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/StarterAssets/Environment/Art/Materials
+    - Assets/Perfabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/StarterAssets/Environment/Art/Materials
+  - Assets/Perfabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 70c60000
-    m_LastClickedID: 50800
-    m_ExpandedIDs: 00000000d2c50000d4c50000d6c50000d8c50000dac50000dcc50000dec50000e0c50000e2c50000e4c50000e6c50000e8c50000eac50000ecc5000000ca9a3b
+    m_SelectedIDs: e06d0000
+    m_LastClickedID: 28128
+    m_ExpandedIDs: 00000000d26d0000d46d0000d66d0000d86d0000da6d0000dc6d0000de6d0000e06d0000e26d0000e46d0000e66d0000e86d0000ea6d0000ec6d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -8549,7 +9292,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d2c50000d4c50000d6c50000d8c50000dac50000dcc50000dec50000e0c50000e2c50000e4c50000e6c50000e8c50000eac50000ecc50000
+    m_ExpandedIDs: 00000000d26d0000d46d0000d66d0000d86d0000da6d0000dc6d0000de6d0000e06d0000e26d0000e46d0000e66d0000e86d0000ea6d0000ec6d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -8604,7 +9347,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 197
+  m_DirectoriesAreaWidth: 50
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -8626,9 +9369,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 529
-    width: 548
-    height: 330
+    y: 534
+    width: 837
+    height: 325
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -8640,7 +9383,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 548, y: 309}
+  m_TargetSize: {x: 800, y: 480}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -8649,16 +9392,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000002000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -274
-    m_HBaseRangeMax: 274
-    m_VBaseRangeMin: -154.5
-    m_VBaseRangeMax: 154.5
+    m_HBaseRangeMin: -400
+    m_HBaseRangeMax: 400
+    m_VBaseRangeMin: -240
+    m_VBaseRangeMax: 240
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -8676,26 +9419,26 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 548
-      height: 309
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 274, y: 154.5}
+      width: 837
+      height: 304
+    m_Scale: {x: 0.6333333, y: 0.6333333}
+    m_Translation: {x: 418.5, y: 152}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -274
-      y: -154.5
-      width: 548
-      height: 309
+      x: -660.7895
+      y: -240
+      width: 1321.579
+      height: 480
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 548, y: 330}
+  m_defaultScale: 0.6333333
+  m_LastWindowPixelSize: {x: 837, y: 325}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_LowResolutionForAspectRatios: 01000001000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 --- !u!114 &20
@@ -8720,8 +9463,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 119
-    width: 548
-    height: 393
+    width: 870
+    height: 363
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -8968,9 +9711,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.6672567, y: 2.0208836, z: -2.2627256}
+    m_Target: {x: 1.01, y: 0.14199999, z: -1.72}
     speed: 2
-    m_Value: {x: 270.5, y: 151.6875, z: 0}
+    m_Value: {x: 1.01, y: 0.14199999, z: -1.72}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -8991,9 +9734,9 @@ MonoBehaviour:
   m_Grid:
     xGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -9007,23 +9750,23 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.4033175
+    m_Target: 0.18371177
     speed: 2
-    m_Value: 319.065
+    m_Value: 0.18371177
   m_Ortho:
     m_Target: 1
     speed: 2
