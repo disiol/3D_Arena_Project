@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596f741e-7d16-44fc-bb2c-f77153c7d656" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Perfabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Perfabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +28,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/641e30bacc0444688e6c5f619fdd19b4158400/01/f449e474/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69c8939e7e5942c39b585957244f444f3a00/82/00bb0e40/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/2c/11eaa80f/ObjectPool`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/51/5208a383/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/c9/bf86666b/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/cf/51469b3b/CustomYieldInstruction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/e7/ff3d8037/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
@@ -30,7 +39,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerActionsMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Scripts/Player/Movement/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/HeadBob.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.1/InputSystem/Actions/InputAction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.1/InputSystem/Actions/InputActionMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.1/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
@@ -104,10 +113,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21971">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="21971" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -150,7 +159,9 @@
       <workItem from="1685701827025" duration="3448000" />
       <workItem from="1685803485069" duration="7263000" />
       <workItem from="1685909353508" duration="7955000" />
-      <workItem from="1685966777032" duration="8777000" />
+      <workItem from="1685966777032" duration="10841000" />
+      <workItem from="1686044077052" duration="7773000" />
+      <workItem from="1686056092659" duration="5310000" />
     </task>
     <servers />
   </component>
@@ -181,42 +192,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs</url>
-          <line>408</line>
+          <line>409</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" initialLine="175" containingFunctionPresentation="Method 'PlayerMovesToSafeLocationWhenAtEdge'">
             <startOffsets>
-              <option value="13683" />
+              <option value="13718" />
             </startOffsets>
             <endOffsets>
-              <option value="13714" />
+              <option value="13749" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs</url>
-          <line>79</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" initialLine="79" containingFunctionPresentation="Method 'OnLuk'">
+          <line>43</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" initialLine="43" containingFunctionPresentation="Method 'Start'">
             <startOffsets>
-              <option value="2350" />
+              <option value="1406" />
             </startOffsets>
             <endOffsets>
-              <option value="2380" />
+              <option value="1482" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs</url>
-          <line>80</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" initialLine="80" containingFunctionPresentation="Method 'OnLuk'">
-            <startOffsets>
-              <option value="2393" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2463" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -227,8 +225,9 @@
         <watch expression="maxHealth" />
         <watch expression="_movementInput" />
         <watch expression="_lukInput" />
+        <watch expression="_playerCameraController" />
       </configuration>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" line="92">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" line="100">
         <watch expression="direction" />
       </inline-watch>
     </watches-manager>
