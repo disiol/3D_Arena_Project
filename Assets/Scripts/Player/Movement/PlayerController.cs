@@ -27,7 +27,6 @@ namespace Player.Movement
 
         private PlayerActionsMap _playerActionsMap;
         private Rigidbody _rigidbody;
-        private PlayerCameraController _playerCameraController;
 
         private void Start()
         {
@@ -41,7 +40,6 @@ namespace Player.Movement
             _playerActionsMap.Enable();
 
             _rigidbody = gameObject.GetComponent<Rigidbody>();
-            _playerCameraController = gameObject.GetComponent<PlayerCameraController>();
         }
 
         private void OnDisable()
@@ -87,7 +85,7 @@ namespace Player.Movement
            
             transform.Rotate(Vector3.up * lukInputX * turnSpeed * Time.deltaTime);
            
-            _playerCameraController.LukInput = _lukInput;
+           // _playerCameraController.LukInput = _lukInput;
             Debug.Log("PlayerController OnLuk   rotation = "+ transform.rotation);
 
         }
@@ -96,13 +94,11 @@ namespace Player.Movement
 
         private void Movement()
         {
-            // Debug.Log("PlayerController Movement  before movement transform = "+ transform.position);
 
             Vector3 direction = new Vector3(_movementInput.x, 0, _movementInput.y).normalized;
 
             _rigidbody.MovePosition(transform.position +
                                     transform.TransformDirection(direction) * movementSpeed * Time.fixedDeltaTime);
-            // Debug.Log("PlayerController Movement transform = "+ transform.position);
         }
 
         public void OnMovement(InputAction.CallbackContext context)

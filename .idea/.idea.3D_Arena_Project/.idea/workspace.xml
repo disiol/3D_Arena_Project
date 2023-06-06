@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596f741e-7d16-44fc-bb2c-f77153c7d656" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/projectSettingsUpdater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Perfabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Perfabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Movement/PlayerControllerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +153,7 @@
       <workItem from="1685909353508" duration="7955000" />
       <workItem from="1685966777032" duration="10841000" />
       <workItem from="1686044077052" duration="7773000" />
-      <workItem from="1686056092659" duration="5310000" />
+      <workItem from="1686056092659" duration="6901000" />
     </task>
     <servers />
   </component>
@@ -215,6 +207,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCameraController.cs</url>
+          <line>39</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCameraController.cs" initialLine="39" containingFunctionPresentation="Method 'LateUpdate'">
+            <startOffsets>
+              <option value="1146" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1206" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCameraController.cs</url>
+          <line>40</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCameraController.cs" initialLine="40" containingFunctionPresentation="Method 'LateUpdate'">
+            <startOffsets>
+              <option value="1219" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1283" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
