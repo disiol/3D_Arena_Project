@@ -6,6 +6,7 @@ using UnityEngine.TestTools;
 using NUnit.Framework;
 using Player.Movement;
 using UnityEngine.InputSystem;
+using Camera = UnityEngine.Camera;
 using Object = UnityEngine.Object;
 
 namespace Tests.TestsPlayMode.Movement

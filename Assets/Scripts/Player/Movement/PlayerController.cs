@@ -1,16 +1,20 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Player.Movement
 {
     public class PlayerController : MonoBehaviour
     {
+        [Header("Player")]
         [SerializeField] private float movementSpeed = 2f;
         [SerializeField] private float turnSpeed = 200f;
-        [SerializeField] private GameObject projectilePrefab;
-        [SerializeField] private float projectileForce = 10f;
+        
+        [Header("Bullet")]
+        [SerializeField] private GameObject bulletPrefab;
+        [SerializeField] private float bulletForce = 10f;
 
 
         private Rigidbody _rb;
@@ -23,6 +27,7 @@ namespace Player.Movement
 
         private PlayerActionsMap _playerActionsMap;
         private Rigidbody _rigidbody;
+        private PlayerCameraController _playerCameraController;
 
         private void Start()
         {
@@ -36,6 +41,7 @@ namespace Player.Movement
             _playerActionsMap.Enable();
 
             _rigidbody = gameObject.GetComponent<Rigidbody>();
+            _playerCameraController = gameObject.GetComponent<PlayerCameraController>();
         }
 
         private void OnDisable()
@@ -76,12 +82,14 @@ namespace Player.Movement
         private void OnLuk()
         {
             Debug.Log("PlayerController OnLuk  before rotation rotation = "+ transform.rotation);
-
             float lukInputX = _lukInput.x;
+           
+           
             transform.Rotate(Vector3.up * lukInputX * turnSpeed * Time.deltaTime);
+           
+            _playerCameraController.LukInput = _lukInput;
             Debug.Log("PlayerController OnLuk   rotation = "+ transform.rotation);
 
-            
         }
 
        
@@ -125,9 +133,9 @@ namespace Player.Movement
 
         private void LaunchProjectile()
         {
-            GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+            GameObject projectile = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             Rigidbody rb = projectile.GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * projectileForce, ForceMode.Impulse);
+            rb.AddForce(transform.forward * bulletForce, ForceMode.Impulse);
         }
 
         private bool IsAtEdge()

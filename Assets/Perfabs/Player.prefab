@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2756400313700680782}
   - component: {fileID: 183377203642606174}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: PlayerCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4085636806962466539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -1.6}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 8361523090125356568}
   - component: {fileID: 8361523090125356647}
   - component: {fileID: 365420888}
+  - component: {fileID: 4946324980924419965}
   - component: {fileID: 1362731462}
   m_Layer: 0
   m_Name: Player
@@ -136,7 +137,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8361523090125356646}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -199,8 +200,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 2
   turnSpeed: 200
-  projectilePrefab: {fileID: 688918793758728779, guid: 6e21c74019b2c6959aafa9d5f32f5e2f, type: 3}
-  projectileForce: 10
+  bulletPrefab: {fileID: 0}
+  bulletForce: 10
+--- !u!114 &4946324980924419965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8361523090125356646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787e84ab059600203b7f721aea73b2db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yAngleMin: 0
+  yAngleMax: 50
+  lookAt: {fileID: 8361523090125356570}
+  camTransform: {fileID: 6412515565362739614}
+  distanceX: 0
+  distanceY: 0
+  distanceZ: 0
 --- !u!54 &1362731462
 Rigidbody:
   m_ObjectHideFlags: 0
