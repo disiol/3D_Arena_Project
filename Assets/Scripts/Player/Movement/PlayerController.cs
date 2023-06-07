@@ -134,59 +134,6 @@ namespace Player.Movement
             rb.AddForce(transform.forward * bulletForce, ForceMode.Impulse);
         }
 
-        private bool IsAtEdge()
-        {
-            // Check if the player is close to the edge
-
-            //TODO
-            // if (platform != null)
-            // {
-            //     float distanceToEdge = Vector3.Distance(transform.position, platform.position);
-            //     return distanceToEdge <= edgeDistance;
-            // }
-
-            return false;
-        }
-
-        private void MovePlayerToSafeLocation()
-        {
-            //TODO
-            // Vector3 randomPosition = GetRandomPositionAwayFromEnemies();
-            // transform.position = randomPosition;
-        }
-
-        // private Vector3 GetRandomPositionAwayFromEnemies()
-        // {
-        //TODO
-        // Vector3 randomPosition = Vector3.zero;
-        // bool isPositionValid = false;
-        //
-        // while (!isPositionValid)
-        // {
-        //     // Generate a random position within the platform boundaries
-        //     var position = platform.position;
-        //     var localScale = platform.localScale;
-        //
-        //     float randomX = Random.Range(position.x - localScale.x / 2f, position.x + localScale.x / 2f);
-        //     float randomZ = Random.Range(position.z - localScale.z / 2f, position.z + localScale.z / 2f);
-        //     randomPosition = new Vector3(randomX, transform.position.y, randomZ);
-        //
-        //     // Check if the random position is far enough from all enemies
-        //     bool isPositionSafe = true;
-        //     foreach (Transform enemy in enemies)
-        //     {
-        //         float distanceToEnemy = Vector3.Distance(randomPosition, enemy.position);
-        //         if (distanceToEnemy <= enemyRadius)
-        //         {
-        //             isPositionSafe = false;
-        //             break;
-        //         }
-        //     }
-        //
-        //     isPositionValid = isPositionSafe;
-        // }
-        //
-        // return randomPosition;
-        // }
+      
     }
 }

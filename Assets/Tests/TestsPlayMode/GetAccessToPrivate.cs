@@ -1,5 +1,6 @@
 using System;
 using System.Reflection;
+using Tolls;
 using UnityEngine;
 
 namespace Tests.TestsPlayMode
@@ -41,10 +42,32 @@ namespace Tests.TestsPlayMode
             }
         }
 
-        public void GetPrivateMethod(Type type,  string name)
+        public void SetPrivateFieldValue(Type type, object instance, string name, GameObject value)
+        {
+            FieldInfo fieldInfo = type.GetField(name, BindingFlags.NonPublic | BindingFlags.Instance);
+
+            // Set the value of the private field
+            if (fieldInfo != null)
+            {
+                fieldInfo.SetValue(instance, value);
+            }
+        }
+
+        public void SetPrivateFieldValue(Type type, object instance, string name, float value)
+        {
+            FieldInfo fieldInfo = type.GetField(name, BindingFlags.NonPublic | BindingFlags.Instance);
+
+            // Set the value of the private field
+            if (fieldInfo != null)
+            {
+                fieldInfo.SetValue(instance, value);
+            }
+        }
+
+        public void GetPrivateMethod(Type type, string name)
         {
             // Get the private method "MyPrivateMethod"
-             type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
+            type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
         }
     }
 }
