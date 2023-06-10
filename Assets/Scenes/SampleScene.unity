@@ -1121,6 +1121,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 950348374706654754, guid: ebd8c60392c0d5fdd8f12a5094de7faf, type: 3}
   m_PrefabInstance: {fileID: 950348375020967976}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1009116118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5738136471344511342, guid: 24bf720ac665c91f19ca7e64077f10e3, type: 3}
+  m_PrefabInstance: {fileID: 1587757600}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1036530605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,6 +2313,11 @@ RectTransform:
   m_AnchoredPosition: {x: 309, y: 352.90002}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1657870665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1234485504437107415, guid: a11c6d7137cea2d5bba5dc84a5d7d067, type: 3}
+  m_PrefabInstance: {fileID: 439608541}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1682760532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2611,7 +2621,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformCollider: {fileID: 950348375020967981}
-  platformRadius: 1
+  platformRadius: 4
+  enemies:
+  - {fileID: 1657870665}
+  - {fileID: 1009116118}
 --- !u!1 &1892731816
 GameObject:
   m_ObjectHideFlags: 0
@@ -3395,7 +3408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boundaryPrefab: {fileID: 6496337429377591920, guid: 24ff5550e40785f248ef8cef24d8d90c, type: 3}
   spacing: 1
-  platformRadius: 5
+  platformRadius: 6
   centerPoint: {fileID: 1006040133}
 --- !u!64 &950348375020967981 stripped
 MeshCollider:

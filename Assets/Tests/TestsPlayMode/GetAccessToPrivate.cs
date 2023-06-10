@@ -19,6 +19,7 @@ namespace Tests.TestsPlayMode
             return privateFieldValue;
         }
 
+
         public void SetPrivateFieldValue(Type type, object instance, string name, Transform value)
         {
             // Get the private field by name
@@ -64,8 +65,30 @@ namespace Tests.TestsPlayMode
                 fieldInfo.SetValue(instance, value);
             }
         }
-        
+
         public void SetPrivateFieldValue(Type type, object instance, string name, GameObject[] value)
+        {
+            FieldInfo fieldInfo = type.GetField(name, BindingFlags.NonPublic | BindingFlags.Instance);
+
+            // Set the value of the private field
+            if (fieldInfo != null)
+            {
+                fieldInfo.SetValue(instance, value);
+            }
+        }
+
+        public void SetPrivateFieldValue(Type type, object instance, string name, BoxCollider value)
+        {
+            FieldInfo fieldInfo = type.GetField(name, BindingFlags.NonPublic | BindingFlags.Instance);
+
+            // Set the value of the private field
+            if (fieldInfo != null)
+            {
+                fieldInfo.SetValue(instance, value);
+            }
+        }
+        
+        public void SetPrivateFieldValue(Type type,  object instance, string name, Collider value)
         {
             FieldInfo fieldInfo = type.GetField(name, BindingFlags.NonPublic | BindingFlags.Instance);
 
@@ -81,15 +104,19 @@ namespace Tests.TestsPlayMode
             // Get the private method "MyPrivateMethod"
             type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
         }
-        
-        public void SetPrivateMethodVaule(Type type,object instance, string name,  object[] parameters)
-        {
-            // Use reflection to access the private method
-            MethodInfo method = type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
 
-            // Invoke the private method
-            method.Invoke(instance, parameters);
+        public object GetPrivateMethod(Type type, object instance, string name,object[] parameters)
+        {
+            // Get the private method "MyPrivateMethod"
+            type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
+
+            MethodInfo method = type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
+         
+            object invoke = method.Invoke(instance, parameters);
+
+            return invoke;
         }
+
 
        
     }
