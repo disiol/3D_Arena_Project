@@ -30,5 +30,7 @@ namespace Tolls
                 boundaryObject.transform.SetParent(transform);
             }
         }
+        
+   
     }
 }

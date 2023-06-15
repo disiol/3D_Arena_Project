@@ -21,7 +21,7 @@ namespace Tests.TestsPlayMode.Movement
         private Rigidbody _rigidbody;
 
         [SetUp]
-        public void Setup()
+        public override void Setup()
         {
             _playerObject = new GameObject("Player");
             var root = new GameObject();

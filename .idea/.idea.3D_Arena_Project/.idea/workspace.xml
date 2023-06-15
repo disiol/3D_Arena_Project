@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596f741e-7d16-44fc-bb2c-f77153c7d656" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Player/Movement/PlayerCollisionHandlerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Player/Movement/PlayerCollisionHandlerTests.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3D_Arena_Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Perfabs/Arena.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Perfabs/Arena.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Perfabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Perfabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCollisionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCollisionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tolls/PlatformBoundariesGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tolls/PlatformBoundariesGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/GetAccessToPrivate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/GetAccessToPrivate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Player/Movement/PlayerCollisionHandlerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Player/Movement/PlayerCollisionHandlerTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Player/Movement/PlayerControllerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestsPlayMode/Player/Movement/PlayerControllerTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +34,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/2c/11eaa80f/ObjectPool`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/39/066e1259/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/51/5208a383/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/55/fdb13a80/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/c9/bf86666b/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/cf/51469b3b/CustomYieldInstruction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/abea95e9303e4cb391fe50f331fbf34c159c00/e7/ff3d8037/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
@@ -44,10 +46,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health/Model/PlayerHealthModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Health/Presenter/PlayerHealthPresenter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerActionsMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/PlatformBoundariesTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/PlatformBoundariesTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Player/Movement/PlayerControllerTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/denis/IT/unity/TODO/retrostylegames/3D_Arena_Project/Assets/Tests/TestsPlayMode/Player/Movement/PlayerControllerTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.1/InputSystem/Actions/InputAction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.1/InputSystem/Actions/InputActionMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.5.1/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
@@ -124,10 +122,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="130672">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="130672" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -190,7 +188,17 @@
       <workItem from="1686303910130" duration="5000" />
       <workItem from="1686304004953" duration="21004000" />
       <workItem from="1686358026597" duration="1079000" />
-      <workItem from="1686390060073" duration="987000" />
+      <workItem from="1686390060073" duration="3892000" />
+      <workItem from="1686428532145" duration="5007000" />
+      <workItem from="1686437154368" duration="1077000" />
+      <workItem from="1686518352605" duration="12017000" />
+      <workItem from="1686656042375" duration="157000" />
+      <workItem from="1686748326109" duration="92000" />
+      <workItem from="1686749824798" duration="278000" />
+      <workItem from="1686755320893" duration="103000" />
+      <workItem from="1686755464249" duration="1321000" />
+      <workItem from="1686762372657" duration="632000" />
+      <workItem from="1686787389081" duration="531000" />
     </task>
     <servers />
   </component>
@@ -218,6 +226,58 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCollisionHandler.cs</url>
+          <line>15</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCollisionHandler.cs" initialLine="15" containingFunctionPresentation="Method 'OnCollisionEnter'">
+            <startOffsets>
+              <option value="416" />
+            </startOffsets>
+            <endOffsets>
+              <option value="461" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCollisionHandler.cs</url>
+          <line>16</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCollisionHandler.cs" initialLine="16" containingFunctionPresentation="Method 'OnCollisionEnter'">
+            <startOffsets>
+              <option value="474" />
+            </startOffsets>
+            <endOffsets>
+              <option value="475" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCollisionHandler.cs</url>
+          <line>17</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCollisionHandler.cs" initialLine="17" containingFunctionPresentation="Method 'OnCollisionEnter'">
+            <startOffsets>
+              <option value="492" />
+            </startOffsets>
+            <endOffsets>
+              <option value="552" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCollisionHandler.cs</url>
+          <line>18</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Movement/PlayerCollisionHandler.cs" initialLine="18" containingFunctionPresentation="Method 'OnCollisionEnter'">
+            <startOffsets>
+              <option value="569" />
+            </startOffsets>
+            <endOffsets>
+              <option value="605" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

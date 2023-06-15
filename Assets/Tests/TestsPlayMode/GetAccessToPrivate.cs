@@ -102,22 +102,19 @@ namespace Tests.TestsPlayMode
         public void GetPrivateMethod(Type type, string name)
         {
             // Get the private method "MyPrivateMethod"
-            type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
+            var methodInfo = type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
         }
 
-        public object GetPrivateMethod(Type type, object instance, string name,object[] parameters)
+        public void GetPrivateMethod(Type type, object instance, string name,object[] parameters)
         {
             // Get the private method "MyPrivateMethod"
-            type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
-
-            MethodInfo method = type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
-         
-            object invoke = method.Invoke(instance, parameters);
-
-            return invoke;
+            MethodInfo methodInfo = type.GetMethod(name, BindingFlags.NonPublic | BindingFlags.Instance);
+            methodInfo.Invoke(instance, parameters);
         }
 
 
        
     }
+
+    
 }

@@ -1,4 +1,9 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Numerics;
+using System.Reflection;
 using Moq;
 using Player.Movement;
 
@@ -12,62 +17,67 @@ namespace Tests.TestsPlayMode.Player.Movement
     {
         private readonly GetAccessToPrivate _getAccessToPrivate = new GetAccessToPrivate();
 
+
         [UnityTest]
-        public IEnumerator OnCollisionEnter_WhenCollidedWithTagLimit_ShouldSetRandomPosition()
+        public IEnumerator OnCollisionEnter_CollisionWithTagLimit_ShouldMovePlayerToRandomPositionAwayFromEnemies()
         {
             // Arrange
-            // Create a test platform
-            GameObject platform = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            platform.transform.position = Vector3.zero;
-            platform.transform.localScale = new Vector3(10f, 1f, 10f);
-
-            // Create test enemies
-            GameObject enemy1 = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            enemy1.transform.position = new Vector3(-2f, 0f, 0f);
-            enemy1.tag = "Enemy";
-
-            GameObject enemy2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            enemy2.transform.position = new Vector3(2f, 0f, 0f);
-            enemy2.tag = "Enemy";
-
-
-            // Create the player object and attach the PlayerCollisionHandler script
-            GameObject player = new GameObject("Player");
+            GameObject player = new GameObject();
             PlayerCollisionHandler collisionHandler = player.AddComponent<PlayerCollisionHandler>();
 
+            Collider platformCollider = player.AddComponent<BoxCollider>();
+            platformCollider.bounds.SetMinMax(new Vector3(0f, 0f, 0f), new Vector3(10f, 0f, 10f));
 
             _getAccessToPrivate.SetPrivateFieldValue(typeof(PlayerCollisionHandler), collisionHandler,
-                "platformCollider", platform.GetComponent<Collider>());
+                "platformCollider", platformCollider);
+            _getAccessToPrivate.SetPrivateFieldValue(typeof(PlayerCollisionHandler), collisionHandler,
+                "platformRadius", 2f);
 
+            GameObject enemy1 = new GameObject();
+            GameObject enemy2 = new GameObject();
 
             _getAccessToPrivate.SetPrivateFieldValue(typeof(PlayerCollisionHandler), collisionHandler,
-                "enemies", new GameObject[] { enemy1, enemy2 });
-
-
-            // Set the player's initial position to a dangerous position near the enemies
-            player.transform.position = new Vector3(0f, 0f, 0f);
-
-            //Act
-            // Trigger a collision with the "limit" object
-            GameObject limit = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            limit.gameObject.tag = "limit";
+                "enemies", new[] { enemy1, enemy2 });
+           
+            GameObject collisionObject = new GameObject();
+            collisionObject.AddComponent<BoxCollider>();
+            collisionObject.tag = "limit";
+            collisionObject.transform.position = new Vector3(10f, 0f, 10f);
             
-            // Wait for one frame update
+
+            // Act
+        
+            player.transform.position = new Vector3(10f, 0f, 10f);
+        
+
+
             yield return new WaitForSeconds(0.1f);
+
             // Assert
+            Vector3 playerPosition = player.transform.position;
+            Vector3 platformCenter = platformCollider.bounds.center;
+            Vector3 platformExtents = platformCollider.bounds.extents;
 
-            // Check if the player has been teleported to a safe position
+            Assert.IsTrue(playerPosition.x >= platformCenter.x - platformExtents.x &&
+                          playerPosition.x <= platformCenter.x + platformExtents.x);
+           
+            Assert.IsTrue(playerPosition.z >= platformCenter.z - platformExtents.z &&
+                          playerPosition.z <= platformCenter.z + platformExtents.z);
 
-            bool isPositionNearEnemies = (bool)_getAccessToPrivate.GetPrivateMethod(typeof(PlayerCollisionHandler),
-                collisionHandler,"IsPositionNearEnemies" ,new object[] { player.transform.position });
 
-            Assert.IsFalse(isPositionNearEnemies);
+            GameObject[] enemies = (GameObject[])_getAccessToPrivate.GetPrivateFieldValue(
+                typeof(PlayerCollisionHandler),
+                collisionHandler,
+                "enemies");
+            ;
+            foreach (GameObject enemy in enemies)
+            {
+                float distance = Vector3.Distance(playerPosition, enemy.transform.position);
 
-            // Cleanup the test objects
-            Object.Destroy(player);
-            Object.Destroy(platform);
-            Object.Destroy(enemy1);
-            Object.Destroy(enemy2);
+                float platformRadius = 5f;
+
+                Assert.Greater(distance, platformRadius);
+            }
         }
     }
 }

@@ -1,13 +1,16 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Player.Movement
 {
     public class PlayerCollisionHandler : MonoBehaviour
     {
-        public Collider platformCollider;
-        public float platformRadius = 1f;
-        public GameObject[] enemies;
+        [SerializeField]private Collider platformCollider;
+        [SerializeField] private float platformRadius;
+        [SerializeField]private GameObject[] enemies;
 
+      
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag("limit"))
@@ -49,6 +52,16 @@ namespace Player.Movement
                     return randomPosition;
                 }
             }
+        }
+        
+        private void OnDrawGizmos()
+        {
+        
+            // Ensure the collider is a sphere collider
+            
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireSphere(platformCollider.bounds.center, platformRadius);
+            
         }
     }
 

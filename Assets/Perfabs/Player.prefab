@@ -56,7 +56,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8361523090125356568}
   - component: {fileID: 8361523090125356647}
   - component: {fileID: 365420888}
-  - component: {fileID: 4946324980924419965}
+  - component: {fileID: 1848086036}
   - component: {fileID: 1362731462}
   m_Layer: 0
   m_Name: Player
@@ -202,7 +202,7 @@ MonoBehaviour:
   turnSpeed: 200
   bulletPrefab: {fileID: 0}
   bulletForce: 10
---- !u!114 &4946324980924419965
+--- !u!114 &1848086036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,16 +211,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8361523090125356646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787e84ab059600203b7f721aea73b2db, type: 3}
+  m_Script: {fileID: 11500000, guid: d8ea98a13c7a40c185f359833d74c6e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yAngleMin: 0
-  yAngleMax: 50
-  lookAt: {fileID: 8361523090125356570}
-  camTransform: {fileID: 6412515565362739614}
-  distanceX: 0
-  distanceY: 0
-  distanceZ: 0
+  platformCollider: {fileID: 0}
+  platformRadius: 4
+  enemies:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!54 &1362731462
 Rigidbody:
   m_ObjectHideFlags: 0
